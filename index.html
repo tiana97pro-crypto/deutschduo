@@ -397,7 +397,8 @@ function renderSettings(m){
     '<p class="hint">Créez une clé gratuite sur aistudio.google.com (bouton « Get API key »), puis collez-la ici. Elle reste dans ce navigateur. En offre gratuite, Google peut utiliser vos textes pour améliorer ses produits : évitez d\'y mettre des informations sensibles.</p>' +
     '<label for="s-gkey">Clé API Gemini</label><input type="password" id="s-gkey" autocomplete="off" spellcheck="false" value="' + esc(store.get('dd_gkey', '')) + '">' +
     '<label for="s-gmodel">Modèle</label><input type="text" id="s-gmodel" autocomplete="off" spellcheck="false" placeholder="gemini-flash-latest" value="' + esc(store.get('dd_gmodel', '')) + '">' +
-    '<div class="row"><button class="btn" data-act="ai-test">Tester la connexion</button></div>' +
+    '<div class="row"><button class="btn" data-act="ai-test">Tester la connexion</button><button class="btn" data-act="ai-models">Lister les modèles disponibles</button></div>' +
+    '<div id="ai-models"></div>' +
     '<h2>Vos chiffres</h2><p>' + cards.length + ' mots dans le carnet, dont ' + mature + ' bien installés en mémoire (revus à 3 semaines ou plus).</p>' +
     '<h2>Sauvegarde</h2><p class="hint">' + lastBackupText() + '</p>' +
     '<div class="row"><button class="btn primary" data-act="download">Enregistrer un fichier de sauvegarde</button></div>' +
@@ -547,8 +548,13 @@ async function gemini(o){
   const body = { contents: [{ role: 'user', parts: o.parts }], generationConfig: { temperature: o.temperature == null ? 0.2 : o.temperature } };
   if (o.system) body.systemInstruction = { parts: [{ text: o.system }] };
   if (o.json) body.generationConfig.responseMimeType = 'application/json';
-  const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(model) + ':generateContent', {
-    method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify(body) });
+  let r;
+  for (let attempt = 0; attempt < 3; attempt++){
+    r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(model) + ':generateContent', {
+      method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify(body) });
+    if (r.ok || ![500, 502, 503, 504].includes(r.status) || attempt === 2) break;
+    await new Promise(res => setTimeout(res, 1500 * (attempt + 1)));
+  }
   if (!r.ok){
     let detail = '';
     try { const j = await r.json(); detail = (j.error && j.error.message) || ''; } catch (e) {}
@@ -567,7 +573,7 @@ function geminiError(e){
   else if (st === 401 || st === 403) toast('Clé Gemini refusée ou non autorisée. Vérifiez-la dans les Réglages.');
   else if (st === 404) toast('Modèle introuvable : changez le nom du modèle dans les Réglages.');
   else if (st === 429) toast('Quota gratuit atteint. Réessayez dans quelques minutes, ou demain.');
-  else if (st >= 500) toast('Gemini est indisponible pour le moment. Réessayez plus tard.');
+  else if (st >= 500) toast('Gemini a renvoyé l\'erreur ' + st + (det ? ' : ' + det.slice(0, 140) : '') + '. Essayez un autre modèle : Réglages, « Lister les modèles disponibles ».');
   else if (m === 'empty') toast('Gemini n\'a rien renvoyé (texte bloqué ?). Réessayez.');
   else toast('Connexion à Gemini impossible. Vérifiez votre réseau.');
 }
@@ -658,6 +664,25 @@ const acts = {
   download(){ downloadBackup(); },
   'drive-save'(){ driveSave(); },
   'drive-load'(){ driveLoad(); },
+  'ai-models'(){
+    const key = store.get('dd_gkey', '');
+    if (!key){ toast('Ajoutez d\'abord votre clé Gemini ci-dessus.'); return; }
+    toast('Recherche des modèles…');
+    fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', { headers: { 'x-goog-api-key': key } })
+      .then(r => r.ok ? r.json() : r.json().catch(() => ({})).then(j => { const e = new Error('gemini ' + r.status); e.status = r.status; e.detail = (j.error && j.error.message) || ''; throw e; }))
+      .then(d => {
+        const skip = /tts|image|embed|live|audio|aqa|imagen|veo|robotics|computer-use/i;
+        const names = (d.models || []).filter(m => (m.supportedGenerationMethods || []).includes('generateContent'))
+          .map(m => String(m.name).replace(/^models\//, '')).filter(n => !skip.test(n)).sort();
+        if (!names.length){ toast('Aucun modèle trouvé pour cette clé.'); return; }
+        const cur = store.get('dd_gmodel', '');
+        $('#ai-models').innerHTML = '<label for="s-gpick">Modèles disponibles pour votre clé (' + names.length + ')</label><select id="s-gpick"><option value="">Choisir un modèle…</option>' +
+          names.map(n => '<option value="' + esc(n) + '"' + (n === cur ? ' selected' : '') + '>' + esc(n) + '</option>').join('') + '</select>' +
+          '<p class="hint" style="margin-top:6px">Les modèles « flash » sont rapides et adaptés ; « lite » est le plus léger. Après le choix, cliquez sur « Tester la connexion ».</p>';
+        toast(names.length + ' modèles trouvés.');
+      })
+      .catch(geminiError);
+  },
   'ai-test'(){
     toast('Test en cours…');
     gemini({ parts: [{ text: 'Réponds uniquement par le mot OK.' }], temperature: 0 })
@@ -687,6 +712,7 @@ document.addEventListener('change', e => {
   else if (id === 's-typing'){ settings.typing = e.target.checked; }
   else if (id === 's-theme'){ settings.theme = e.target.value; applyTheme(); }
   else if (id === 's-gkey'){ store.set('dd_gkey', e.target.value.trim()); toast('Clé enregistrée sur cet appareil.'); return; }
+  else if (id === 's-gpick'){ if (!e.target.value) return; store.set('dd_gmodel', e.target.value); const inp = $('#s-gmodel'); if (inp) inp.value = e.target.value; toast('Modèle choisi : ' + e.target.value); return; }
   else if (id === 's-gmodel'){ store.set('dd_gmodel', e.target.value.trim()); toast('Modèle enregistré.'); return; }
   else if (id === 's-gclient'){ store.set('dd_gclient', e.target.value.trim()); toast('Identifiant enregistré.'); return; }
   else if (id === 'imp-file'){
