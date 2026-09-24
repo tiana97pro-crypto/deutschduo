@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>DeutschDuo · Wortschatz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    --bg:#F2F4F7; --surface:#FFFFFF; --ink:#18212B; --muted:#5B6776; --line:#D9DFE7;
+    --brand:#1F4E79; --brand-ink:#FFFFFF; --good:#2E7D5B; --hard:#9A6412; --bad:#B23A3A;
+    --soft:#E8EEF5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#10161D; --surface:#182029; --ink:#E7ECF2; --muted:#98A5B4; --line:#2A3542;
+      --brand:#7FB0E0; --brand-ink:#0E1620; --good:#6CC39A; --hard:#E0AE5C; --bad:#E58585;
+      --soft:#1F2A36;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#10161D; --surface:#182029; --ink:#E7ECF2; --muted:#98A5B4; --line:#2A3542;
+    --brand:#7FB0E0; --brand-ink:#0E1620; --good:#6CC39A; --hard:#E0AE5C; --bad:#E58585;
+    --soft:#1F2A36;
+  }
+  html{scroll-padding-top:env(safe-area-inset-top,0px)}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif;min-height:100vh}
+  main{max-width:640px;margin:0 auto;padding:20px 16px 110px}
+  h1{font:600 1.6rem/1.2 'Literata',Georgia,serif;margin:8px 0 18px}
+  h2{font:600 1.1rem/1.3 'Literata',Georgia,serif;margin:28px 0 10px}
+  p{margin:0 0 12px}
+  .hint{color:var(--muted);font-size:.92rem}
+  :focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+  .stats div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 10px}
+  .stats b{display:block;font:600 1.8rem/1.1 'Literata',Georgia,serif}
+  .stats span{color:var(--muted);font-size:.85rem}
+
+  .btn{min-height:44px;padding:10px 16px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-weight:500;cursor:pointer}
+  .btn:hover{border-color:var(--brand)}
+  .primary{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+  .big{width:100%;font-size:1.05rem;min-height:52px}
+  .link{background:none;border:0;padding:6px 4px;color:var(--brand);font:inherit;font-size:.9rem;cursor:pointer;text-decoration:underline}
+  .danger{color:var(--bad)}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+
+  .progress{height:6px;background:var(--soft);border-radius:3px;overflow:hidden;margin:4px 0 16px}
+  .progress i{display:block;height:100%;background:var(--brand);transition:width .25s}
+  .topline{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem}
+
+  .card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:22px 20px;min-height:200px}
+  .instr{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+  .prompt{font:600 1.9rem/1.25 'Literata',Georgia,serif;overflow-wrap:anywhere}
+  .ctx{font:400 1.05rem/1.6 'Literata',Georgia,serif;color:var(--muted);margin:14px 0 0}
+  .gap{display:inline-block;border-bottom:2px solid var(--brand);height:1em;vertical-align:baseline;margin:0 2px}
+  .answer{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+  .answer .prompt{color:var(--brand)}
+  .note{margin-top:10px;font-size:.92rem;color:var(--muted)}
+  .speak{margin-left:8px;vertical-align:middle;min-height:36px;padding:4px 10px;font-size:.85rem}
+  .verdict{margin-top:14px;font-weight:500}
+  .verdict.ok{color:var(--good)} .verdict.near{color:var(--hard)} .verdict.bad{color:var(--bad)}
+
+  input[type=text],input[type=number],textarea,select{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
+  #ans{font:400 1.25rem 'Literata',Georgia,serif;margin-top:16px}
+  textarea{resize:vertical}
+  label{display:block;font-weight:500;margin:14px 0 6px}
+  label.inline{display:flex;gap:10px;align-items:center;font-weight:400}
+  label.inline input{width:20px;height:20px}
+
+  .rates{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+  .rate{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px;border-radius:8px;border:1px solid var(--line);border-bottom-width:4px;background:var(--surface);color:var(--ink);font:inherit;font-weight:600;cursor:pointer;min-height:64px}
+  .rate small{font-weight:400;color:var(--muted);font-size:.78rem}
+  .rate.r0{border-bottom-color:var(--bad)} .rate.r1{border-bottom-color:var(--hard)}
+  .rate.r2{border-bottom-color:var(--good)} .rate.r3{border-bottom-color:var(--brand)}
+  .rate.suggest{background:var(--soft);border-color:var(--brand)}
+
+  ul.items{list-style:none;margin:12px 0 0;padding:0}
+  .item{display:flex;gap:12px;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+  .item .de{font:600 1.1rem 'Literata',Georgia,serif;overflow-wrap:anywhere}
+  .item .fr{color:var(--ink)}
+  .item .ctxs{color:var(--muted);font-size:.88rem;margin-top:4px}
+  .item .side{text-align:right;flex:none}
+  .chip{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:99px;background:var(--soft);color:var(--muted)}
+  .chip.due{background:var(--brand);color:var(--brand-ink)} .chip.new{color:var(--hard)}
+
+  nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+  nav button{flex:1;padding:14px 4px 12px;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font:500 .92rem 'Public Sans',system-ui,sans-serif;cursor:pointer}
+  nav button[aria-current="page"]{color:var(--brand);border-top-color:var(--brand)}
+
+  #toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90%;z-index:10}
+  #toast.show{opacity:1}
+  .warn{background:var(--soft);border:1px solid var(--hard);border-radius:8px;padding:10px 12px;margin-bottom:14px;font-size:.92rem}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main id="main"></main>
+<nav aria-label="Navigation principale">
+  <button data-view="review">Réviser</button>
+  <button data-view="add">Ajouter</button>
+  <button data-view="list">Carnet</button>
+  <button data-view="settings">Réglages</button>
+</nav>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- Utilitaires ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const DAY = 86400000;
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const dayKey = (t = Date.now()) => { const d = new Date(t); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+const startOfDay = (t = Date.now()) => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
+const addDays = n => { const d = new Date(); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + n); return d.getTime(); };
+
+/* ---------- Stockage local (propre à ce navigateur) ---------- */
+let storageWorks = true;
+const store = {
+  get(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { storageWorks = false; return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { storageWorks = false; return false; } }
+};
+let cards = store.get('dd_cards', []);
+let settings = Object.assign({ newPerDay: 10, direction: 'fr-de', typing: true, theme: 'auto' }, store.get('dd_settings', {}));
+let log = store.get('dd_log', {});
+function save(){
+  const ok = store.set('dd_cards', cards) && store.set('dd_settings', settings) && store.set('dd_log', log);
+  if (!ok) toast("Enregistrement impossible dans ce navigateur. Pensez à exporter vos données.");
+}
+function applyTheme(){
+  if (settings.theme === 'auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme', settings.theme);
+}
+
+/* ---------- Répétition espacée (type SM-2) ---------- */
+// grade : 0 = À revoir, 1 = Difficile, 2 = Bien, 3 = Facile
+function schedule(c, g){
+  let ease = c.ease || 2.5, interval = c.interval || 0, reps = c.reps || 0, lapses = c.lapses || 0, due;
+  if (g === 0){
+    lapses++; reps = 0; interval = 0; ease = Math.max(1.3, ease - 0.2);
+    due = Date.now() + 10 * 60000;
+  } else {
+    if (g === 1){ interval = reps === 0 ? 1 : Math.max(interval + 1, Math.round(interval * 1.2)); ease = Math.max(1.3, ease - 0.15); }
+    else if (g === 2){ interval = reps === 0 ? 1 : reps === 1 ? Math.max(3, interval + 1) : Math.max(interval + 1, Math.round(interval * ease)); }
+    else { interval = reps === 0 ? 4 : Math.max(interval + 2, Math.round(interval * ease * 1.3)); ease = ease + 0.15; }
+    reps++;
+    due = addDays(interval);
+  }
+  return { ease, interval, reps, lapses, due };
+}
+function rateLabel(c, g){
+  if (g === 0) return '10 min';
+  const i = schedule(c, g).interval;
+  return i >= 30 ? Math.round(i / 30) + ' mois' : i + ' j';
+}
+const byId = id => cards.find(c => c.id === id);
+function newCard(f){
+  return { id: uid(), de: f.de, fr: f.fr, ctx: f.ctx || '', note: f.note || '', created: Date.now(),
+           due: 0, ease: 2.5, interval: 0, reps: 0, lapses: 0, lastReview: null };
+}
+function buildQueue(){
+  const now = Date.now();
+  const l = log[dayKey()] || {};
+  const due = cards.filter(c => c.lastReview && c.due <= now).sort((a, b) => a.due - b.due).map(c => c.id);
+  const room = Math.max(0, settings.newPerDay + (l.bonus || 0) - (l.newSeen || 0));
+  const fresh = cards.filter(c => !c.lastReview).sort((a, b) => a.created - b.created).slice(0, room).map(c => c.id);
+  return { due, fresh };
+}
+function streak(){
+  let n = 0, t = Date.now();
+  const has = k => log[k] && log[k].reviews > 0;
+  if (!has(dayKey(t))) t -= DAY;
+  while (has(dayKey(t))) { n++; t -= DAY; }
+  return n;
+}
+
+/* ---------- Vérification de la réponse tapée ---------- */
+const stripP = s => s.replace(/[.,;:!?"“”„()]/g, '').replace(/\s+/g, ' ').trim();
+const lower = s => stripP(s).toLowerCase();
+const noArt = s => s.replace(/^(der|die|das|ein|eine)\s+/, '');
+const fold = s => s.replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u').replace(/ß/g, 'ss');
+function verdict(typed, target){
+  const a = lower(typed), b = lower(target);
+  if (!a) return null;
+  if (a === b) return stripP(typed) === stripP(target)
+    ? { k: 'ok', t: 'Exact.' }
+    : { k: 'near', t: 'Le mot est bon. Attention aux majuscules : les noms en prennent une.' };
+  if (noArt(a) === noArt(b)) return { k: 'near', t: "Le mot est bon, vérifiez l'article." };
+  if (fold(noArt(a)) === fold(noArt(b))) return { k: 'near', t: 'Presque : attention aux umlauts et au ß.' };
+  return { k: 'bad', t: "Ce n'est pas la bonne réponse." };
+}
+
+/* ---------- Phrase d'exemple avec le mot masqué ---------- */
+function ctxHtml(ctx, de, mask){
+  if (!ctx) return '';
+  if (!mask) return esc(ctx);
+  const toks = de.split(/\s+/).map(t => t.replace(/[^\p{L}]/gu, '')).filter(t => t.length >= 3 && !/^(der|die|das|ein|eine|sich|zum|zur)$/i.test(t));
+  if (!toks.length) return esc(ctx);
+  const w = toks.sort((a, b) => b.length - a.length)[0];
+  const stem = w.length > 5 ? w.slice(0, w.length - 2) : w.length > 3 ? w.slice(0, w.length - 1) : w;
+  const re = new RegExp(escRe(stem) + '\\p{L}*', 'giu');
+  let out = '', last = 0, m;
+  while ((m = re.exec(ctx))){
+    out += esc(ctx.slice(last, m.index)) + '<span class="gap" style="width:' + Math.min(9, Math.max(3, m[0].length)) + 'ch"></span>';
+    last = m.index + m[0].length;
+    if (m[0].length === 0) re.lastIndex++;
+  }
+  return out + esc(ctx.slice(last));
+}
+
+/* ---------- Voix allemande du navigateur ---------- */
+function speak(text){
+  try {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'de-DE';
+    const v = (speechSynthesis.getVoices() || []).find(v => v.lang && v.lang.toLowerCase().startsWith('de'));
+    if (v) u.voice = v;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  } catch (e) { toast('La lecture vocale n\'est pas disponible sur ce navigateur.'); }
+}
+
+/* ---------- Messages ---------- */
+let toastT;
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+/* ---------- État de l'interface ---------- */
+let view = 'review', session = null, editingId = null, pendingDelete = null, pendingWipe = false, listQuery = '';
+
+function setView(v){
+  view = v;
+  if (v !== 'add') editingId = null;
+  pendingDelete = null; pendingWipe = false;
+  render();
+  window.scrollTo(0, 0);
+}
+function render(){
+  document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-current', b.dataset.view === view ? 'page' : 'false'));
+  const m = $('#main');
+  const banner = storageWorks ? '' : '<div class="warn">Ce navigateur bloque le stockage local : vos mots ne seront pas conservés. Exportez-les régulièrement depuis les réglages.</div>';
+  m.innerHTML = banner;
+  const box = document.createElement('div');
+  m.appendChild(box);
+  ({ review: renderReview, add: renderAdd, list: renderList, settings: renderSettings })[view](box);
+}
+
+/* ---------- Vue : Réviser ---------- */
+function renderReview(m){
+  if (!session) return renderHome(m);
+  if (session.queue.length === 0) return renderDone(m);
+
+  const id = session.queue[0], c = byId(id);
+  if (!c){ session.queue.shift(); return renderReview(m); }
+  if (!session.dir[id]) session.dir[id] = settings.direction === 'mix' ? (Math.random() < 0.5 ? 'fr-de' : 'de-fr') : settings.direction;
+  const dir = session.dir[id], back = session.stage === 'back';
+  const pct = Math.round(session.done / session.total * 100);
+
+  let inner = '';
+  if (dir === 'fr-de'){
+    inner += '<div class="instr">Comment dit-on en allemand ?</div><div class="prompt">' + esc(c.fr) + '</div>';
+    if (c.ctx) inner += '<p class="ctx">' + ctxHtml(c.ctx, c.de, !back) + '</p>';
+    if (!back && settings.typing) inner += '<input type="text" id="ans" placeholder="Tapez votre réponse" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Votre réponse en allemand">';
+    if (back){
+      inner += '<div class="answer"><div class="prompt">' + esc(c.de) + '<button class="btn speak" data-act="speak" data-text="' + esc(c.de) + '" aria-label="Écouter">Écouter</button></div>';
+      if (session.verdict) inner += '<div class="verdict ' + session.verdict.k + '">' + esc(session.verdict.t) + (session.typed ? ' Vous avez écrit : ' + esc(session.typed) : '') + '</div>';
+      if (c.note) inner += '<div class="note">' + esc(c.note) + '</div>';
+      inner += '</div>';
+    }
+  } else {
+    inner += '<div class="instr">Que veut dire ce mot ?</div><div class="prompt">' + esc(c.de) + '<button class="btn speak" data-act="speak" data-text="' + esc(c.de) + '" aria-label="Écouter">Écouter</button></div>';
+    if (c.ctx) inner += '<p class="ctx">' + esc(c.ctx) + '</p>';
+    if (back){
+      inner += '<div class="answer"><div class="prompt">' + esc(c.fr) + '</div>';
+      if (c.note) inner += '<div class="note">' + esc(c.note) + '</div>';
+      inner += '</div>';
+    }
+  }
+
+  let actions;
+  if (!back){
+    const label = (dir === 'fr-de' && settings.typing) ? 'Vérifier' : 'Voir la réponse';
+    actions = '<div class="row"><button class="btn primary big" data-act="reveal">' + label + '</button></div>';
+  } else {
+    const sug = session.verdict ? { ok: 2, near: 1, bad: 0 }[session.verdict.k] : -1;
+    const names = ['À revoir', 'Difficile', 'Bien', 'Facile'];
+    actions = '<div class="rates">' + names.map((n, g) =>
+      '<button class="rate r' + g + (g === sug ? ' suggest' : '') + '" data-act="rate" data-g="' + g + '">' + n + '<small>' + rateLabel(c, g) + '</small></button>').join('') + '</div>' +
+      '<p class="hint" style="margin-top:10px">Raccourcis clavier : 1, 2, 3, 4.</p>';
+  }
+
+  m.innerHTML = '<div class="topline"><span>' + session.done + ' / ' + session.total + ' cartes</span><button class="link" data-act="quit">Arrêter</button></div>' +
+    '<div class="progress"><i style="width:' + pct + '%"></i></div>' +
+    '<div class="card">' + inner + '</div>' + actions;
+
+  const a = $('#ans'); if (a) a.focus();
+}
+
+function renderHome(m){
+  const q = buildQueue(), nDue = q.due.length, nNew = q.fresh.length;
+  const l = log[dayKey()] || { reviews: 0 };
+  let body;
+  if (cards.length === 0){
+    body = '<p>Votre carnet est vide. Ajoutez un mot avec sa phrase d\'exemple : c\'est ce qui rend la mémorisation solide.</p>' +
+      '<div class="row"><button class="btn primary" data-act="goto-add">Ajouter un mot</button><button class="btn" data-act="seed">Charger 5 mots d\'exemple</button></div>';
+  } else if (nDue + nNew > 0){
+    body = '<button class="btn primary big" data-act="start">Commencer (' + (nDue + nNew) + ' cartes)</button>';
+  } else {
+    const future = cards.filter(c => c.lastReview && c.due > Date.now()).map(c => c.due);
+    let nxt = '';
+    if (future.length){
+      const d = Math.round((startOfDay(Math.min.apply(null, future)) - startOfDay()) / DAY);
+      nxt = d <= 0 ? ' La prochaine carte revient plus tard aujourd\'hui.' : d === 1 ? ' La prochaine carte revient demain.' : ' La prochaine carte revient dans ' + d + ' jours.';
+    }
+    body = '<p>Tout est à jour pour le moment.' + nxt + '</p>';
+    if (cards.some(c => !c.lastReview)) body += '<div class="row"><button class="btn" data-act="more">Apprendre 5 nouveaux mots de plus</button></div>';
+  }
+  m.innerHTML = '<h1>Wortschatz</h1>' +
+    '<div class="stats"><div><b>' + nDue + '</b><span>à réviser</span></div><div><b>' + nNew + '</b><span>nouveaux aujourd\'hui</span></div><div><b>' + streak() + '</b><span>jours d\'affilée</span></div></div>' +
+    body + '<p class="hint" style="margin-top:16px">Aujourd\'hui : ' + (l.reviews || 0) + ' révisions.</p>';
+}
+
+function renderDone(m){
+  m.innerHTML = '<h1>Session terminée</h1><div class="card"><p class="prompt">' + session.total + ' cartes revues.</p>' +
+    '<p class="hint">' + (session.again ? session.again + ' carte(s) ont été à revoir avant d\'être retenues.' : 'Aucune carte n\'a été à revoir.') + '</p></div>' +
+    '<div class="row"><button class="btn primary" data-act="finish">Retour</button><button class="btn" data-act="goto-add">Ajouter un mot</button></div>';
+}
+
+/* ---------- Vue : Ajouter / Modifier ---------- */
+function renderAdd(m){
+  const c = editingId ? byId(editingId) : null;
+  m.innerHTML = '<h1>' + (c ? 'Modifier le mot' : 'Ajouter un mot') + '</h1>' +
+    '<label for="f-de">Mot ou expression en allemand (avec l\'article)</label><input type="text" id="f-de" autocomplete="off" value="' + esc(c ? c.de : '') + '">' +
+    '<label for="f-fr">Traduction en français</label><input type="text" id="f-fr" autocomplete="off" value="' + esc(c ? c.fr : '') + '">' +
+    '<label for="f-ctx">Phrase d\'exemple en allemand</label><textarea id="f-ctx" rows="2">' + esc(c ? c.ctx : '') + '</textarea>' +
+    '<label for="f-note">Note (facultatif)</label><input type="text" id="f-note" autocomplete="off" value="' + esc(c ? c.note : '') + '">' +
+    '<div class="row"><button class="btn primary" data-act="save-card">Enregistrer</button>' + (c ? '<button class="btn" data-act="cancel-edit">Annuler</button>' : '') + '</div>' +
+    '<p class="hint" style="margin-top:14px">Une phrase entière se retient mieux qu\'un mot isolé : pendant la révision, le mot y sera masqué pour vous aider à le retrouver.</p>';
+  if (!c) $('#f-de').focus();
+}
+
+/* ---------- Vue : Carnet ---------- */
+function statusOf(c){
+  if (!c.lastReview) return { t: 'Nouveau', k: 'new' };
+  if (c.due <= Date.now()) return { t: 'À réviser', k: 'due' };
+  return { t: 'Dans ' + Math.max(1, Math.round((c.due - startOfDay()) / DAY)) + ' j', k: 'ok' };
+}
+function listItems(filter){
+  const f = filter.trim().toLowerCase();
+  const arr = cards.filter(c => !f || (c.de + ' ' + c.fr + ' ' + (c.ctx || '')).toLowerCase().includes(f)).sort((a, b) => b.created - a.created);
+  if (!arr.length) return '<p class="hint">' + (cards.length ? 'Aucun résultat.' : 'Le carnet est vide.') + '</p>';
+  return '<ul class="items">' + arr.map(c => {
+    const s = statusOf(c);
+    return '<li class="item"><div><div class="de">' + esc(c.de) + '</div><div class="fr">' + esc(c.fr) + '</div>' +
+      (c.ctx ? '<div class="ctxs">' + esc(c.ctx) + '</div>' : '') + '</div>' +
+      '<div class="side"><span class="chip ' + s.k + '">' + s.t + '</span><div>' +
+      '<button class="link" data-act="edit" data-id="' + c.id + '">Modifier</button>' +
+      '<button class="link danger" data-act="del" data-id="' + c.id + '">' + (pendingDelete === c.id ? 'Confirmer' : 'Supprimer') + '</button></div></div></li>';
+  }).join('') + '</ul>';
+}
+function renderList(m){
+  m.innerHTML = '<h1>Carnet (' + cards.length + ')</h1>' +
+    '<input type="text" id="q" placeholder="Rechercher un mot, une traduction…" value="' + esc(listQuery) + '" aria-label="Rechercher">' +
+    '<div id="items">' + listItems(listQuery) + '</div>';
+}
+
+/* ---------- Vue : Réglages ---------- */
+function exportText(){
+  return JSON.stringify({ app: 'deutschduo', version: 1, exported: new Date().toISOString(), cards, settings, log });
+}
+function renderSettings(m){
+  const mature = cards.filter(c => c.interval >= 21).length;
+  m.innerHTML = '<h1>Réglages</h1>' +
+    '<p class="hint">Vos données restent dans ce navigateur, sur cet appareil. Une autre personne qui ouvre l\'appli sur son propre appareil a son propre carnet, totalement séparé.</p>' +
+    '<label for="s-new">Nouveaux mots par jour</label><input type="number" id="s-new" min="1" max="50" value="' + settings.newPerDay + '">' +
+    '<label for="s-dir">Sens des révisions</label><select id="s-dir">' +
+      '<option value="fr-de"' + (settings.direction === 'fr-de' ? ' selected' : '') + '>Français vers allemand (production)</option>' +
+      '<option value="de-fr"' + (settings.direction === 'de-fr' ? ' selected' : '') + '>Allemand vers français (reconnaissance)</option>' +
+      '<option value="mix"' + (settings.direction === 'mix' ? ' selected' : '') + '>Mélangé</option></select>' +
+    '<label class="inline" style="margin-top:16px"><input type="checkbox" id="s-typing"' + (settings.typing ? ' checked' : '') + '>Taper la réponse en allemand avant de la voir</label>' +
+    '<label for="s-theme">Apparence</label><select id="s-theme">' +
+      '<option value="auto"' + (settings.theme === 'auto' ? ' selected' : '') + '>Selon l\'appareil</option>' +
+      '<option value="light"' + (settings.theme === 'light' ? ' selected' : '') + '>Clair</option>' +
+      '<option value="dark"' + (settings.theme === 'dark' ? ' selected' : '') + '>Sombre</option></select>' +
+    '<h2>Vos chiffres</h2><p>' + cards.length + ' mots dans le carnet, dont ' + mature + ' bien installés en mémoire (revus à 3 semaines ou plus).</p>' +
+    '<h2>Sauvegarde</h2><p class="hint">Copiez ce texte et gardez-le dans un fichier ou un message à vous-même. Pour restaurer, collez-le plus bas.</p>' +
+    '<textarea id="exp" rows="4" readonly aria-label="Données exportées">' + esc(exportText()) + '</textarea>' +
+    '<div class="row"><button class="btn" data-act="copy">Copier la sauvegarde</button></div>' +
+    '<label for="imp">Restaurer une sauvegarde</label><textarea id="imp" rows="3" placeholder="Collez ici le texte de la sauvegarde"></textarea>' +
+    '<div class="row"><input type="file" id="imp-file" accept="application/json,.json,text/plain" aria-label="Choisir un fichier de sauvegarde"><button class="btn" data-act="import">Fusionner avec mon carnet</button></div>' +
+    '<h2>Zone sensible</h2><div class="row"><button class="btn danger" data-act="wipe">' + (pendingWipe ? 'Confirmer : tout effacer' : 'Effacer toutes mes données') + '</button></div>';
+}
+
+/* ---------- Actions ---------- */
+const acts = {
+  'goto-add'(){ setView('add'); },
+  start(){
+    const q = buildQueue(), ids = q.due.concat(q.fresh);
+    if (!ids.length) return;
+    session = { queue: ids, total: ids.length, done: 0, stage: 'front', dir: {}, typed: '', verdict: null, again: 0 };
+    render();
+  },
+  reveal(){
+    if (!session || session.stage !== 'front') return;
+    const c = byId(session.queue[0]);
+    const inp = $('#ans');
+    session.typed = inp ? inp.value.trim() : '';
+    session.verdict = (inp && c) ? verdict(session.typed, c.de) : null;
+    session.stage = 'back';
+    render();
+  },
+  rate(id, el){
+    if (!session || session.stage !== 'back') return;
+    const g = typeof id === 'number' ? id : Number(el.dataset.g);
+    const cid = session.queue.shift(), c = byId(cid);
+    if (c){
+      const wasNew = !c.lastReview;
+      Object.assign(c, schedule(c, g));
+      c.lastReview = Date.now();
+      const k = dayKey(), l = log[k] = log[k] || { reviews: 0, newSeen: 0, correct: 0, bonus: 0 };
+      l.reviews++; if (wasNew) l.newSeen++; if (g >= 2) l.correct++;
+      if (g === 0){ session.queue.push(cid); session.again++; } else session.done++;
+      save();
+    }
+    session.stage = 'front'; session.typed = ''; session.verdict = null;
+    render();
+  },
+  quit(){ session = null; render(); },
+  finish(){ session = null; render(); },
+  more(){
+    const k = dayKey(), l = log[k] = log[k] || { reviews: 0, newSeen: 0, correct: 0, bonus: 0 };
+    l.bonus = (l.bonus || 0) + 5; save(); render();
+  },
+  speak(_, el){ speak(el.dataset.text); },
+  seed(){
+    const ex = [
+      { de: 'die Entscheidung', fr: 'la décision', ctx: 'Diese Entscheidung ist mir nicht leicht gefallen.' },
+      { de: 'sich beschweren über', fr: 'se plaindre de', ctx: 'Die Kunden beschweren sich über die lange Wartezeit.', note: '+ Akkusativ' },
+      { de: 'die Herausforderung', fr: 'le défi', ctx: 'Der Umzug war eine große Herausforderung.' },
+      { de: 'verzichten auf', fr: 'renoncer à', ctx: 'Ich möchte nicht auf meinen Urlaub verzichten.', note: '+ Akkusativ' },
+      { de: 'zuverlässig', fr: 'fiable', ctx: 'Er ist ein sehr zuverlässiger Mitarbeiter.' }
+    ];
+    let n = 0;
+    ex.forEach(e => { if (!cards.some(c => c.de.toLowerCase() === e.de.toLowerCase())){ cards.push(newCard(e)); n++; } });
+    save(); toast(n + ' mots ajoutés.'); render();
+  },
+  'save-card'(){
+    const de = $('#f-de').value.trim(), fr = $('#f-fr').value.trim(), ctx = $('#f-ctx').value.trim(), note = $('#f-note').value.trim();
+    if (!de || !fr){ toast('Le mot allemand et sa traduction sont obligatoires.'); return; }
+    if (editingId){
+      const c = byId(editingId);
+      if (c) Object.assign(c, { de, fr, ctx, note });
+      editingId = null; save(); toast('Mot modifié.'); setView('list'); return;
+    }
+    if (cards.some(c => c.de.toLowerCase() === de.toLowerCase())){ toast('Ce mot est déjà dans votre carnet.'); return; }
+    cards.push(newCard({ de, fr, ctx, note }));
+    save(); toast('Mot ajouté.'); render();
+  },
+  'cancel-edit'(){ setView('list'); },
+  edit(id){ editingId = id; view = 'add'; render(); window.scrollTo(0, 0); },
+  del(id){
+    if (pendingDelete !== id){ pendingDelete = id; $('#items').innerHTML = listItems(listQuery); return; }
+    cards = cards.filter(c => c.id !== id); pendingDelete = null; save(); render();
+  },
+  copy(){
+    const t = $('#exp'); t.focus(); t.select();
+    try {
+      navigator.clipboard.writeText(t.value).then(() => toast('Sauvegarde copiée.'), () => { try { document.execCommand('copy'); toast('Sauvegarde copiée.'); } catch (e) { toast('Sélectionnez le texte et copiez-le à la main.'); } });
+    } catch (e) {
+      try { document.execCommand('copy'); toast('Sauvegarde copiée.'); } catch (e2) { toast('Sélectionnez le texte et copiez-le à la main.'); }
+    }
+  },
+  import(){
+    try {
+      const d = JSON.parse($('#imp').value);
+      if (!d || !Array.isArray(d.cards)) throw new Error('format');
+      let added = 0;
+      d.cards.forEach(ic => {
+        if (!ic || !ic.de || !ic.fr) return;
+        const ex = cards.find(c => c.id === ic.id) || cards.find(c => c.de.toLowerCase() === String(ic.de).toLowerCase());
+        if (!ex){ cards.push(Object.assign(newCard(ic), ic)); added++; }
+        else if ((ic.lastReview || 0) > (ex.lastReview || 0)) Object.assign(ex, ic, { id: ex.id });
+      });
+      if (d.log) Object.keys(d.log).forEach(k => { if (!log[k]) log[k] = d.log[k]; });
+      save(); toast(added + ' mots importés.'); render();
+    } catch (e) { toast('Sauvegarde illisible : collez le texte complet.'); }
+  },
+  wipe(){
+    if (!pendingWipe){ pendingWipe = true; render(); return; }
+    cards = []; log = {}; pendingWipe = false; session = null; save(); toast('Données effacées.'); render();
+  }
+};
+
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-act],[data-view]');
+  if (!el) return;
+  if (el.dataset.view){ session = el.dataset.view === 'review' ? session : session; setView(el.dataset.view); return; }
+  const f = acts[el.dataset.act];
+  if (f) f(el.dataset.id !== undefined ? el.dataset.id : undefined, el);
+});
+document.addEventListener('input', e => {
+  if (e.target.id === 'q'){ listQuery = e.target.value; $('#items').innerHTML = listItems(listQuery); }
+});
+document.addEventListener('change', e => {
+  const id = e.target.id;
+  if (id === 's-new'){ settings.newPerDay = Math.min(50, Math.max(1, parseInt(e.target.value, 10) || 10)); }
+  else if (id === 's-dir'){ settings.direction = e.target.value; }
+  else if (id === 's-typing'){ settings.typing = e.target.checked; }
+  else if (id === 's-theme'){ settings.theme = e.target.value; applyTheme(); }
+  else if (id === 'imp-file'){
+    const file = e.target.files && e.target.files[0]; if (!file) return;
+    const r = new FileReader(); r.onload = () => { $('#imp').value = String(r.result || ''); toast('Fichier chargé. Cliquez sur Fusionner.'); }; r.readAsText(file);
+    return;
+  } else return;
+  save();
+});
+document.addEventListener('keydown', e => {
+  if (view !== 'review' || !session || !session.queue.length) return;
+  const inField = e.target.matches && e.target.matches('input,textarea,select');
+  if (session.stage === 'front'){
+    if (e.key === 'Enter' && (e.target.id === 'ans' || !inField)){ e.preventDefault(); acts.reveal(); }
+    else if (e.key === ' ' && !inField){ e.preventDefault(); acts.reveal(); }
+  } else if (!inField && /^[1-4]$/.test(e.key)){
+    acts.rate(Number(e.key) - 1);
+  }
+});
+
+applyTheme();
+render();
+})();
+</script>
+</body>
+</html>
