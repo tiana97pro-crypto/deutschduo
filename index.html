@@ -91,7 +91,7 @@
   .chip.due{background:var(--brand);color:var(--brand-ink)} .chip.new{color:var(--hard)}
 
   nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
-  nav button{flex:1;padding:14px 4px 12px;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font:500 .92rem 'Public Sans',system-ui,sans-serif;cursor:pointer}
+  nav button{flex:1;padding:14px 4px 12px;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font:500 .85rem 'Public Sans',system-ui,sans-serif;cursor:pointer}
   nav button[aria-current="page"]{color:var(--brand);border-top-color:var(--brand)}
 
   #toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90%;z-index:10}
@@ -102,12 +102,7 @@
 </head>
 <body>
 <main id="main"></main>
-<nav aria-label="Navigation principale">
-  <button data-view="review">Réviser</button>
-  <button data-view="add">Ajouter</button>
-  <button data-view="list">Carnet</button>
-  <button data-view="settings">Réglages</button>
-</nav>
+<nav aria-label="Navigation principale"></nav>
 <div id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -234,7 +229,7 @@ function speak(text){
 let toastT;
 function toast(msg){
   const t = $('#toast'); t.textContent = msg; t.classList.add('show');
-  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2800);
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), Math.max(2800, msg.length * 55));
 }
 
 /* ---------- État de l'interface ---------- */
@@ -254,7 +249,10 @@ function render(){
   m.innerHTML = banner;
   const box = document.createElement('div');
   m.appendChild(box);
-  ({ review: renderReview, add: renderAdd, list: renderList, settings: renderSettings })[view](box);
+  const builtin = { review: renderReview, add: renderAdd, list: renderList, settings: renderSettings };
+  const mod = modules.find(x => x.id === view);
+  const fn = builtin[view] || (mod && mod.render);
+  if (fn) fn(box); else { view = 'review'; renderReview(box); }
 }
 
 /* ---------- Vue : Réviser ---------- */
@@ -395,6 +393,11 @@ function renderSettings(m){
       '<option value="auto"' + (settings.theme === 'auto' ? ' selected' : '') + '>Selon l\'appareil</option>' +
       '<option value="light"' + (settings.theme === 'light' ? ' selected' : '') + '>Clair</option>' +
       '<option value="dark"' + (settings.theme === 'dark' ? ' selected' : '') + '>Sombre</option></select>' +
+    '<h2>Intelligence artificielle (Gemini)</h2>' +
+    '<p class="hint">Créez une clé gratuite sur aistudio.google.com (bouton « Get API key »), puis collez-la ici. Elle reste dans ce navigateur. En offre gratuite, Google peut utiliser vos textes pour améliorer ses produits : évitez d\'y mettre des informations sensibles.</p>' +
+    '<label for="s-gkey">Clé API Gemini</label><input type="password" id="s-gkey" autocomplete="off" spellcheck="false" value="' + esc(store.get('dd_gkey', '')) + '">' +
+    '<label for="s-gmodel">Modèle</label><input type="text" id="s-gmodel" autocomplete="off" spellcheck="false" placeholder="gemini-flash-latest" value="' + esc(store.get('dd_gmodel', '')) + '">' +
+    '<div class="row"><button class="btn" data-act="ai-test">Tester la connexion</button></div>' +
     '<h2>Vos chiffres</h2><p>' + cards.length + ' mots dans le carnet, dont ' + mature + ' bien installés en mémoire (revus à 3 semaines ou plus).</p>' +
     '<h2>Sauvegarde</h2><p class="hint">' + lastBackupText() + '</p>' +
     '<div class="row"><button class="btn primary" data-act="download">Enregistrer un fichier de sauvegarde</button></div>' +
@@ -525,6 +528,50 @@ async function driveLoad(){
   } catch (e) { driveError(e); }
 }
 
+/* ---------- Modules et IA (Gemini) ---------- */
+const modules = [];
+function buildNav(){
+  const tabs = [['review', 'Réviser'], ['add', 'Ajouter'], ['list', 'Carnet']].concat(modules.map(m => [m.id, m.label])).concat([['settings', 'Réglages']]);
+  $('nav').innerHTML = tabs.map(t => '<button data-view="' + esc(t[0]) + '">' + esc(t[1]) + '</button>').join('');
+}
+function register(mod){
+  const i = modules.findIndex(x => x.id === mod.id);
+  if (i >= 0) modules[i] = mod; else modules.push(mod);
+  buildNav();
+  if (view === mod.id) render(); else document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-current', b.dataset.view === view ? 'page' : 'false'));
+}
+async function gemini(o){
+  const key = store.get('dd_gkey', '');
+  if (!key) throw new Error('nokey');
+  const model = store.get('dd_gmodel', '') || 'gemini-flash-latest';
+  const body = { contents: [{ role: 'user', parts: o.parts }], generationConfig: { temperature: o.temperature == null ? 0.2 : o.temperature } };
+  if (o.system) body.systemInstruction = { parts: [{ text: o.system }] };
+  if (o.json) body.generationConfig.responseMimeType = 'application/json';
+  const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(model) + ':generateContent', {
+    method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify(body) });
+  if (!r.ok){
+    let detail = '';
+    try { const j = await r.json(); detail = (j.error && j.error.message) || ''; } catch (e) {}
+    const err = new Error('gemini ' + r.status); err.status = r.status; err.detail = detail; throw err;
+  }
+  const d = await r.json();
+  const parts = d.candidates && d.candidates[0] && d.candidates[0].content && d.candidates[0].content.parts;
+  if (!parts) throw new Error('empty');
+  return parts.map(p => p.text || '').join('');
+}
+function geminiError(e){
+  const m = String((e && e.message) || e), st = e && e.status, det = (e && e.detail) || '';
+  if (m === 'nokey') toast('Ajoutez d\'abord votre clé Gemini dans les Réglages.');
+  else if (st === 400 && /API key/i.test(det)) toast('Clé Gemini refusée : vérifiez-la dans les Réglages.');
+  else if (st === 400) toast('Requête refusée par Gemini' + (det ? ' : ' + det.slice(0, 120) : '') + '.');
+  else if (st === 401 || st === 403) toast('Clé Gemini refusée ou non autorisée. Vérifiez-la dans les Réglages.');
+  else if (st === 404) toast('Modèle introuvable : changez le nom du modèle dans les Réglages.');
+  else if (st === 429) toast('Quota gratuit atteint. Réessayez dans quelques minutes, ou demain.');
+  else if (st >= 500) toast('Gemini est indisponible pour le moment. Réessayez plus tard.');
+  else if (m === 'empty') toast('Gemini n\'a rien renvoyé (texte bloqué ?). Réessayez.');
+  else toast('Connexion à Gemini impossible. Vérifiez votre réseau.');
+}
+
 /* ---------- Actions ---------- */
 const acts = {
   'goto-add'(){ setView('add'); },
@@ -611,6 +658,12 @@ const acts = {
   download(){ downloadBackup(); },
   'drive-save'(){ driveSave(); },
   'drive-load'(){ driveLoad(); },
+  'ai-test'(){
+    toast('Test en cours…');
+    gemini({ parts: [{ text: 'Réponds uniquement par le mot OK.' }], temperature: 0 })
+      .then(() => toast('Connexion réussie (' + (store.get('dd_gmodel', '') || 'gemini-flash-latest') + ').'))
+      .catch(geminiError);
+  },
   wipe(){
     if (!pendingWipe){ pendingWipe = true; render(); return; }
     cards = []; log = {}; pendingWipe = false; session = null; save(); toast('Données effacées.'); render();
@@ -633,6 +686,8 @@ document.addEventListener('change', e => {
   else if (id === 's-dir'){ settings.direction = e.target.value; }
   else if (id === 's-typing'){ settings.typing = e.target.checked; }
   else if (id === 's-theme'){ settings.theme = e.target.value; applyTheme(); }
+  else if (id === 's-gkey'){ store.set('dd_gkey', e.target.value.trim()); toast('Clé enregistrée sur cet appareil.'); return; }
+  else if (id === 's-gmodel'){ store.set('dd_gmodel', e.target.value.trim()); toast('Modèle enregistré.'); return; }
   else if (id === 's-gclient'){ store.set('dd_gclient', e.target.value.trim()); toast('Identifiant enregistré.'); return; }
   else if (id === 'imp-file'){
     const file = e.target.files && e.target.files[0]; if (!file) return;
@@ -652,9 +707,22 @@ document.addEventListener('keydown', e => {
   }
 });
 
+window.DD = {
+  $, esc, uid, dayKey, store, toast, register, gemini, geminiError, render,
+  get view(){ return view; },
+  addWord(w){
+    if (!w || !w.de || !w.fr) return 'invalid';
+    if (cards.some(c => c.de.toLowerCase() === String(w.de).toLowerCase())) return 'dup';
+    cards.push(newCard({ de: String(w.de), fr: String(w.fr), ctx: String(w.ctx || ''), note: '' }));
+    save(); return 'added';
+  }
+};
+
 applyTheme();
+buildNav();
 render();
 })();
 </script>
+<script src="schreiben.js"></script>
 </body>
 </html>
