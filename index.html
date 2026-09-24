@@ -131,7 +131,7 @@ const store = {
   set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { storageWorks = false; return false; } }
 };
 let cards = store.get('dd_cards', []);
-let settings = Object.assign({ newPerDay: 10, direction: 'fr-de', typing: true, theme: 'auto' }, store.get('dd_settings', {}));
+let settings = Object.assign({ newPerDay: 10, direction: 'fr-de', typing: true, theme: 'auto', lastBackup: null }, store.get('dd_settings', {}));
 let log = store.get('dd_log', {});
 function save(){
   const ok = store.set('dd_cards', cards) && store.set('dd_settings', settings) && store.set('dd_log', log);
@@ -329,7 +329,7 @@ function renderHome(m){
   }
   m.innerHTML = '<h1>Wortschatz</h1>' +
     '<div class="stats"><div><b>' + nDue + '</b><span>à réviser</span></div><div><b>' + nNew + '</b><span>nouveaux aujourd\'hui</span></div><div><b>' + streak() + '</b><span>jours d\'affilée</span></div></div>' +
-    body + '<p class="hint" style="margin-top:16px">Aujourd\'hui : ' + (l.reviews || 0) + ' révisions.</p>';
+    body + '<p class="hint" style="margin-top:16px">Aujourd\'hui : ' + (l.reviews || 0) + ' révisions.</p>' + backupNag();
 }
 
 function renderDone(m){
@@ -381,6 +381,7 @@ function exportText(){
   return JSON.stringify({ app: 'deutschduo', version: 1, exported: new Date().toISOString(), cards, settings, log });
 }
 function renderSettings(m){
+  if (store.get('dd_gclient', '')) loadGsi().catch(() => {});
   const mature = cards.filter(c => c.interval >= 21).length;
   m.innerHTML = '<h1>Réglages</h1>' +
     '<p class="hint">Vos données restent dans ce navigateur, sur cet appareil. Une autre personne qui ouvre l\'appli sur son propre appareil a son propre carnet, totalement séparé.</p>' +
@@ -395,12 +396,133 @@ function renderSettings(m){
       '<option value="light"' + (settings.theme === 'light' ? ' selected' : '') + '>Clair</option>' +
       '<option value="dark"' + (settings.theme === 'dark' ? ' selected' : '') + '>Sombre</option></select>' +
     '<h2>Vos chiffres</h2><p>' + cards.length + ' mots dans le carnet, dont ' + mature + ' bien installés en mémoire (revus à 3 semaines ou plus).</p>' +
-    '<h2>Sauvegarde</h2><p class="hint">Copiez ce texte et gardez-le dans un fichier ou un message à vous-même. Pour restaurer, collez-le plus bas.</p>' +
+    '<h2>Sauvegarde</h2><p class="hint">' + lastBackupText() + '</p>' +
+    '<div class="row"><button class="btn primary" data-act="download">Enregistrer un fichier de sauvegarde</button></div>' +
+    '<p class="hint" style="margin-top:8px">Sur téléphone, le menu de partage s\'ouvre : choisissez Drive pour y déposer le fichier. Sur ordinateur, le fichier est téléchargé.</p>' +
+    '<h2>Google Drive</h2>' +
+    '<label for="s-gclient">Identifiant client Google (Client ID)</label>' +
+    '<input type="text" id="s-gclient" autocomplete="off" spellcheck="false" placeholder="xxxx.apps.googleusercontent.com" value="' + esc(store.get('dd_gclient', '')) + '">' +
+    '<div class="row"><button class="btn" data-act="drive-save">Sauvegarder sur Drive</button><button class="btn" data-act="drive-load">Restaurer depuis Drive</button></div>' +
+    '<p class="hint" style="margin-top:8px">Le fichier « deutschduo-sauvegarde.json » apparaît dans votre Drive. L\'appli n\'a accès qu\'à ce fichier, jamais au reste de votre Drive.</p>' +
+    '<h2>Sauvegarde manuelle</h2><p class="hint">Copiez ce texte et gardez-le où vous voulez. Pour restaurer, collez-le plus bas.</p>' +
     '<textarea id="exp" rows="4" readonly aria-label="Données exportées">' + esc(exportText()) + '</textarea>' +
     '<div class="row"><button class="btn" data-act="copy">Copier la sauvegarde</button></div>' +
     '<label for="imp">Restaurer une sauvegarde</label><textarea id="imp" rows="3" placeholder="Collez ici le texte de la sauvegarde"></textarea>' +
     '<div class="row"><input type="file" id="imp-file" accept="application/json,.json,text/plain" aria-label="Choisir un fichier de sauvegarde"><button class="btn" data-act="import">Fusionner avec mon carnet</button></div>' +
     '<h2>Zone sensible</h2><div class="row"><button class="btn danger" data-act="wipe">' + (pendingWipe ? 'Confirmer : tout effacer' : 'Effacer toutes mes données') + '</button></div>';
+}
+
+/* ---------- Sauvegarde : fusion, fichier, Google Drive ---------- */
+function mergeImport(text){
+  const d = JSON.parse(text);
+  if (!d || !Array.isArray(d.cards)) throw new Error('format');
+  let added = 0;
+  d.cards.forEach(ic => {
+    if (!ic || !ic.de || !ic.fr) return;
+    const ex = cards.find(c => c.id === ic.id) || cards.find(c => c.de.toLowerCase() === String(ic.de).toLowerCase());
+    if (!ex){ cards.push(Object.assign(newCard(ic), ic)); added++; }
+    else if ((ic.lastReview || 0) > (ex.lastReview || 0)) Object.assign(ex, ic, { id: ex.id });
+  });
+  if (d.log) Object.keys(d.log).forEach(k => { if (!log[k]) log[k] = d.log[k]; });
+  save();
+  return added;
+}
+function lastBackupText(){
+  return settings.lastBackup ? 'Dernière sauvegarde : ' + new Date(settings.lastBackup).toLocaleDateString('fr-FR') + '.' : 'Aucune sauvegarde pour le moment.';
+}
+function backupNag(){
+  if (cards.length < 10) return '';
+  if (settings.lastBackup && Date.now() - settings.lastBackup < 7 * DAY) return '';
+  return '<div class="warn" style="margin-top:14px">Pensez à sauvegarder votre carnet (Réglages, Sauvegarde). Le navigateur peut l\'effacer.</div>';
+}
+async function downloadBackup(){
+  const name = 'deutschduo-sauvegarde-' + dayKey() + '.json';
+  const file = new File([exportText()], name, { type: 'application/json' });
+  try {
+    if (navigator.canShare && navigator.canShare({ files: [file] })){
+      await navigator.share({ files: [file], title: 'Sauvegarde DeutschDuo' });
+      settings.lastBackup = Date.now(); save(); if (view === 'settings') render();
+      return;
+    }
+  } catch (e) { if (e && e.name === 'AbortError') return; }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(file); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  settings.lastBackup = Date.now(); save(); toast('Fichier téléchargé.');
+  if (view === 'settings') render();
+}
+
+const DRIVE_FILE = 'deutschduo-sauvegarde.json';
+function loadGsi(){
+  return new Promise((res, rej) => {
+    if (window.google && google.accounts && google.accounts.oauth2) return res();
+    const s = document.createElement('script');
+    s.src = 'https://accounts.google.com/gsi/client'; s.async = true;
+    s.onload = () => res(); s.onerror = () => rej(new Error('gsi'));
+    document.head.appendChild(s);
+  });
+}
+async function driveToken(){
+  const cid = store.get('dd_gclient', '');
+  if (!cid) throw new Error('noclient');
+  await loadGsi();
+  return new Promise((res, rej) => {
+    const tc = google.accounts.oauth2.initTokenClient({
+      client_id: cid,
+      scope: 'https://www.googleapis.com/auth/drive.file',
+      callback: r => r.error ? rej(new Error(r.error)) : res(r.access_token),
+      error_callback: e => rej(new Error((e && e.type) || 'popup'))
+    });
+    tc.requestAccessToken();
+  });
+}
+async function driveFind(tok){
+  const q = encodeURIComponent("name='" + DRIVE_FILE + "' and trashed=false");
+  const r = await fetch('https://www.googleapis.com/drive/v3/files?q=' + q + '&fields=files(id,modifiedTime)&orderBy=' + encodeURIComponent('modifiedTime desc'), { headers: { Authorization: 'Bearer ' + tok } });
+  if (!r.ok) throw new Error('drive ' + r.status);
+  const d = await r.json();
+  return (d.files && d.files[0]) || null;
+}
+function driveError(e){
+  const m = String((e && e.message) || e);
+  if (m === 'noclient') toast('Collez d\'abord l\'identifiant client Google ci-dessus.');
+  else if (m === 'gsi') toast('Impossible de charger Google. Vérifiez votre connexion.');
+  else if (/popup|access_denied|closed|blocked/i.test(m)) toast('Connexion à Google annulée ou bloquée.');
+  else if (/drive (401|403)/.test(m)) toast('Google a refusé l\'accès : vérifiez que l\'API Drive est activée et que votre adresse est utilisateur de test.');
+  else toast('La sauvegarde Drive a échoué (' + m + ').');
+}
+async function driveSave(){
+  try {
+    const tok = await driveToken();
+    const text = exportText(), f = await driveFind(tok);
+    let r;
+    if (f){
+      r = await fetch('https://www.googleapis.com/upload/drive/v3/files/' + f.id + '?uploadType=media', {
+        method: 'PATCH', headers: { Authorization: 'Bearer ' + tok, 'Content-Type': 'application/json' }, body: text });
+    } else {
+      const b = 'ddb' + uid();
+      const body = '--' + b + '\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n' + JSON.stringify({ name: DRIVE_FILE }) +
+        '\r\n--' + b + '\r\nContent-Type: application/json\r\n\r\n' + text + '\r\n--' + b + '--';
+      r = await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart', {
+        method: 'POST', headers: { Authorization: 'Bearer ' + tok, 'Content-Type': 'multipart/related; boundary=' + b }, body });
+    }
+    if (!r.ok) throw new Error('drive ' + r.status);
+    settings.lastBackup = Date.now(); save();
+    toast('Sauvegarde enregistrée sur Google Drive.');
+    if (view === 'settings') render();
+  } catch (e) { driveError(e); }
+}
+async function driveLoad(){
+  try {
+    const tok = await driveToken();
+    const f = await driveFind(tok);
+    if (!f){ toast('Aucune sauvegarde trouvée sur votre Drive.'); return; }
+    const r = await fetch('https://www.googleapis.com/drive/v3/files/' + f.id + '?alt=media', { headers: { Authorization: 'Bearer ' + tok } });
+    if (!r.ok) throw new Error('drive ' + r.status);
+    const n = mergeImport(await r.text());
+    toast(n + ' mots restaurés depuis Drive.'); render();
+  } catch (e) { driveError(e); }
 }
 
 /* ---------- Actions ---------- */
@@ -483,20 +605,12 @@ const acts = {
     }
   },
   import(){
-    try {
-      const d = JSON.parse($('#imp').value);
-      if (!d || !Array.isArray(d.cards)) throw new Error('format');
-      let added = 0;
-      d.cards.forEach(ic => {
-        if (!ic || !ic.de || !ic.fr) return;
-        const ex = cards.find(c => c.id === ic.id) || cards.find(c => c.de.toLowerCase() === String(ic.de).toLowerCase());
-        if (!ex){ cards.push(Object.assign(newCard(ic), ic)); added++; }
-        else if ((ic.lastReview || 0) > (ex.lastReview || 0)) Object.assign(ex, ic, { id: ex.id });
-      });
-      if (d.log) Object.keys(d.log).forEach(k => { if (!log[k]) log[k] = d.log[k]; });
-      save(); toast(added + ' mots importés.'); render();
-    } catch (e) { toast('Sauvegarde illisible : collez le texte complet.'); }
+    try { const n = mergeImport($('#imp').value); toast(n + ' mots importés.'); render(); }
+    catch (e) { toast('Sauvegarde illisible : collez le texte complet.'); }
   },
+  download(){ downloadBackup(); },
+  'drive-save'(){ driveSave(); },
+  'drive-load'(){ driveLoad(); },
   wipe(){
     if (!pendingWipe){ pendingWipe = true; render(); return; }
     cards = []; log = {}; pendingWipe = false; session = null; save(); toast('Données effacées.'); render();
@@ -519,6 +633,7 @@ document.addEventListener('change', e => {
   else if (id === 's-dir'){ settings.direction = e.target.value; }
   else if (id === 's-typing'){ settings.typing = e.target.checked; }
   else if (id === 's-theme'){ settings.theme = e.target.value; applyTheme(); }
+  else if (id === 's-gclient'){ store.set('dd_gclient', e.target.value.trim()); toast('Identifiant enregistré.'); return; }
   else if (id === 'imp-file'){
     const file = e.target.files && e.target.files[0]; if (!file) return;
     const r = new FileReader(); r.onload = () => { $('#imp').value = String(r.result || ''); toast('Fichier chargé. Cliquez sur Fusionner.'); }; r.readAsText(file);
