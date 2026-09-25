@@ -1,0 +1,187 @@
+{
+"format": "deutschduo-pack",
+"id": "passiv-01",
+"rule": "passiv",
+"lesson": {
+"title": "Das Passiv",
+"level": "B1+",
+"summary": "Das Passiv stellt eine Handlung oder ihr Ergebnis in den Mittelpunkt, während die handelnde Person weniger wichtig oder unbekannt ist. Auf B2-Niveau ist besonders wichtig, zwischen Vorgangspassiv mit „werden“ und Zustandspassiv mit „sein“ sowie zwischen verschiedenen Zeitformen und Modalverben zu unterscheiden.",
+"sections": [
+{
+"heading": "Bildung des Vorgangspassivs",
+"body": "Das Vorgangspassiv wird mit „werden“ + Partizip II gebildet: „Die Regierung verabschiedet ein neues Gesetz“ wird zu „Ein neues Gesetz wird von der Regierung verabschiedet“. Im Präsens steht „werden“ an der zweiten Stelle und das Partizip II am Satzende. Im Perfekt lautet die Struktur „sein + Partizip II + worden“, zum Beispiel: „Das Gesetz ist verabschiedet worden“."
+},
+{
+"heading": "Wann verwendet man das Passiv?",
+"body": "Das Passiv wird verwendet, wenn die Handlung oder das Ergebnis wichtiger ist als die handelnde Person, wenn diese unbekannt ist oder wenn man sie bewusst nicht nennen möchte. Statt „Die Behörden kontrollieren die Daten“ kann man sagen: „Die Daten werden kontrolliert“. Wenn der Urheber relevant ist, kann er mit „von“ genannt werden: „Die Daten werden von den Behörden kontrolliert“."
+},
+{
+"heading": "Zeitformen und Modalverben",
+"body": "Das Vorgangspassiv kann in verschiedenen Zeitformen stehen: „Die Reform wird diskutiert“, „Die Reform wurde diskutiert“, „Die Reform ist diskutiert worden“. Mit einem Modalverb lautet die Struktur „Modalverb + Partizip II + werden“, zum Beispiel: „Die Daten müssen besser geschützt werden“. Im Präteritum heißt es: „Die Daten mussten besser geschützt werden“."
+},
+{
+"heading": "Vorgangspassiv und Zustandspassiv",
+"body": "Das Vorgangspassiv mit „werden“ betont den Ablauf einer Handlung: „Die Brücke wird repariert“ bedeutet, dass die Reparatur gerade stattfindet. Das Zustandspassiv mit „sein“ beschreibt dagegen den daraus entstandenen Zustand: „Die Brücke ist repariert“ bedeutet, dass sie sich nun in einem reparierten Zustand befindet."
+},
+{
+"heading": "Nuancen auf B2-Niveau",
+"body": "Nicht jede passive Aussage braucht eine handelnde Person. Bei allgemeinen Aussagen sind Formen wie „Es wird häufig darüber diskutiert“ oder „In vielen Ländern wird die Arbeitszeit verkürzt“ natürlich. Bei Verben ohne Akkusativobjekt kann ein unpersönliches Passiv entstehen: „Die Bürger protestieren gegen die Reform“ wird zu „Gegen die Reform wird protestiert“. Dabei bleibt das Verb im Singular, weil kein Nominativsubjekt vorhanden ist."
+}
+],
+"examples": [
+{
+"de": "Die Regierung verabschiedet ein neues Klimagesetz.",
+"fr": "Le gouvernement adopte une nouvelle loi sur le climat.",
+"note": "Aktivsatz: Das Akkusativobjekt „ein neues Klimagesetz“ wird im Passiv zum Subjekt."
+},
+{
+"de": "Ein neues Klimagesetz wird von der Regierung verabschiedet.",
+"fr": "Une nouvelle loi sur le climat est adoptée par le gouvernement.",
+"note": "Vorgangspassiv im Präsens: „wird“ + Partizip II."
+},
+{
+"de": "Die Ergebnisse wurden gestern veröffentlicht.",
+"fr": "Les résultats ont été publiés hier.",
+"note": "Vorgangspassiv im Präteritum: „wurden“ + Partizip II."
+},
+{
+"de": "Die Ergebnisse sind gestern veröffentlicht worden.",
+"fr": "Les résultats ont été publiés hier.",
+"note": "Vorgangspassiv im Perfekt: „sein“ + Partizip II + „worden“."
+},
+{
+"de": "Die persönlichen Daten müssen besser geschützt werden.",
+"fr": "Les données personnelles doivent être mieux protégées.",
+"note": "Mit Modalverb steht das Partizip II vor dem Infinitiv „werden“."
+},
+{
+"de": "Die Türen sind bereits geschlossen.",
+"fr": "Les portes sont déjà fermées.",
+"note": "Zustandspassiv mit „sein“ beschreibt das Ergebnis, nicht den Vorgang des Schließens."
+}
+],
+"pitfalls": [
+"Französischsprachige Lernende verwenden im deutschen Passiv leicht „sein“ statt „werden“, obwohl ein Vorgang und nicht ein Zustand gemeint ist.",
+"Im Perfekt des Vorgangspassivs heißt es „worden“ und nicht „geworden“: „Das Gesetz ist verabschiedet worden“.",
+"Bei Modalverben steht „werden“ als Infinitiv am Ende: „Die Maßnahmen müssen umgesetzt werden“, nicht „müssen umgesetzt worden“."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "In vielen Ländern ___ strengere Regeln zum Datenschutz eingeführt.",
+"answers": [
+"werden"
+],
+"explanation": "Das ist ein Vorgangspassiv im Präsens: „werden“ + Partizip II „eingeführt“."
+},
+{
+"type": "gap",
+"prompt": "Die Ergebnisse der Studie ___ gestern veröffentlicht.",
+"answers": [
+"wurden"
+],
+"explanation": "Das Passiv steht hier im Präteritum: „wurden“ + „veröffentlicht“."
+},
+{
+"type": "gap",
+"prompt": "Die Reform ist bereits umgesetzt ___ .",
+"answers": [
+"worden"
+],
+"explanation": "Im Perfekt des Vorgangspassivs verwendet man „sein + Partizip II + worden“."
+},
+{
+"type": "gap",
+"prompt": "Die persönlichen Daten müssen besser geschützt ___ .",
+"answers": [
+"werden"
+],
+"explanation": "Nach einem Modalverb steht beim Passiv der Infinitiv „werden“ am Satzende."
+},
+{
+"type": "gap",
+"prompt": "Die neue Regelung ___ derzeit intensiv diskutiert.",
+"answers": [
+"wird"
+],
+"explanation": "„Wird diskutiert“ beschreibt einen gerade stattfindenden Vorgang und steht deshalb im Vorgangspassiv Präsens."
+},
+{
+"type": "choice",
+"prompt": "Die Entscheidung ___ gestern offiziell bekannt gegeben.",
+"options": [
+"wurde",
+"war",
+"ist"
+],
+"answer": 0,
+"explanation": "„Wurde bekannt gegeben“ ist das Vorgangspassiv im Präteritum."
+},
+{
+"type": "choice",
+"prompt": "Die neuen Vorschriften müssen schnell ___ .",
+"options": [
+"umgesetzt werden",
+"werden umgesetzt",
+"umgesetzt worden"
+],
+"answer": 0,
+"explanation": "Mit einem Modalverb lautet die passive Struktur „Modalverb + Partizip II + werden“."
+},
+{
+"type": "choice",
+"prompt": "Welche Form beschreibt einen bereits erreichten Zustand?",
+"options": [
+"Die Brücke wird repariert.",
+"Die Brücke ist repariert.",
+"Die Brücke wurde repariert."
+],
+"answer": 1,
+"explanation": "„Ist repariert“ ist Zustandspassiv und beschreibt das Ergebnis der Reparatur."
+},
+{
+"type": "choice",
+"prompt": "Welche Form ist grammatisch korrekt?",
+"options": [
+"Die Daten sind gespeichert geworden.",
+"Die Daten sind gespeichert worden.",
+"Die Daten haben gespeichert worden."
+],
+"answer": 1,
+"explanation": "Im Perfekt des Vorgangspassivs verwendet man „sein + Partizip II + worden“."
+},
+{
+"type": "order",
+"sentence": "Über die Auswirkungen der Digitalisierung wird in der Öffentlichkeit kontrovers diskutiert.",
+"explanation": "Bei einem unpersönlichen Passiv ohne Akkusativobjekt steht „wird“ im Singular; „über die Auswirkungen“ bleibt eine Präpositionalgruppe."
+},
+{
+"type": "order",
+"sentence": "Die notwendigen Maßnahmen müssen von den zuständigen Behörden umgesetzt werden.",
+"explanation": "Mit Modalverb steht „müssen“ als finites Verb und „umgesetzt werden“ als Verbklammer am Ende."
+},
+{
+"type": "order",
+"sentence": "Die persönlichen Daten sind nach der Untersuchung vollständig gelöscht worden.",
+"explanation": "Das Perfekt des Vorgangspassivs wird mit „sind“ + Partizip II + „worden“ gebildet."
+},
+{
+"type": "transform",
+"prompt": "Forme den Aktivsatz ins Vorgangspassiv um: Die Behörden kontrollieren regelmäßig die Einhaltung der neuen Vorschriften.",
+"answers": [
+"Die Einhaltung der neuen Vorschriften wird von den Behörden regelmäßig kontrolliert."
+],
+"explanation": "Das Akkusativobjekt „die Einhaltung der neuen Vorschriften“ wird im Passiv zum Subjekt; „kontrollieren“ wird zu „wird kontrolliert“."
+},
+{
+"type": "transform",
+"prompt": "Forme den Aktivsatz ins Perfekt des Vorgangspassivs um: Die Kommission hat den Bericht gestern veröffentlicht.",
+"answers": [
+"Der Bericht ist gestern von der Kommission veröffentlicht worden."
+],
+"explanation": "Im Perfekt des Passivs wird „hat veröffentlicht“ zu „ist veröffentlicht worden“."
+}
+]
+}
+

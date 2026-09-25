@@ -1,0 +1,187 @@
+{
+"format": "deutschduo-pack",
+"id": "relativsatz-01",
+"rule": "relativsatz",
+"lesson": {
+"title": "Relativsätze",
+"level": "B1+",
+"summary": "Relativsätze verbinden Informationen über eine Person, eine Sache oder eine Situation mit einem Hauptsatz, ohne dass man einen neuen Satz beginnen muss. Auf B2-Niveau sind besonders Kasus, Präpositionen, Relativadverbien und komplexere Bezüge wichtig.",
+"sections": [
+{
+"heading": "Bildung und Relativpronomen",
+"body": "Ein Relativsatz beginnt meistens mit einem Relativpronomen, das sich in Genus und Numerus auf das Bezugswort bezieht. Der Kasus hängt dagegen von der Funktion im Relativsatz ab: „Das ist die Frau, die die Studie geleitet hat“ (Nominativ), aber „Das ist die Frau, die ich gestern getroffen habe“ (Akkusativ)."
+},
+{
+"heading": "Kasus im Relativsatz",
+"body": "Der Kasus des Relativpronomens wird nicht durch das Bezugswort bestimmt, sondern durch seine Funktion im Relativsatz. Vergleiche: „Der Mann, der dort steht, ist mein Nachbar“ (Nominativ) und „Der Mann, den ich dort gesehen habe, ist mein Nachbar“ (Akkusativ). Im Dativ heißt es zum Beispiel: „Der Mann, dem ich geholfen habe, ist mein Nachbar“."
+},
+{
+"heading": "Präpositionen und Genitiv",
+"body": "Steht das Relativpronomen nach einer Präposition, bleibt die Präposition vor dem Pronomen: „Das Thema, über das wir diskutieren, ist wichtig“ oder „Die Person, mit der ich gesprochen habe, arbeitet hier“. Im Genitiv verwendet man „dessen“ für Maskulinum und Neutrum sowie „deren“ für Femininum und Plural: „Die Organisation, deren Mitglieder protestieren, fordert Veränderungen“."
+},
+{
+"heading": "Relativadverbien und ganze Situationen",
+"body": "Bei Orts-, Zeit- und Situationsbezügen verwendet man häufig Relativadverbien wie „wo“, „wann“ und „was“. Zum Beispiel: „Das ist die Stadt, in der ich studiert habe“, „Das war der Moment, in dem die Entscheidung fiel“ und „Alles, was er gesagt hat, wurde protokolliert“. Nach einem substantivierten Superlativ oder Ausdrücken wie „das Einzige“ ist „was“ ebenfalls üblich: „Das ist das Wichtigste, was wir berücksichtigen müssen“."
+},
+{
+"heading": "Komplexe Bezüge auf B2-Niveau",
+"body": "Ein Relativsatz kann sich auch auf einen ganzen vorherigen Satz oder eine gesamte Aussage beziehen. Dann verwendet man häufig „was“: „Die Regierung änderte die Regelung, was zu heftigen Diskussionen führte“. Bei längeren Sätzen sollte man außerdem genau prüfen, welches Bezugswort gemeint ist, damit der Relativsatz eindeutig bleibt."
+}
+],
+"examples": [
+{
+"de": "Die Frau, die neben dem Minister sitzt, ist eine bekannte Wissenschaftlerin.",
+"fr": "La femme qui est assise à côté du ministre est une scientifique connue.",
+"note": "„Die“ steht im Nominativ, weil sie im Relativsatz das Subjekt von „sitzt“ ist."
+},
+{
+"de": "Die Studie, die wir gestern veröffentlicht haben, sorgt für Diskussionen.",
+"fr": "L'étude que nous avons publiée hier suscite des discussions.",
+"note": "„Die“ steht im Akkusativ, weil es das Objekt von „veröffentlicht haben“ ist."
+},
+{
+"de": "Der Experte, dem die Regierung vertraut, kritisiert die Reform.",
+"fr": "L'expert auquel le gouvernement fait confiance critique la réforme.",
+"note": "„Dem“ steht im Dativ, weil „vertrauen“ den Dativ verlangt."
+},
+{
+"de": "Die Organisation, deren Mitglieder gegen die Reform protestieren, fordert Verhandlungen.",
+"fr": "L'organisation dont les membres protestent contre la réforme demande des négociations.",
+"note": "„Deren“ drückt eine Zugehörigkeit im Genitiv aus und bezieht sich auf „die Organisation“."
+},
+{
+"de": "Das Thema, über das heute diskutiert wird, betrifft viele Menschen.",
+"fr": "Le sujet dont on discute aujourd'hui concerne beaucoup de personnes.",
+"note": "Nach „über“ steht das Relativpronomen im Akkusativ: „über das“."
+},
+{
+"de": "Die Regierung änderte die Regelung, was zu heftigen Protesten führte.",
+"fr": "Le gouvernement a modifié la réglementation, ce qui a entraîné de vives protestations.",
+"note": "„Was“ bezieht sich hier auf die gesamte vorherige Aussage und nicht auf ein einzelnes Substantiv."
+}
+],
+"pitfalls": [
+"Französischsprachige Lernende wählen den Kasus des Relativpronomens oft nach dem französischen „qui/que“ statt nach seiner Funktion im deutschen Relativsatz.",
+"Bei Präpositionen darf die Präposition nicht einfach weggelassen werden: „die Person, mit der ich gesprochen habe“ und nicht „die Person, der ich gesprochen habe“.",
+"„Dessen“ und „deren“ richten sich nach dem Bezugswort, nicht nach dem Geschlecht der Person oder Sache, die danach genannt wird."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Die Expertin, ___ die Studie geleitet hat, arbeitet an einer Universität.",
+"answers": [
+"die"
+],
+"explanation": "Das Relativpronomen ist Nominativ, weil die Expertin im Relativsatz das Subjekt von „geleitet hat“ ist."
+},
+{
+"type": "gap",
+"prompt": "Der Bericht, ___ wir gestern veröffentlicht haben, wurde vielfach zitiert.",
+"answers": [
+"den"
+],
+"explanation": "„Den“ steht im Akkusativ, weil „den Bericht“ das direkte Objekt von „veröffentlicht haben“ ist."
+},
+{
+"type": "gap",
+"prompt": "Der Politiker, ___ die Journalistin mehrere Fragen gestellt hat, antwortete ausführlich.",
+"answers": [
+"dem"
+],
+"explanation": "„Jemandem Fragen stellen“ verlangt den Dativ; deshalb steht das Relativpronomen als „dem“."
+},
+{
+"type": "gap",
+"prompt": "Die Organisation, ___ Mitglieder an der Demonstration teilnahmen, veröffentlichte eine Stellungnahme.",
+"answers": [
+"deren"
+],
+"explanation": "„Deren“ zeigt Zugehörigkeit an und bezieht sich auf das feminine Bezugswort „die Organisation“."
+},
+{
+"type": "gap",
+"prompt": "Das ist die Frage, auf ___ es bei der Diskussion besonders ankommt.",
+"answers": [
+"die"
+],
+"explanation": "„Auf etwas ankommen“ verlangt „auf“ mit Akkusativ; deshalb heißt es „auf die“."
+},
+{
+"type": "choice",
+"prompt": "Die Maßnahmen, ___ gestern beschlossen wurden, treten nächste Woche in Kraft.",
+"options": [
+"die",
+"den",
+"deren"
+],
+"answer": 0,
+"explanation": "„Die Maßnahmen“ sind das Subjekt von „beschlossen wurden“, deshalb steht das Relativpronomen im Nominativ Plural."
+},
+{
+"type": "choice",
+"prompt": "Der Mann, mit ___ ich gestern gesprochen habe, ist Wirtschaftsexperte.",
+"options": [
+"den",
+"dem",
+"der"
+],
+"answer": 1,
+"explanation": "Die Präposition „mit“ verlangt den Dativ. Das maskuline Relativpronomen lautet deshalb „dem“."
+},
+{
+"type": "choice",
+"prompt": "Die Stadt, in ___ viele internationale Organisationen ihren Sitz haben, wächst schnell.",
+"options": [
+"der",
+"die",
+"deren"
+],
+"answer": 0,
+"explanation": "„In“ steht hier bei einer Ortsangabe mit dem Dativ. Für „die Stadt“ lautet das Relativpronomen „der“."
+},
+{
+"type": "choice",
+"prompt": "Die Regierung änderte kurzfristig den Plan, ___ zu Kritik von mehreren Parteien führte.",
+"options": [
+"das",
+"was",
+"der"
+],
+"answer": 1,
+"explanation": "„Was“ kann sich auf eine gesamte vorherige Aussage beziehen: Die Änderung des Plans führte zur Kritik."
+},
+{
+"type": "order",
+"sentence": "Die Reform, die vor einem Jahr beschlossen wurde, wird derzeit erneut diskutiert.",
+"explanation": "Der Relativsatz steht direkt nach seinem Bezugswort „die Reform“ und enthält das finite Verb „wurde“ am Ende."
+},
+{
+"type": "order",
+"sentence": "Der Wissenschaftler, dessen Forschung international anerkannt ist, erhielt einen wichtigen Preis.",
+"explanation": "„Dessen“ bezeichnet die Zugehörigkeit der Forschung zum Wissenschaftler und steht bei einem maskulinen Bezugswort."
+},
+{
+"type": "order",
+"sentence": "Das Problem, mit dem sich die Kommission beschäftigt, betrifft mehrere Länder.",
+"explanation": "Die feste Verbindung „sich mit etwas beschäftigen“ verlangt „mit“ + Dativ, daher „mit dem“."
+},
+{
+"type": "transform",
+"prompt": "Verbinde die beiden Sätze mit einem Relativsatz: Die Forscherin arbeitet an einer neuen Studie. Die Forscherin wurde gestern ausgezeichnet.",
+"answers": [
+"Die Forscherin, die an einer neuen Studie arbeitet, wurde gestern ausgezeichnet."
+],
+"explanation": "Das gemeinsame Subjekt „die Forscherin“ wird im zweiten Satz durch das Relativpronomen „die“ ersetzt."
+},
+{
+"type": "transform",
+"prompt": "Verbinde die beiden Sätze mit einem Relativsatz: Die Reform wurde im Parlament beschlossen. Viele Bürger kritisieren die Reform.",
+"answers": [
+"Die Reform, die im Parlament beschlossen wurde, wird von vielen Bürgern kritisiert."
+],
+"explanation": "„Die Reform“ ist im ersten Satz das Subjekt des Passivs und wird im Relativsatz durch „die“ ersetzt."
+}
+]
+}
+
