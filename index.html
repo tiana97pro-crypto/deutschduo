@@ -737,6 +737,7 @@ window.DD = {
   $, esc, uid, dayKey, store, toast, register, gemini, geminiError, render, setView,
   pending: null,
   get view(){ return view; },
+  get knownDe(){ return cards.map(c => c.de.toLowerCase()); },
   addWord(w){
     if (!w || !w.de || !w.fr) return 'invalid';
     if (cards.some(c => c.de.toLowerCase() === String(w.de).toLowerCase())) return 'dup';
@@ -752,5 +753,6 @@ render();
 </script>
 <script src="schreiben.js"></script>
 <script src="grammatik.js"></script>
+<script src="lesen.js"></script>
 </body>
 </html>
