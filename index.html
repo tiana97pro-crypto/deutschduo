@@ -734,7 +734,8 @@ document.addEventListener('keydown', e => {
 });
 
 window.DD = {
-  $, esc, uid, dayKey, store, toast, register, gemini, geminiError, render,
+  $, esc, uid, dayKey, store, toast, register, gemini, geminiError, render, setView,
+  pending: null,
   get view(){ return view; },
   addWord(w){
     if (!w || !w.de || !w.fr) return 'invalid';
@@ -750,5 +751,6 @@ render();
 })();
 </script>
 <script src="schreiben.js"></script>
+<script src="grammatik.js"></script>
 </body>
 </html>

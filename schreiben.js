@@ -148,7 +148,7 @@ function weakHtml(){
   const top = Object.keys(e).map(k => [k, e[k].n]).sort((a, b) => b[1] - a[1]).slice(0, 4);
   if (!top.length) return '';
   return '<div class="sc-sec" style="margin-top:0"><h2>Vos points faibles</h2><div class="weak">' +
-    top.map(t => '<span class="chip">' + esc(RULES[t[0]] || t[0]) + ' · ' + t[1] + '</span>').join('') +
+    top.map(t => '<button class="chipbtn" data-sa="gogram" data-r="' + esc(t[0]) + '">' + esc(RULES[t[0]] || t[0]) + ' · ' + t[1] + '</button>').join('') +
     '</div><p class="hint">D\'après vos textes corrigés jusqu\'ici. Le module Grammatik s\'appuiera dessus.</p></div>';
 }
 function writeHtml(){
@@ -203,7 +203,7 @@ function resultHtml(){
   if (!r.erreurs.length) h += '<p>Aucune erreur signalée. Bien joué.</p>';
   r.erreurs.forEach((e, i) => {
     h += '<div class="err" id="err-' + i + '"><div class="fix"><s>' + esc(e.original) + '</s> → <b>' + esc(e.correction) + '</b></div>' +
-      '<span class="chip">' + esc(RULES[e.regle] || 'Autre') + '</span>' +
+      '<button class="chipbtn" data-sa="gogram" data-r="' + esc(e.regle) + '">' + esc(RULES[e.regle] || 'Autre') + '</button>' +
       (e.explication ? '<p>' + esc(e.explication) + '</p>' : '') + '</div>';
   });
   h += '</div>';
@@ -375,6 +375,7 @@ document.addEventListener('click', e => {
   else if (a === 'ins') insertAtCursor(el.dataset.t);
   else if (a === 'correct') correct();
   else if (a === 'copy' && st.result) copyText(st.result.texte_corrige);
+  else if (a === 'gogram'){ DD.pending = { rule: el.dataset.r }; DD.setView('grammatik'); }
   else if (a === 'new'){ st.text = ''; st.result = null; st.notice = ''; st.scanPreview = null; saveDraft(); rerender(); window.scrollTo(0, 0); }
   else if (a === 'addword' && st.result){
     const i = Number(el.dataset.i), v = st.result.vocabulaire[i];
