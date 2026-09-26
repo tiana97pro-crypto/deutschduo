@@ -1,0 +1,221 @@
+{
+"format": "deutschduo-lesen-pack",
+"id": "technologie-01",
+"level": "B2.1",
+"topic": "Technologie & numérique",
+"textType": "Artikel",
+"title": "Wenn KI im Büro zum Kollegen wird",
+"estMinutes": 5,
+"prereading": {
+"question": "Wie könnte künstliche Intelligenz den Arbeitsalltag in den nächsten Jahren verändern?",
+"options": [
+"Sie könnte vor allem einfache und wiederholte Aufgaben übernehmen.",
+"Sie könnte dafür sorgen, dass alle Menschen weniger arbeiten müssen.",
+"Sie könnte persönliche Gespräche im Berufsleben vollständig ersetzen."
+]
+},
+"text": "Künstliche Intelligenz hält zunehmend Einzug in den Arbeitsalltag. Viele Unternehmen nutzen bereits Programme, die Texte zusammenfassen, Daten auswerten oder Termine organisieren. Dadurch können Beschäftigte Zeit sparen und sich stärker auf Aufgaben konzentrieren, bei denen menschliche Erfahrung und Kreativität gefragt sind.\n\nAllerdings verändert die neue Technologie nicht nur einzelne Tätigkeiten. Auch die Anforderungen an die Beschäftigten wandeln sich. Wer regelmäßig mit digitalen Werkzeugen arbeitet, muss deren Möglichkeiten und Grenzen kennen. Außerdem wird es wichtiger, Informationen kritisch zu prüfen, weil ein KI-System zwar schnell Antworten liefern kann, diese aber nicht immer richtig sind.\n\nBefürworter sehen darin eine große Chance für die Arbeitswelt. Sie erwarten, dass Unternehmen durch den Einsatz von KI effizienter werden und neue Arbeitsbereiche entstehen. Kritiker befürchten dagegen, dass bestimmte Stellen langfristig wegfallen könnten. Dennoch ist ein vollständiger Ersatz menschlicher Arbeitskräfte derzeit in vielen Berufen kaum realistisch.\n\nEntscheidend wird deshalb sein, wie Unternehmen mit der Entwicklung umgehen. Statt Beschäftigte nur vor möglichen Veränderungen zu warnen, sollten sie Weiterbildung anbieten. So könnten Arbeitnehmer lernen, neue Werkzeuge sinnvoll einzusetzen, ohne ihre eigenen Fähigkeiten aus den Augen zu verlieren.",
+"vocabulary": [
+{
+"word": "der Einzug",
+"meaning": "l'arrivée, l'introduction",
+"example": "Künstliche Intelligenz hält zunehmend Einzug in den Arbeitsalltag.",
+"synonyms": ["die Einführung"]
+},
+{
+"word": "auswerten",
+"meaning": "analyser, évaluer des données",
+"example": "Viele Unternehmen nutzen bereits Programme, die Texte zusammenfassen, Daten auswerten oder Termine organisieren.",
+"synonyms": ["analysieren"]
+},
+{
+"word": "sich konzentrieren auf",
+"meaning": "se concentrer sur",
+"example": "Beschäftigte können sich stärker auf Aufgaben konzentrieren, bei denen menschliche Erfahrung und Kreativität gefragt sind.",
+"synonyms": ["sich fokussieren auf"]
+},
+{
+"word": "die Anforderung",
+"meaning": "l'exigence, la compétence requise",
+"example": "Auch die Anforderungen an die Beschäftigten wandeln sich.",
+"synonyms": ["das Erfordernis"]
+},
+{
+"word": "die Grenze",
+"meaning": "la limite",
+"example": "Wer regelmäßig mit digitalen Werkzeugen arbeitet, muss deren Möglichkeiten und Grenzen kennen.",
+"synonyms": ["die Begrenzung"]
+},
+{
+"word": "kritisch prüfen",
+"meaning": "vérifier de manière critique",
+"example": "Außerdem wird es wichtiger, Informationen kritisch zu prüfen.",
+"synonyms": ["hinterfragen"]
+},
+{
+"word": "der Befürworter",
+"meaning": "le partisan, le défenseur",
+"example": "Befürworter sehen darin eine große Chance für die Arbeitswelt.",
+"synonyms": ["der Unterstützer"]
+},
+{
+"word": "befürchten",
+"meaning": "craindre",
+"example": "Kritiker befürchten dagegen, dass bestimmte Stellen langfristig wegfallen könnten.",
+"synonyms": ["fürchten"]
+},
+{
+"word": "der Ersatz",
+"meaning": "le remplacement",
+"example": "Dennoch ist ein vollständiger Ersatz menschlicher Arbeitskräfte derzeit in vielen Berufen kaum realistisch.",
+"synonyms": ["die Ersetzung"]
+},
+{
+"word": "die Weiterbildung",
+"meaning": "la formation continue",
+"example": "Statt Beschäftigte nur vor möglichen Veränderungen zu warnen, sollten sie Weiterbildung anbieten.",
+"synonyms": ["die Fortbildung"]
+}
+],
+"connectors": [
+{
+"word": "Allerdings",
+"function": "concession / opposition"
+},
+{
+"word": "Außerdem",
+"function": "ajout"
+},
+{
+"word": "dagegen",
+"function": "opposition / contraste"
+},
+{
+"word": "Dennoch",
+"function": "concession"
+}
+],
+"questions": [
+{
+"id": "q1",
+"skill": "main_idea",
+"type": "choice",
+"prompt": "Was ist die Hauptaussage des Artikels?",
+"options": [
+"KI kann die Arbeitswelt verändern, weshalb Unternehmen und Beschäftigte sich darauf vorbereiten sollten.",
+"KI wird in wenigen Jahren alle menschlichen Arbeitskräfte ersetzen.",
+"Unternehmen sollten digitale Werkzeuge grundsätzlich vermeiden."
+],
+"answer": 0,
+"quote": "Entscheidend wird deshalb sein, wie Unternehmen mit der Entwicklung umgehen.",
+"explanation": "Der Text zeigt sowohl Chancen als auch Risiken von KI und betont, dass Unternehmen und Beschäftigte sich an die Veränderungen anpassen müssen.",
+"tip": "Achte besonders auf die Schlussfolgerung am Ende des Textes."
+},
+{
+"id": "q2",
+"skill": "detail",
+"type": "choice",
+"prompt": "Welche Aufgaben können KI-Programme laut Text übernehmen?",
+"options": [
+"Sie können Texte zusammenfassen, Daten auswerten und Termine organisieren.",
+"Sie können ausschließlich persönliche Gespräche führen.",
+"Sie können alle Entscheidungen eines Unternehmens treffen."
+],
+"answer": 0,
+"quote": "Viele Unternehmen nutzen bereits Programme, die Texte zusammenfassen, Daten auswerten oder Termine organisieren.",
+"explanation": "Diese drei Tätigkeiten werden im ersten Absatz ausdrücklich als Beispiele genannt.",
+"tip": "Die richtige Antwort entspricht direkt den im Text genannten Beispielen."
+},
+{
+"id": "q3",
+"skill": "detail",
+"type": "choice",
+"prompt": "Warum wird es laut Text wichtiger, Informationen kritisch zu prüfen?",
+"options": [
+"Weil KI-Systeme nicht immer richtige Antworten liefern.",
+"Weil Unternehmen keine Informationen mehr bereitstellen.",
+"Weil Beschäftigte keine digitalen Werkzeuge mehr verwenden sollen."
+],
+"answer": 0,
+"quote": "Außerdem wird es wichtiger, Informationen kritisch zu prüfen, weil ein KI-System zwar schnell Antworten liefern kann, diese aber nicht immer richtig sind.",
+"explanation": "Der Text weist darauf hin, dass schnelle Antworten eines KI-Systems nicht automatisch korrekt sind.",
+"tip": "Das Wort „weil“ leitet hier den Grund ein."
+},
+{
+"id": "q4",
+"skill": "inference",
+"type": "choice",
+"prompt": "Was lässt sich aus dem Text über die zukünftige Arbeitswelt schließen?",
+"options": [
+"Menschliche Fähigkeiten werden trotz des technischen Fortschritts weiterhin wichtig bleiben.",
+"Kreativität wird in Zukunft bei der Arbeit keine Rolle mehr spielen.",
+"Digitale Kenntnisse werden für Beschäftigte weniger wichtig werden."
+],
+"answer": 0,
+"quote": "So könnten Arbeitnehmer lernen, neue Werkzeuge sinnvoll einzusetzen, ohne ihre eigenen Fähigkeiten aus den Augen zu verlieren.",
+"explanation": "Der Text legt nahe, dass neue Technologien menschliche Fähigkeiten nicht vollständig ersetzen, sondern mit ihnen kombiniert werden sollten.",
+"tip": "Bei einer Inferenz geht es darum, was man aus mehreren Aussagen des Textes ableiten kann."
+},
+{
+"id": "q5",
+"skill": "vocab_context",
+"type": "choice",
+"prompt": "Was bedeutet „wegfallen“ im Kontext des Textes?",
+"options": [
+"verschwinden oder nicht mehr benötigt werden",
+"neu geschaffen werden",
+"besser bezahlt werden"
+],
+"answer": 0,
+"quote": "Kritiker befürchten dagegen, dass bestimmte Stellen langfristig wegfallen könnten.",
+"explanation": "Hier bedeutet „wegfallen“, dass bestimmte Arbeitsplätze in Zukunft möglicherweise nicht mehr existieren.",
+"tip": "„Eine Stelle fällt weg“ bedeutet im Deutschen, dass diese Stelle nicht mehr vorhanden ist."
+},
+{
+"id": "q6",
+"skill": "paraphrase",
+"type": "choice",
+"prompt": "Welche Aussage gibt den folgenden Satz am besten wieder: „Dennoch ist ein vollständiger Ersatz menschlicher Arbeitskräfte derzeit in vielen Berufen kaum realistisch.“",
+"options": [
+"In vielen Berufen ist es momentan unwahrscheinlich, dass Menschen vollständig durch KI ersetzt werden.",
+"In den meisten Berufen werden Menschen bereits vollständig durch KI ersetzt.",
+"Menschen können heute in keinem Beruf durch Technologie unterstützt werden."
+],
+"answer": 0,
+"quote": "Dennoch ist ein vollständiger Ersatz menschlicher Arbeitskräfte derzeit in vielen Berufen kaum realistisch.",
+"explanation": "Der Satz sagt aus, dass eine komplette Ersetzung menschlicher Arbeitskräfte momentan in vielen Berufen wenig wahrscheinlich ist.",
+"tip": "„kaum realistisch“ entspricht hier ungefähr „wenig wahrscheinlich“."
+},
+{
+"id": "q7",
+"skill": "opinion",
+"type": "choice",
+"prompt": "Welche Maßnahme des Textes hältst du für die wichtigste, damit Beschäftigte mit KI umgehen können?",
+"options": [
+"Weiterbildung für die Beschäftigten",
+"Vollständiger Verzicht auf KI",
+"Ersetzung möglichst vieler Arbeitsplätze durch KI"
+],
+"answer": 0,
+"quote": "Statt Beschäftigte nur vor möglichen Veränderungen zu warnen, sollten sie Weiterbildung anbieten.",
+"explanation": "Der Text empfiehlt Weiterbildung als Möglichkeit, Beschäftigte auf den technologischen Wandel vorzubereiten.",
+"tip": "Es gibt hier eine im Text empfohlene Lösung, aber du kannst deine persönliche Meinung begründen."
+},
+{
+"id": "q8",
+"skill": "connector",
+"type": "gap",
+"prompt": "Ergänze den Satz mit dem passenden Konnektor aus dem Text: „KI kann schnell Antworten liefern, ______ sind diese nicht immer richtig.“",
+"answers": [
+"aber",
+"dagegen",
+"dennoch"
+],
+"answer": "aber",
+"quote": "Außerdem wird es wichtiger, Informationen kritisch zu prüfen, weil ein KI-System zwar schnell Antworten liefern kann, diese aber nicht immer richtig sind.",
+"explanation": "„aber“ stellt hier einen Gegensatz zwischen der schnellen Antwort und ihrer möglichen Unrichtigkeit her.",
+"tip": "Der Konnektor steht im Text direkt vor „nicht immer richtig“."
+}
+]
+}
+
