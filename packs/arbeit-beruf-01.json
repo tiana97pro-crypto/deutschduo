@@ -1,0 +1,218 @@
+{
+"format": "deutschduo-lesen-pack",
+"id": "arbeit-beruf-01",
+"level": "B2.1",
+"topic": "Arbeit & Beruf",
+"textType": "Artikel",
+"title": "Mehr Flexibilität im Berufsleben",
+"estMinutes": 5,
+"prereading": {
+"question": "Welche Vorteile und Nachteile könnte flexibles Arbeiten für Beschäftigte haben?",
+"options": [
+"Es könnte mehr Freiheit bei der Gestaltung des Arbeitsalltags ermöglichen.",
+"Es könnte dafür sorgen, dass alle Beschäftigten weniger arbeiten müssen.",
+"Es könnte persönliche Kontakte am Arbeitsplatz vollständig ersetzen."
+]
+},
+"text": "Flexible Arbeitsmodelle sind in vielen Unternehmen inzwischen ein wichtiges Thema. Dazu gehören zum Beispiel Homeoffice, Gleitzeit oder die Möglichkeit, die Arbeitswoche auf verschiedene Tage zu verteilen. Für viele Beschäftigte bedeutet diese Entwicklung mehr Freiheit bei der Organisation ihres Alltags.\n\nBesonders für Menschen mit langen Arbeitswegen oder familiären Verpflichtungen kann Flexibilität eine große Erleichterung sein. Wer teilweise von zu Hause arbeitet, spart Zeit für den täglichen Weg ins Büro. Außerdem lässt sich die Arbeitszeit unter bestimmten Bedingungen besser mit privaten Terminen vereinbaren.\n\nAllerdings bringt flexibles Arbeiten auch Herausforderungen mit sich. Wenn Kollegen nur selten gemeinsam im Büro sind, können spontane Gespräche und der persönliche Austausch schwieriger werden. Darüber hinaus fällt es manchen Beschäftigten schwer, nach Feierabend wirklich abzuschalten. Die Grenze zwischen Berufs- und Privatleben kann dadurch verschwimmen.\n\nDeshalb kommt es nicht nur darauf an, ob ein Unternehmen Homeoffice anbietet. Entscheidend sind klare Regeln und gegenseitiges Vertrauen. Unternehmen sollten gemeinsam mit ihren Beschäftigten festlegen, wann persönliche Treffen notwendig sind und wann Aufgaben unabhängig vom Arbeitsort erledigt werden können. So lässt sich Flexibilität mit den sozialen Bedürfnissen eines Teams verbinden.",
+"vocabulary": [
+{
+"word": "das Arbeitsmodell",
+"meaning": "le modèle de travail",
+"example": "Flexible Arbeitsmodelle sind in vielen Unternehmen inzwischen ein wichtiges Thema.",
+"synonyms": ["die Arbeitsform"]
+},
+{
+"word": "die Gleitzeit",
+"meaning": "les horaires flexibles",
+"example": "Dazu gehören zum Beispiel Homeoffice, Gleitzeit oder die Möglichkeit, die Arbeitswoche auf verschiedene Tage zu verteilen.",
+"synonyms": ["die flexible Arbeitszeit"]
+},
+{
+"word": "die Verpflichtung",
+"meaning": "l'obligation, la responsabilité",
+"example": "Besonders für Menschen mit langen Arbeitswegen oder familiären Verpflichtungen kann Flexibilität eine große Erleichterung sein.",
+"synonyms": ["die Verantwortung"]
+},
+{
+"word": "die Erleichterung",
+"meaning": "le soulagement, la facilité",
+"example": "Besonders für Menschen mit langen Arbeitswegen oder familiären Verpflichtungen kann Flexibilität eine große Erleichterung sein.",
+"synonyms": ["die Entlastung"]
+},
+{
+"word": "vereinbaren",
+"meaning": "concilier, accorder",
+"example": "Außerdem lässt sich die Arbeitszeit unter bestimmten Bedingungen besser mit privaten Terminen vereinbaren.",
+"synonyms": ["in Einklang bringen"]
+},
+{
+"word": "die Herausforderung",
+"meaning": "le défi",
+"example": "Allerdings bringt flexibles Arbeiten auch Herausforderungen mit sich.",
+"synonyms": ["die Schwierigkeit"]
+},
+{
+"word": "der Austausch",
+"meaning": "l'échange",
+"example": "Wenn Kollegen nur selten gemeinsam im Büro sind, können spontane Gespräche und der persönliche Austausch schwieriger werden.",
+"synonyms": ["die Kommunikation"]
+},
+{
+"word": "abschalten",
+"meaning": "déconnecter, décrocher",
+"example": "Darüber hinaus fällt es manchen Beschäftigten schwer, nach Feierabend wirklich abzuschalten.",
+"synonyms": ["sich entspannen"]
+},
+{
+"word": "verschwimmen",
+"meaning": "s'estomper, se brouiller",
+"example": "Die Grenze zwischen Berufs- und Privatleben kann dadurch verschwimmen.",
+"synonyms": ["sich vermischen"]
+},
+{
+"word": "das gegenseitige Vertrauen",
+"meaning": "la confiance mutuelle",
+"example": "Entscheidend sind klare Regeln und gegenseitiges Vertrauen.",
+"synonyms": ["das Vertrauen"]
+}
+],
+"connectors": [
+{
+"word": "Allerdings",
+"function": "concession / opposition"
+},
+{
+"word": "Außerdem",
+"function": "ajout"
+},
+{
+"word": "Darüber hinaus",
+"function": "ajout / renforcement"
+},
+{
+"word": "Deshalb",
+"function": "conséquence"
+}
+],
+"questions": [
+{
+"id": "q1",
+"skill": "main_idea",
+"type": "choice",
+"prompt": "Was ist die Hauptaussage des Artikels?",
+"options": [
+"Flexible Arbeitsmodelle bieten Vorteile, benötigen aber klare Regeln und Vertrauen.",
+"Homeoffice sollte in allen Unternehmen verpflichtend eingeführt werden.",
+"Persönliche Kontakte im Büro sind für die moderne Arbeitswelt nicht mehr wichtig."
+],
+"answer": 0,
+"quote": "Deshalb kommt es nicht nur darauf an, ob ein Unternehmen Homeoffice anbietet.",
+"explanation": "Der Text zeigt sowohl die Vorteile als auch die Herausforderungen flexibler Arbeitsmodelle und betont die Bedeutung klarer Regeln.",
+"tip": "Die zentrale Aussage wird besonders im letzten Absatz deutlich."
+},
+{
+"id": "q2",
+"skill": "detail",
+"type": "choice",
+"prompt": "Welche flexiblen Arbeitsmodelle werden im Text genannt?",
+"options": [
+"Homeoffice und Gleitzeit",
+"Vier-Tage-Woche und Teilzeitarbeit",
+"Jobsharing und Schichtarbeit"
+],
+"answer": 0,
+"quote": "Dazu gehören zum Beispiel Homeoffice, Gleitzeit oder die Möglichkeit, die Arbeitswoche auf verschiedene Tage zu verteilen.",
+"explanation": "Im ersten Absatz werden Homeoffice, Gleitzeit und eine flexible Verteilung der Arbeitswoche ausdrücklich genannt.",
+"tip": "Suche im ersten Absatz nach konkreten Beispielen."
+},
+{
+"id": "q3",
+"skill": "detail",
+"type": "choice",
+"prompt": "Für wen kann flexibles Arbeiten laut Text besonders hilfreich sein?",
+"options": [
+"Für Menschen mit langen Arbeitswegen oder familiären Verpflichtungen",
+"Nur für Führungskräfte",
+"Nur für Beschäftigte ohne private Termine"
+],
+"answer": 0,
+"quote": "Besonders für Menschen mit langen Arbeitswegen oder familiären Verpflichtungen kann Flexibilität eine große Erleichterung sein.",
+"explanation": "Der Text nennt ausdrücklich lange Arbeitswege und familiäre Verpflichtungen als Situationen, in denen Flexibilität hilfreich sein kann.",
+"tip": "Die Antwort steht fast wörtlich im zweiten Absatz."
+},
+{
+"id": "q4",
+"skill": "inference",
+"type": "choice",
+"prompt": "Was kann man aus dem Text über die ideale Organisation flexibler Arbeit schließen?",
+"options": [
+"Sie sollte die Bedürfnisse des Teams und die individuellen Bedürfnisse der Beschäftigten berücksichtigen.",
+"Sie sollte möglichst ohne Regeln funktionieren.",
+"Sie sollte persönliche Treffen grundsätzlich vermeiden."
+],
+"answer": 0,
+"quote": "So lässt sich Flexibilität mit den sozialen Bedürfnissen eines Teams verbinden.",
+"explanation": "Der letzte Satz zeigt, dass flexible Arbeit sowohl individuelle Freiheiten als auch die sozialen Bedürfnisse eines Teams berücksichtigen sollte.",
+"tip": "Bei einer Inferenz musst du mehrere Aussagen des Textes miteinander verbinden."
+},
+{
+"id": "q5",
+"skill": "vocab_context",
+"type": "choice",
+"prompt": "Was bedeutet „abschalten“ im Kontext des Textes?",
+"options": [
+"Nach der Arbeit gedanklich zur Ruhe kommen",
+"Den Computer im Büro ausschalten",
+"Die Arbeitszeit vorzeitig beenden"
+],
+"answer": 0,
+"quote": "Darüber hinaus fällt es manchen Beschäftigten schwer, nach Feierabend wirklich abzuschalten.",
+"explanation": "Hier bedeutet „abschalten“, nach der Arbeit nicht mehr über berufliche Aufgaben nachzudenken und sich zu entspannen.",
+"tip": "„Abschalten“ wird hier im übertragenen und nicht im technischen Sinn verwendet."
+},
+{
+"id": "q6",
+"skill": "paraphrase",
+"type": "choice",
+"prompt": "Welche Aussage entspricht am besten diesem Satz: „Die Grenze zwischen Berufs- und Privatleben kann dadurch verschwimmen.“",
+"options": [
+"Es kann schwieriger werden, Arbeitszeit und Privatleben klar voneinander zu trennen.",
+"Berufliche und private Termine werden automatisch besser organisiert.",
+"Beschäftigte haben grundsätzlich weniger Freizeit."
+],
+"answer": 0,
+"quote": "Die Grenze zwischen Berufs- und Privatleben kann dadurch verschwimmen.",
+"explanation": "„Verschwimmen“ bedeutet hier, dass die klare Trennung zwischen Arbeit und Privatleben schwieriger wird.",
+"tip": "„verschwimmen“ kann im übertragenen Sinn bedeuten, dass eine klare Grenze weniger deutlich wird."
+},
+{
+"id": "q7",
+"skill": "opinion",
+"type": "choice",
+"prompt": "Welche Lösung findest du für Unternehmen am sinnvollsten, um flexible Arbeit gut zu organisieren?",
+"options": [
+"Klare Regeln gemeinsam mit den Beschäftigten festlegen",
+"Alle Beschäftigten ausschließlich zu Hause arbeiten lassen",
+"Flexible Arbeitsmodelle vollständig abschaffen"
+],
+"answer": 0,
+"quote": "Unternehmen sollten gemeinsam mit ihren Beschäftigten festlegen, wann persönliche Treffen notwendig sind und wann Aufgaben unabhängig vom Arbeitsort erledigt werden können.",
+"explanation": "Der Text schlägt vor, gemeinsam klare Regeln für persönliche Treffen und ortsunabhängige Aufgaben festzulegen.",
+"tip": "Bei dieser Frage kannst du deine eigene Meinung mit Argumenten begründen."
+},
+{
+"id": "q8",
+"skill": "connector",
+"type": "gap",
+"prompt": "Ergänze den Satz mit dem passenden Konnektor aus dem Text: „Flexible Arbeitsmodelle bieten viele Vorteile. ______ bringen sie auch neue Herausforderungen mit sich.“",
+"answers": [
+"Allerdings"
+],
+"quote": "Allerdings bringt flexibles Arbeiten auch Herausforderungen mit sich.",
+"explanation": "„Allerdings“ führt hier einen Gegensatz zu den zuvor genannten Vorteilen ein.",
+"tip": "Der Konnektor entspricht ungefähr „cependant“ ou „toutefois“ en français."
+}
+]
+}
+
