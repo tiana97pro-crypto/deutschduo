@@ -90,8 +90,9 @@
   .chip{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:99px;background:var(--soft);color:var(--muted)}
   .chip.due{background:var(--brand);color:var(--brand-ink)} .chip.new{color:var(--hard)}
 
-  nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
-  nav button{flex:1;padding:14px 4px 12px;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font:500 .85rem 'Public Sans',system-ui,sans-serif;cursor:pointer}
+  nav{position:fixed;left:0;right:0;bottom:0;display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+  nav::-webkit-scrollbar{display:none}
+  nav button{flex:0 0 auto;white-space:nowrap;scroll-snap-align:start;padding:14px 14px 12px;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font:500 .85rem 'Public Sans',system-ui,sans-serif;cursor:pointer}
   nav button[aria-current="page"]{color:var(--brand);border-top-color:var(--brand)}
 
   #toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90%;z-index:10}
@@ -243,7 +244,11 @@ function setView(v){
   window.scrollTo(0, 0);
 }
 function render(){
-  document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-current', b.dataset.view === view ? 'page' : 'false'));
+  document.querySelectorAll('nav button').forEach(b => {
+    const cur = b.dataset.view === view;
+    b.setAttribute('aria-current', cur ? 'page' : 'false');
+    if (cur) b.scrollIntoView({ inline: 'center', block: 'nearest' });
+  });
   const m = $('#main');
   const banner = storageWorks ? '' : '<div class="warn">Ce navigateur bloque le stockage local : vos mots ne seront pas conservés. Exportez-les régulièrement depuis les réglages.</div>';
   m.innerHTML = banner;

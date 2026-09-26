@@ -105,6 +105,7 @@ async function loadPacks(){
         const r = await fetch('packs/' + id + '.json', { cache: 'no-store' });
         if (!r.ok) throw new Error('http ' + r.status);
         const data = await r.json();
+        if (data && data.format && data.format !== 'deutschduo-pack') continue; // pack d'un autre module (ex. Lesen B2) : ignoré ici
         const v = validatePack(data, id);
         if (v.ok) packs[v.pack.id] = v.pack;
         else loadErrors.push(id + ' : ' + v.errors.join(', '));
@@ -153,7 +154,7 @@ function genDeclension(n){
     const options = shuffled([correct].concat(distractors));
     const answer = options.indexOf(correct);
     const genNote = c === 'gen' && (g === 'm' || g === 'n') ? ' Notez aussi le nom : il prend -s ou -es au Genitiv (' + noun + 's / ' + noun + 'es).' : '';
-    out.push({ type: 'choice', prompt: 'Vervollständigen Sie: „… ' + prep + ' ___ ' + noun + '.“',
+    out.push({ type: 'choice', prompt: 'Complétez : « … ' + prep + ' ___ ' + noun + '. »',
       options, answer,
       explanation: 'La préposition « ' + prep + ' » se construit toujours avec le ' + CASE_NAME[c] + '. Article ' + (kind === 'def' ? 'défini' : 'indéfini') + ', genre ' + (g === 'm' ? 'masculin' : g === 'f' ? 'féminin' : 'neutre') + '.' + genNote });
   }
@@ -181,7 +182,7 @@ function genKonnektoren(n){
     const choices = shuffled([p.rel].concat(shuffled(opts.filter(x => x !== p.rel)).slice(0, 3)));
     const answer = choices.indexOf(p.rel);
     const pos = (p.note === 'concession-invers' || p.note === 'consequence-invers') ? 'Verbe en 2e position (inversion)' : 'Verbe rejeté en fin de proposition';
-    out.push({ type: 'choice', prompt: 'Welcher Konnektor passt am besten?\n„' + p.a + ', ___ ' + p.b + '.“',
+    out.push({ type: 'choice', prompt: 'Quel connecteur convient le mieux ?\n« ' + p.a + ', ___ ' + p.b + '. »',
       options: choices, answer,
       explanation: 'Avec « ' + p.rel + ' » : ' + pos + '. Relisez la phrase entière pour vérifier le sens (cause, concession, conséquence, but).' });
   }
