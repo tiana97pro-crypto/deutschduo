@@ -1,0 +1,65 @@
+{
+  "format": "deutschduo-lesen-pack",
+  "id": "arbeit-homeoffice-01",
+  "level": "B2.1",
+  "topic": "Arbeit",
+  "textType": "Artikel",
+  "title": "Homeoffice: eine Entwicklung, die bleibt",
+  "estMinutes": 6,
+  "prereading": {
+    "question": "Avant de lire : que pensez-vous que dit ce texte ?",
+    "options": [
+      "Le télétravail va bientôt disparaître partout.",
+      "Le télétravail s'est installé et de nombreuses entreprises adoptent des modèles mixtes.",
+      "Le télétravail ne concerne que quelques métiers rares."
+    ]
+  },
+  "text": "Immer mehr Beschäftigte in Deutschland arbeiten zumindest teilweise von zu Hause aus. Was während der Pandemie oft eine Notlösung war, ist für viele Unternehmen inzwischen zu einem festen Bestandteil des Arbeitsalltags geworden.\n\nBefürworter des Homeoffice betonen vor allem die gewonnene Flexibilität. Wer nicht täglich pendeln muss, spart Zeit und kann Beruf und Familie leichter miteinander vereinbaren. Studien deuten zudem darauf hin, dass viele Beschäftigte im Homeoffice konzentrierter arbeiten, weil sie seltener von Kollegen unterbrochen werden.\n\nAllerdings sehen nicht alle Experten die Entwicklung ausschließlich positiv. Kritiker weisen darauf hin, dass der informelle Austausch mit Kolleginnen und Kollegen leidet, wenn man sich kaum noch persönlich begegnet. Gerade neue Mitarbeiter hätten es schwerer, sich in ein Team zu integrieren. Zudem verschwimmen für manche die Grenzen zwischen Arbeit und Freizeit, was langfristig zu Erschöpfung führen kann.\n\nDennoch scheint klar, dass sich die Arbeitswelt nicht mehr vollständig zurückentwickeln wird. Die meisten Unternehmen setzen inzwischen auf Mischmodelle, bei denen die Beschäftigten einen Teil der Woche im Büro und einen Teil zu Hause arbeiten. Ob sich dieses Modell langfristig durchsetzt, wird auch davon abhängen, wie gut es Unternehmen gelingt, Zusammenhalt und Produktivität gleichzeitig zu sichern.",
+  "vocabulary": [
+    {"word": "die Notlösung", "meaning": "la solution de secours", "example": "Homeoffice war anfangs nur eine Notlösung."},
+    {"word": "der Bestandteil", "meaning": "l'élément constitutif", "example": "Homeoffice ist ein fester Bestandteil des Alltags geworden."},
+    {"word": "pendeln", "meaning": "faire la navette", "example": "Sie pendelt jeden Tag eine Stunde zur Arbeit."},
+    {"word": "vereinbaren", "meaning": "concilier", "example": "Er möchte Beruf und Familie besser vereinbaren.", "synonyms": ["kombinieren"]},
+    {"word": "der Austausch", "meaning": "l'échange", "example": "Der Austausch mit Kollegen ist ihr wichtig."},
+    {"word": "sich integrieren", "meaning": "s'intégrer", "example": "Neue Mitarbeiter integrieren sich schneller im Büro."},
+    {"word": "verschwimmen", "meaning": "s'estomper, devenir flou", "example": "Die Grenzen zwischen Arbeit und Freizeit verschwimmen."},
+    {"word": "die Erschöpfung", "meaning": "l'épuisement", "example": "Ständige Erreichbarkeit kann zu Erschöpfung führen."},
+    {"word": "sich durchsetzen", "meaning": "s'imposer, devenir la norme", "example": "Das neue Modell hat sich schnell durchgesetzt."},
+    {"word": "der Zusammenhalt", "meaning": "la cohésion", "example": "Der Zusammenhalt im Team ist wichtig."}
+  ],
+  "connectors": [
+    {"word": "allerdings", "function": "opposition, nuance"},
+    {"word": "zudem", "function": "ajout d'un argument"},
+    {"word": "dennoch", "function": "concession"}
+  ],
+  "questions": [
+    {"id":"q1","skill":"main_idea","type":"choice","prompt":"Was ist die Hauptaussage des Textes?",
+     "options":["Homeoffice wird von allen Unternehmen bald wieder abgeschafft.","Homeoffice hat sich etabliert, und viele Unternehmen setzen zunehmend auf Mischmodelle.","Homeoffice existiert nur, weil es während der Pandemie Pflicht war."],
+     "answer":1,"quote":"Die meisten Unternehmen setzen inzwischen auf Mischmodelle",
+     "explanation":"Le dernier paragraphe indique que la plupart des entreprises adoptent désormais des modèles mixtes (bureau + domicile)."},
+    {"id":"q2","skill":"detail","type":"choice","prompt":"Welchen Vorteil nennen Befürworter des Homeoffice?",
+     "options":["Mehr direkten Kontakt zu Kollegen","Zeitersparnis, weil man nicht pendeln muss","Höhere Gehälter"],
+     "answer":1,"quote":"Wer nicht täglich pendeln muss, spart Zeit",
+     "explanation":"Le texte cite explicitement le gain de temps lié à l'absence de trajet quotidien."},
+    {"id":"q3","skill":"detail","type":"choice","prompt":"Richtig oder falsch: Laut Text haben neue Mitarbeiter im Homeoffice manchmal Schwierigkeiten, sich ins Team zu integrieren.",
+     "options":["Richtig","Falsch"],"answer":0,"quote":"Gerade neue Mitarbeiter hätten es schwerer, sich in ein Team zu integrieren.",
+     "explanation":"C'est exactement ce que dit le texte à propos des nouveaux employés."},
+    {"id":"q4","skill":"inference","type":"choice","prompt":"Was lässt sich aus dem Text schließen?",
+     "options":["Die Grenze zwischen Arbeit und Freizeit ist im Homeoffice für jeden klar.","Die Vermischung von Arbeit und Freizeit kann im Homeoffice zu einem Problem werden.","Homeoffice führt automatisch zu weniger Erschöpfung."],
+     "answer":1,"quote":"verschwimmen für manche die Grenzen zwischen Arbeit und Freizeit, was langfristig zu Erschöpfung führen kann",
+     "explanation":"Le texte ne l'affirme pas directement mais le suggère : le flou entre vie pro et perso peut mener à l'épuisement."},
+    {"id":"q5","skill":"vocab_context","type":"choice","prompt":"Was bedeutet „sich durchsetzen“ in diesem Zusammenhang am ehesten?",
+     "options":["sich als Standard etablieren","verboten werden","finanziell gefördert werden"],
+     "answer":0,"quote":"Ob sich dieses Modell langfristig durchsetzt",
+     "explanation":"Dans ce contexte, « sich durchsetzen » signifie devenir la norme, s'imposer durablement."},
+    {"id":"q6","skill":"paraphrase","type":"choice","prompt":"Welche Aussage bedeutet ungefähr dasselbe wie: „Der informelle Austausch mit Kollegen leidet.“?",
+     "options":["Die Zusammenarbeit mit Kollegen wird formeller.","Der spontane, zwanglose Kontakt zu Kollegen nimmt ab.","Kollegen tauschen sich häufiger informell aus."],
+     "answer":1,"quote":"der informelle Austausch mit Kolleginnen und Kollegen leidet",
+     "explanation":"« Leiden » (souffrir, se dégrader) signifie ici que ces échanges informels diminuent."},
+    {"id":"q7","skill":"opinion","type":"choice","prompt":"Wie lässt sich die Haltung des Textes zum Thema Homeoffice am besten beschreiben?",
+     "options":["Uneingeschränkt begeistert","Differenziert: sowohl Vorteile als auch Nachteile werden genannt","Vollständig ablehnend"],
+     "answer":1,"explanation":"Le texte présente à la fois les avantages (flexibilité, concentration) et les inconvénients (isolement, épuisement)."},
+    {"id":"q8","skill":"detail","type":"gap","prompt":"Vervollständigen Sie mit einem Wort aus dem Text: „Wer nicht täglich ______ muss, spart Zeit.“",
+     "answers":["pendeln"],"quote":"Wer nicht täglich pendeln muss","explanation":"Le mot manquant est « pendeln » (faire la navette)."}
+  ]
+}
