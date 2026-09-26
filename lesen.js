@@ -201,5 +201,5 @@ document.addEventListener('input', e => {
   else if (e.target.id === 'ls-src'){ srcName = e.target.value; saveDraft(); }
 });
 
-DD.register({ id: 'lesen', label: 'Lesen', render });
+DD.register({ id: 'lesen', label: 'Lesen libre', render });
 })();
