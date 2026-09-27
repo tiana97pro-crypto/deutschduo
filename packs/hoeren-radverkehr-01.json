@@ -1,0 +1,50 @@
+{
+  "format": "deutschduo-hoeren-pack",
+  "id": "hoeren-radverkehr-01",
+  "level": "B2.1",
+  "topic": "Verkehr",
+  "title": "Radverkehr in der Stadt",
+  "estMinutes": 4,
+  "text": "Immer mehr Städte in Deutschland bauen ihr Radwegenetz aus. Ziel ist es, den Verkehr umweltfreundlicher zu gestalten und gleichzeitig die Innenstädte vom Autoverkehr zu entlasten.\n\nBefürworter argumentieren, dass Fahrradfahren nicht nur gut für die Umwelt ist, sondern auch die Gesundheit fördert. Wer täglich zur Arbeit radelt, bewegt sich automatisch mehr, ohne dafür extra Zeit einzuplanen.\n\nAllerdings gibt es auch Kritik an der aktuellen Umsetzung. Viele neue Radwege seien zu schmal oder enden abrupt mitten in der Stadt. Radfahrerinnen und Radfahrer müssten dann plötzlich wieder auf die Straße wechseln, was gefährlich sein kann.\n\nStadtplaner betonen deshalb, dass ein durchgehendes und gut ausgebautes Netz entscheidend ist. Einzelne, kurze Radwege würden wenig bringen, wenn sie nicht sinnvoll miteinander verbunden sind.\n\nTrotz der Herausforderungen sind sich die meisten Experten einig: Der Trend zum Fahrrad wird sich in den kommenden Jahren fortsetzen, vor allem in größeren Städten.",
+  "vocabulary": [
+    {"word": "das Radwegenetz", "meaning": "le réseau de pistes cyclables", "example": "Die Stadt baut ihr Radwegenetz aus."},
+    {"word": "entlasten", "meaning": "soulager, désengorger", "example": "Die neuen Radwege entlasten die Innenstadt vom Autoverkehr."},
+    {"word": "fördern", "meaning": "favoriser", "example": "Fahrradfahren fördert die Gesundheit."},
+    {"word": "radeln", "meaning": "faire du vélo, pédaler", "example": "Sie radelt jeden Tag zur Arbeit."},
+    {"word": "die Umsetzung", "meaning": "la mise en œuvre", "example": "Die Umsetzung des Projekts dauert länger als geplant."},
+    {"word": "abrupt", "meaning": "brusquement, subitement", "example": "Der Radweg endet abrupt mitten in der Stadt."},
+    {"word": "durchgehend", "meaning": "continu, sans interruption", "example": "Ein durchgehendes Netz ist wichtig für die Sicherheit."},
+    {"word": "sich fortsetzen", "meaning": "se poursuivre", "example": "Der Trend wird sich fortsetzen."}
+  ],
+  "connectors": [
+    {"word": "allerdings", "function": "opposition, nuance"},
+    {"word": "deshalb", "function": "conséquence"}
+  ],
+  "questions": [
+    {"id":"q1","skill":"main_idea","type":"choice","prompt":"Was ist die Hauptaussage dieses Hörtexts?",
+     "options":["Fahrradfahren wird in Städten komplett verboten.","Städte bauen ihr Radwegenetz aus, auch wenn es noch Herausforderungen gibt.","Radfahren ist nur für den Sport wichtig."],
+     "answer":1,"quote":"Immer mehr Städte in Deutschland bauen ihr Radwegenetz aus.",
+     "explanation":"Le texte présente le développement des pistes cyclables tout en reconnaissant des difficultés de mise en œuvre."},
+    {"id":"q2","skill":"detail","type":"choice","prompt":"Welchen gesundheitlichen Vorteil nennt der Text?",
+     "options":["Weniger Stress durch Homeoffice","Mehr Bewegung im Alltag, ohne zusätzliche Zeit einzuplanen","Bessere Ernährung"],
+     "answer":1,"quote":"bewegt sich automatisch mehr, ohne dafür extra Zeit einzuplanen",
+     "explanation":"Le texte souligne que pédaler pour aller au travail apporte du mouvement sans effort d'organisation supplémentaire."},
+    {"id":"q3","skill":"detail","type":"choice","prompt":"Richtig oder falsch: Laut Text sind alle neuen Radwege durchgehend und gut geplant.",
+     "options":["Richtig","Falsch"],"answer":1,"quote":"Viele neue Radwege seien zu schmal oder enden abrupt mitten in der Stadt.",
+     "explanation":"C'est l'inverse : le texte critique justement des pistes trop étroites ou qui s'arrêtent brusquement."},
+    {"id":"q4","skill":"inference","type":"choice","prompt":"Was lässt sich daraus schließen, dass Radwege abrupt enden?",
+     "options":["Radfahrer müssen manchmal gefährlich auf die Straße wechseln.","Radfahrer dürfen dort schneller fahren.","Die Radwege sind dort besonders breit."],
+     "answer":0,"quote":"müssten dann plötzlich wieder auf die Straße wechseln, was gefährlich sein kann",
+     "explanation":"Le texte relie explicitement la fin abrupte d'une piste au danger de devoir rejoindre la route."},
+    {"id":"q5","skill":"vocab_context","type":"choice","prompt":"Was bedeutet „entlasten“ in diesem Zusammenhang am ehesten?",
+     "options":["belasten","verringern, weniger belasten","vergrößern"],
+     "answer":1,"quote":"die Innenstädte vom Autoverkehr zu entlasten",
+     "explanation":"« Entlasten » signifie ici réduire la charge (de trafic automobile), donc soulager."},
+    {"id":"q6","skill":"detail","type":"gap","prompt":"Vervollständigen Sie mit einem Wort aus dem Text: „Der Trend zum Fahrrad wird sich in den kommenden Jahren ______.“",
+     "answers":["fortsetzen"],"quote":"Der Trend zum Fahrrad wird sich in den kommenden Jahren fortsetzen",
+     "explanation":"Le mot manquant est « fortsetzen » (se poursuivre)."},
+    {"id":"q7","skill":"opinion","type":"choice","prompt":"Wie lässt sich die Haltung des Textes zum Thema Radverkehr am besten beschreiben?",
+     "options":["Uneingeschränkt begeistert, ohne jede Kritik","Grundsätzlich positiv, aber mit Hinweis auf Probleme bei der Umsetzung","Vollständig ablehnend"],
+     "answer":1,"explanation":"Le texte reconnaît les avantages du vélo tout en signalant les défauts d'aménagement actuels."}
+  ]
+}
