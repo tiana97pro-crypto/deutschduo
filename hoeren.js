@@ -15,7 +15,7 @@ const SKILLS = {
   connector: 'Connecteur', other: 'Autre'
 };
 const REVIEW_STEPS = [1, 3, 7, 14];
-const SPEEDS = [{ v: 0.8, l: 'Lent' }, { v: 1, l: 'Normal' }, { v: 1.15, l: 'Rapide' }];
+const SPEEDS = [{ v: 0.7, l: 'Lent' }, { v: 1, l: 'Normal' }, { v: 1.3, l: 'Rapide' }];
 
 /* ---------- Style ---------- */
 const css = document.createElement('style');
@@ -142,27 +142,28 @@ function matches(input, answers){ const a = norm(input); if (!a) return false; r
 function splitSentences(t){ return t.split(/(?<=[.!?…])\s+(?=[A-ZÄÖÜ0-9„"«])/).map(s => s.trim()).filter(Boolean); }
 
 /* ---------- Lecture audio ---------- */
-let playing = false, curSentence = -1, speed = 1;
-function stopAudio(){ if (window.speechSynthesis) speechSynthesis.cancel(); playing = false; curSentence = -1; rerenderIfActive(); }
-function speakOne(i, sentences){
+let playing = false, curSentence = -1, speed = 1, playToken = 0;
+function stopAudio(){ playToken++; if (window.speechSynthesis) speechSynthesis.cancel(); playing = false; curSentence = -1; rerenderIfActive(); }
+function speakOne(i, sentences, token){
+  if (token !== playToken) return; // une lecture plus récente a pris le relais
   if (!playing || i >= sentences.length){ playing = false; curSentence = -1; rerenderIfActive(); return; }
   curSentence = i; rerenderIfActive();
   const u = new SpeechSynthesisUtterance(sentences[i]);
   u.lang = 'de-DE'; u.rate = speed; if (deVoice) u.voice = deVoice;
-  u.onend = () => { if (playing) speakOne(i + 1, sentences); };
-  u.onerror = () => { playing = false; curSentence = -1; rerenderIfActive(); };
+  u.onend = () => { if (token === playToken && playing) speakOne(i + 1, sentences, token); };
+  u.onerror = () => { if (token === playToken){ playing = false; curSentence = -1; rerenderIfActive(); } };
   speechSynthesis.speak(u);
 }
-function playAll(){
+function startFrom(i){
   if (!window.speechSynthesis){ toast('La lecture audio n\u2019est pas disponible sur ce navigateur.'); return; }
-  speechSynthesis.cancel(); playing = true;
-  speakOne(0, splitSentences(curPack.text));
+  playToken++; const token = playToken; playing = true;
+  speechSynthesis.cancel();
+  // Sur Android (Chrome, Brave...), relancer la synthèse juste après cancel() est ignoré
+  // ou garde l'ancienne vitesse si on ne laisse pas un court délai s'écouler.
+  setTimeout(() => { speakOne(i, splitSentences(curPack.text), token); }, 80);
 }
-function playFrom(i){
-  if (!window.speechSynthesis) return;
-  speechSynthesis.cancel(); playing = true;
-  speakOne(i, splitSentences(curPack.text));
-}
+function playAll(){ startFrom(0); }
+function playFrom(i){ startFrom(i); }
 
 /* ---------- État ---------- */
 let view = 'hub';
