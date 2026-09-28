@@ -8,16 +8,62 @@ if (!window.DD) return;
 const DD = window.DD, $ = DD.$, esc = DD.esc, store = DD.store, toast = DD.toast;
 
 const RULES = {
-  verb_nebensatz: 'Verbe en fin de subordonnée', verb_hauptsatz: 'Verbe en 2e position', inversion: 'Inversion sujet-verbe',
-  konjunktiv2: 'Subjonctif II', konjunktiv1: 'Subjonctif I (discours rapporté)', passiv: 'Passif',
-  partizip: 'Participes (attribut, présent)', relativsatz: 'Propositions relatives', adjektiv: 'Déclinaison des adjectifs',
-  artikel_genus: 'Article et genre', kasus: 'Cas (Akkusativ, Dativ, Genitiv)', wechselpraep: 'Prépositions à double cas',
-  praep_verb: 'Verbes à préposition', praep_kasus: 'Prépositions et cas', konnektoren: 'Connecteurs (weil, obwohl, deshalb…)',
-  infinitiv_zu: 'Infinitif avec zu', nominalisierung: 'Nominalisation', tempus: 'Temps (Perfekt, Präteritum, Plusquamperfekt)',
-  trennbar: 'Verbes séparables', reflexiv: 'Verbes pronominaux', negation: 'Négation', pronomen: 'Pronoms',
-  mittelfeld: 'Ordre des mots (Mittelfeld)', komparation: 'Comparatif et superlatif', plural: 'Pluriel des noms',
-  modalverb: 'Verbes de modalité', rechtschreibung: 'Orthographe', zeichensetzung: 'Ponctuation (virgules)',
-  wortwahl: 'Choix du mot', register: 'Registre de langue', autre: 'Autre'
+  verb_nebensatz: 'Verbe en fin de subordonnée',
+  verb_hauptsatz: 'Verbe en 2e position',
+  inversion: 'Inversion sujet-verbe',
+
+  konjunktiv2: 'Subjonctif II',
+  konjunktiv1: 'Subjonctif I (discours rapporté)',
+
+  passiv: 'Passif',
+  partizip: 'Participes (attribut, présent)',
+  partizipialkonstruktionen: 'Constructions participiales',
+  partizipial_adjektivattribute: 'Attributs participiaux et adjectivaux',
+
+  relativsatz: 'Propositions relatives',
+
+  adjektiv: 'Déclinaison des adjectifs',
+  artikel_genus: 'Article et genre',
+  kasus: 'Cas (Akkusativ, Dativ, Genitiv)',
+
+  wechselpraep: 'Prépositions à double cas',
+  praep_verb: 'Verbes à préposition',
+  praep_kasus: 'Prépositions et cas',
+  praepositionen: 'Prépositions',
+  praepositionaladverbien: 'Adverbes prépositionnels',
+
+  konnektoren: 'Connecteurs et liaisons',
+  infinitiv_zu: 'Infinitif avec zu',
+  nominalisierung: 'Nominalisation',
+  verbalisierung: 'Verbalisierung',
+  nomen_verb_verbindungen: 'Nomen-Verb-Verbindungen',
+
+  tempus: 'Temps (Perfekt, Präteritum, Plusquamperfekt)',
+  futur: 'Futur I et II',
+  tempusgebrauch: 'Emploi des temps',
+
+  trennbar: 'Verbes séparables',
+  reflexiv: 'Verbes pronominaux',
+  negation: 'Négation',
+  pronomen: 'Pronoms',
+
+  mittelfeld: 'Ordre des mots (Mittelfeld)',
+  satzbau_wortstellung: 'Construction de la phrase et ordre des mots',
+  nebensaetze: 'Subordonnées',
+
+  komparation: 'Comparatif et superlatif',
+  plural: 'Pluriel des noms',
+  modalverb: 'Verbes de modalité',
+  modalverben_nuancen: 'Nuances des verbes de modalité',
+
+  rechtschreibung: 'Orthographe',
+  zeichensetzung: 'Ponctuation (virgules)',
+  wortwahl: 'Choix du mot',
+  register: 'Registre de langue',
+
+  textgrammatik_kohaerenz: 'Grammaire du texte et cohérence',
+
+  autre: 'Autre'
 };
 
 /* ---------- Style ---------- */
