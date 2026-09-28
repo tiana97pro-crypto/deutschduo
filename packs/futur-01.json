@@ -1,0 +1,187 @@
+{
+"format": "deutschduo-pack",
+"id": "futur-01",
+"rule": "futur-i-und-futur-ii",
+"lesson": {
+"title": "Futur I und Futur II",
+"level": "B1+",
+"summary": "Cette leçon travaille le Futur I et le Futur II, leur formation et surtout leurs différents emplois au niveau B2. L’objectif est de distinguer une action future, une intention, une supposition et une action considérée comme déjà achevée dans le futur.",
+"sections": [
+{
+"heading": "1. Formation du Futur I",
+"body": "Le Futur I se forme avec le verbe auxiliaire conjugué « werden » et l’infinitif du verbe principal placé à la fin. Il permet de parler d’événements futurs, mais l’allemand utilise aussi très souvent le présent lorsque le moment futur est clairement indiqué. Exemple : « Die Regierung wird im nächsten Jahr neue Maßnahmen beschließen. »"
+},
+{
+"heading": "2. Les principaux emplois du Futur I",
+"body": "Le Futur I peut exprimer une prédiction, une intention ou une décision concernant l’avenir. Il peut également exprimer une supposition concernant le présent. Dans ce dernier cas, le contexte indique généralement que l’on ne dispose pas d’une information certaine. Exemple : « Er wird wahrscheinlich noch im Büro sein. »"
+},
+{
+"heading": "3. Formation du Futur II",
+"body": "Le Futur II se forme avec « werden », le participe passé du verbe principal et l’auxiliaire « haben » ou « sein » à l’infinitif. Il permet de présenter une action comme terminée à un moment donné dans le futur. Exemple : « Bis Ende des Jahres wird das Unternehmen die Reform abgeschlossen haben. »"
+},
+{
+"heading": "4. Le Futur II pour exprimer une supposition",
+"body": "Le Futur II peut aussi exprimer une supposition sur une action déjà accomplie. Il ne s’agit alors pas nécessairement d’un événement situé dans le futur : le locuteur suppose qu’une action est probablement déjà terminée. Exemple : « Sie wird den Bericht bereits gelesen haben. »"
+},
+{
+"heading": "5. Futur I, Futur II et précision temporelle",
+"body": "Au niveau B2, il faut choisir la forme selon la relation temporelle entre les événements. Le Futur I présente l’action comme future ou permet une supposition sur le présent, tandis que le Futur II présente une action comme achevée à un moment de référence. Les expressions temporelles permettent souvent de déterminer clairement l’interprétation."
+}
+],
+"examples": [
+{
+"de": "Die Stadt wird in den kommenden Jahren neue Wohnungen bauen.",
+"fr": "La ville construira de nouveaux logements dans les années à venir.",
+"note": "Le Futur I présente ici une action prévue ou attendue dans l’avenir."
+},
+{
+"de": "Morgen wird die Ministerin die Ergebnisse vorstellen.",
+"fr": "Demain, la ministre présentera les résultats.",
+"note": "Le présent serait également possible, mais le Futur I met davantage l’accent sur l’avenir."
+},
+{
+"de": "Er wird wahrscheinlich schon zu Hause sein.",
+"fr": "Il doit probablement déjà être chez lui.",
+"note": "Le Futur I exprime ici une supposition concernant la situation actuelle."
+},
+{
+"de": "Bis Freitag werden wir den Bericht fertiggestellt haben.",
+"fr": "D’ici vendredi, nous aurons terminé le rapport.",
+"note": "Le Futur II présente l’action comme achevée avant un moment futur déterminé."
+},
+{
+"de": "Sie wird die Nachricht inzwischen gelesen haben.",
+"fr": "Elle aura probablement déjà lu le message entre-temps.",
+"note": "Le Futur II exprime ici une supposition sur une action probablement déjà terminée."
+},
+{
+"de": "Bis Ende des Jahrzehnts wird sich der Arbeitsmarkt stark verändert haben.",
+"fr": "D’ici la fin de la décennie, le marché du travail aura fortement changé.",
+"note": "Le Futur II établit un point de référence futur et présente le changement comme déjà accompli à ce moment-là."
+}
+],
+"pitfalls": [
+"Ne traduisez pas automatiquement le futur français par le Futur I : en allemand, le présent est très fréquent pour parler d’un événement futur clairement situé dans le temps.",
+"Avec le Futur II, l’auxiliaire « haben » ou « sein » reste à l’infinitif à la fin de la proposition.",
+"Le Futur I et le Futur II peuvent tous deux exprimer une supposition, mais le premier concerne généralement une situation actuelle tandis que le second porte sur une action supposée déjà achevée."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "In fünf Jahren ___ die Stadt deutlich mehr Wohnungen haben. (bauen)",
+"answers": [
+"wird"
+],
+"explanation": "Le verbe « bauen » reste à l’infinitif à la fin de la proposition ; le verbe auxiliaire doit être conjugué."
+},
+{
+"type": "gap",
+"prompt": "Bis Ende des Monats ___ das Unternehmen den neuen Standort eröffnet ___. (haben)",
+"answers": [
+"wird ... haben"
+],
+"explanation": "Le Futur II utilise le verbe auxiliaire conjugué au Futur I et l’auxiliaire final à l’infinitif."
+},
+{
+"type": "gap",
+"prompt": "Er ___ wahrscheinlich noch im Zug ___. (sein)",
+"answers": [
+"wird ... sein"
+],
+"explanation": "Le Futur I peut exprimer une supposition concernant une situation actuelle."
+},
+{
+"type": "gap",
+"prompt": "Bis morgen ___ die Techniker das Problem gelöst ___. (haben)",
+"answers": [
+"werden ... haben"
+],
+"explanation": "Le Futur II présente la résolution comme terminée à un moment futur."
+},
+{
+"type": "gap",
+"prompt": "Sie ___ die E-Mail inzwischen gelesen ___. (haben)",
+"answers": [
+"wird ... haben"
+],
+"explanation": "Le Futur II exprime ici une supposition concernant une action probablement déjà accomplie."
+},
+{
+"type": "choice",
+"prompt": "Quelle phrase exprime une supposition concernant la situation actuelle ?",
+"options": [
+"Er wird wahrscheinlich schon im Büro sein.",
+"Er wird wahrscheinlich schon im Büro gewesen haben.",
+"Er wird wahrscheinlich schon im Büro gegangen sein."
+],
+"answer": 0,
+"explanation": "Le Futur I permet ici de supposer où se trouve actuellement la personne."
+},
+{
+"type": "choice",
+"prompt": "Quelle phrase présente une action comme achevée avant un moment futur ?",
+"options": [
+"Bis Juni wird die Firma neue Mitarbeiter einstellen.",
+"Bis Juni wird die Firma neue Mitarbeiter eingestellt haben.",
+"Bis Juni stellt die Firma neue Mitarbeiter ein."
+],
+"answer": 1,
+"explanation": "Le Futur II présente le recrutement comme déjà terminé au moment de référence indiqué."
+},
+{
+"type": "choice",
+"prompt": "Quelle phrase est correcte ?",
+"options": [
+"Bis morgen wird sie den Bericht geschrieben haben.",
+"Bis morgen wird sie den Bericht geschrieben sein.",
+"Bis morgen wird sie den Bericht schreiben gehabt."
+],
+"answer": 0,
+"explanation": "Avec ce verbe, le Futur II se construit avec l’auxiliaire « haben »."
+},
+{
+"type": "choice",
+"prompt": "Quelle phrase exprime une prédiction concernant l’avenir ?",
+"options": [
+"Die Nachfrage wird in den nächsten Jahren steigen.",
+"Die Nachfrage wird in den nächsten Jahren gestiegen haben.",
+"Die Nachfrage wird in den nächsten Jahren gestiegen sein."
+],
+"answer": 0,
+"explanation": "Le Futur I convient pour présenter une évolution attendue dans l’avenir."
+},
+{
+"type": "order",
+"sentence": "Bis Ende des Jahres wird die Regierung neue Maßnahmen beschlossen haben.",
+"explanation": "Le Futur II place le participe passé avant l’auxiliaire final et présente la décision comme achevée à la date indiquée."
+},
+{
+"type": "order",
+"sentence": "Die Zahl der Elektroautos wird in den kommenden Jahren weiter steigen.",
+"explanation": "Le Futur I permet ici d’exprimer une évolution attendue dans l’avenir."
+},
+{
+"type": "order",
+"sentence": "Er wird wahrscheinlich bereits mit der Arbeit begonnen haben.",
+"explanation": "Le Futur II exprime une supposition concernant une action que l’on pense déjà accomplie."
+},
+{
+"type": "transform",
+"prompt": "Transformez cette phrase pour exprimer une action qui sera terminée avant vendredi : Wir schließen den Vertrag ab.",
+"answers": [
+"Bis Freitag werden wir den Vertrag abgeschlossen haben."
+],
+"explanation": "Il faut utiliser le Futur II afin de présenter la conclusion du contrat comme achevée avant le moment de référence."
+},
+{
+"type": "transform",
+"prompt": "Transformez cette phrase pour exprimer une supposition sur la situation actuelle : Er ist wahrscheinlich noch bei der Arbeit.",
+"answers": [
+"Er wird wahrscheinlich noch bei der Arbeit sein."
+],
+"explanation": "Le Futur I peut remplacer cette formulation et exprimer une supposition concernant la situation actuelle."
+}
+]
+}
+

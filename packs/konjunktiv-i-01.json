@@ -1,0 +1,182 @@
+{
+"format": "deutschduo-pack",
+"id": "konjunktiv-i-01",
+"rule": "konjunktiv-i",
+"lesson": {
+"title": "Konjunktiv I und indirekte Rede",
+"level": "B1+",
+"summary": "Le subjonctif I est principalement utilisé pour rapporter les paroles ou les informations d'une autre personne sans les présenter directement comme ses propres affirmations. Au niveau B2, il faut maîtriser sa formation, les changements de temps et de pronoms ainsi que les formes de remplacement lorsque la forme du subjonctif I est identique à l'indicatif.",
+"sections": [
+{
+"heading": "Formation du subjonctif I",
+"body": "Le subjonctif I se forme principalement à partir du radical de l'infinitif avec des terminaisons spécifiques. Il est particulièrement fréquent à la troisième personne, notamment avec « sein » : « Er sagt, er sei zufrieden. » Les formes de « haben » et des verbes courants doivent également être reconnues rapidement."
+},
+{
+"heading": "Discours indirect au présent",
+"body": "Dans le discours indirect, le subjonctif I permet de rapporter une déclaration en gardant une distance par rapport à son contenu. La proposition introduite après un verbe comme « sagen », « erklären » ou « behaupten » conserve généralement l'ordre des mots d'une proposition principale : « Die Ministerin erklärt, die Regierung sei bereit. »"
+},
+{
+"heading": "Pronoms, possessifs et repères temporels",
+"body": "Lorsqu'une déclaration est rapportée, les pronoms et les déterminants possessifs doivent être adaptés au nouveau point de vue. Les indications de temps et de lieu peuvent également changer selon le contexte : « heute » peut devenir « an diesem Tag » et « hier » peut devenir « dort » lorsque le point de référence est différent."
+},
+{
+"heading": "Temps et événements antérieurs",
+"body": "Pour rapporter une action antérieure à celle du verbe introducteur, on utilise notamment le parfait du subjonctif I : « Er sagt, er habe die Unterlagen bereits geschickt. » Pour une situation antérieure avec « sein », on utilise « sei » avec le participe passé et « gewesen » : « Sie erklärt, sie sei bereits dort gewesen. »"
+},
+{
+"heading": "Remplacement par le subjonctif II",
+"body": "Lorsque la forme du subjonctif I est identique à celle de l'indicatif, le subjonctif II est souvent utilisé pour rendre le discours indirect clairement identifiable. Si cette forme est peu naturelle ou difficile à distinguer, la construction avec « würde » peut également apparaître : « Sie sagen, sie hätten keine Zeit. »"
+}
+],
+"examples": [
+{
+"de": "Der Sprecher erklärt, die Situation sei unter Kontrolle.",
+"fr": "Le porte-parole explique que la situation est sous contrôle.",
+"note": "Le subjonctif I indique que le locuteur rapporte l'affirmation du porte-parole sans l'assumer directement."
+},
+{
+"de": "Die Expertin sagt, die Maßnahmen seien notwendig.",
+"fr": "L'experte dit que les mesures sont nécessaires.",
+"note": "La forme utilisée correspond au subjonctif I du verbe « sein » au pluriel."
+},
+{
+"de": "Der Minister behauptet, die Regierung habe von dem Problem nichts gewusst.",
+"fr": "Le ministre affirme que le gouvernement n'était au courant de rien.",
+"note": "Le parfait du subjonctif I permet de rapporter une action antérieure au moment de la déclaration."
+},
+{
+"de": "Sie erklärte, sie werde am nächsten Tag nach Berlin reisen.",
+"fr": "Elle expliqua qu'elle se rendrait à Berlin le lendemain.",
+"note": "Le changement du pronom et du repère temporel adapte la déclaration au nouveau contexte narratif."
+},
+{
+"de": "Die Verantwortlichen sagen, sie hätten alle Vorschriften eingehalten.",
+"fr": "Les responsables disent avoir respecté toutes les règles.",
+"note": "Le subjonctif II est utilisé parce que la forme du subjonctif I serait identique à celle de l'indicatif."
+}
+],
+"pitfalls": [
+"Un francophone peut conserver les pronoms et les possessifs de la déclaration originale alors qu'ils doivent être adaptés au nouveau point de vue.",
+"Il faut distinguer le subjonctif I utilisé pour rapporter une information d'une affirmation personnelle présentée directement comme vraie.",
+"Lorsque le subjonctif I est identique à l'indicatif, il faut souvent employer le subjonctif II pour rendre le discours indirect clairement identifiable."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Der Sprecher erklärt, die Situation ___ unter Kontrolle.",
+"answers": [
+"sei"
+],
+"explanation": "La forme utilisée est le subjonctif I du verbe « sein » et permet de rapporter la déclaration du locuteur."
+},
+{
+"type": "gap",
+"prompt": "Die Ministerin sagt, die Regierung ___ die Entscheidung bereits getroffen.",
+"answers": [
+"habe"
+],
+"explanation": "Le parfait du subjonctif I utilise ici la forme correspondante du verbe « haben » suivie du participe passé."
+},
+{
+"type": "gap",
+"prompt": "Der Experte erklärte, die Maßnahmen ___ nicht ausreichend.",
+"answers": [
+"seien"
+],
+"explanation": "La forme du subjonctif I au pluriel est utilisée pour rapporter l'évaluation de l'expert."
+},
+{
+"type": "gap",
+"prompt": "Sie sagte, sie ___ am nächsten Tag nach Hamburg fahren.",
+"answers": [
+"werde"
+],
+"explanation": "Le subjonctif I permet ici de rapporter une intention future depuis le point de vue de la personne citée."
+},
+{
+"type": "gap",
+"prompt": "Die Verantwortlichen behaupten, sie ___ alle Vorschriften eingehalten.",
+"answers": [
+"hätten"
+],
+"explanation": "La forme utilisée est le subjonctif II, nécessaire ici pour distinguer clairement le discours indirect de l'indicatif."
+},
+{
+"type": "choice",
+"prompt": "Der Sprecher sagt, die Reform ___ bereits beschlossen.",
+"options": [
+"sei",
+"ist",
+"war"
+],
+"answer": 0,
+"explanation": "Le subjonctif I est utilisé pour rapporter indirectement l'affirmation du locuteur."
+},
+{
+"type": "choice",
+"prompt": "Die Expertin erklärt, sie ___ die Daten bereits analysiert.",
+"options": [
+"habe",
+"hat",
+"hatte"
+],
+"answer": 0,
+"explanation": "Le parfait du subjonctif I permet de rapporter une action déjà accomplie."
+},
+{
+"type": "choice",
+"prompt": "Die Mitarbeiter sagen, sie ___ keine weiteren Informationen erhalten.",
+"options": [
+"hätten",
+"haben",
+"hatten"
+],
+"answer": 0,
+"explanation": "Le subjonctif II est employé parce que la forme du subjonctif I serait identique à celle de l'indicatif."
+},
+{
+"type": "choice",
+"prompt": "Er erklärte: „Ich komme morgen zurück.“ Welche indirekte Rede ist korrekt?",
+"options": [
+"Er erklärte, er komme am nächsten Tag zurück.",
+"Er erklärte, ich komme morgen zurück.",
+"Er erklärte, er kam morgen zurück."
+],
+"answer": 0,
+"explanation": "Le pronom et le repère temporel sont adaptés au nouveau point de vue et le subjonctif I est utilisé."
+},
+{
+"type": "order",
+"sentence": "Die Sprecherin erklärt, die Regierung sei bereit, weitere Maßnahmen zu ergreifen.",
+"explanation": "Le verbe introducteur est suivi d'une proposition au discours indirect dont le verbe conjugué reste en deuxième position."
+},
+{
+"type": "order",
+"sentence": "Der Minister behauptet, er habe von den Problemen nichts gewusst.",
+"explanation": "Le parfait du subjonctif I rapporte ici un état de connaissance antérieur au moment de la déclaration."
+},
+{
+"type": "order",
+"sentence": "Die Wissenschaftler sagen, sie hätten keine eindeutigen Beweise gefunden.",
+"explanation": "Le subjonctif II permet de distinguer clairement le discours indirect de l'indicatif."
+},
+{
+"type": "transform",
+"prompt": "Transformez en discours indirect : Der Minister sagt: „Die Regierung hat die Entscheidung getroffen.“",
+"answers": [
+"Der Minister sagt, die Regierung habe die Entscheidung getroffen."
+],
+"explanation": "La déclaration directe est transformée en discours indirect avec le subjonctif I au parfait."
+},
+{
+"type": "transform",
+"prompt": "Transformez en discours indirect : Die Expertin sagte: „Ich werde morgen weitere Informationen veröffentlichen.“",
+"answers": [
+"Die Expertin sagte, sie werde am nächsten Tag weitere Informationen veröffentlichen."
+],
+"explanation": "Le pronom personnel et le repère temporel sont adaptés au nouveau point de vue, tandis que l'intention future est rapportée avec le subjonctif I."
+}
+]
+}
+

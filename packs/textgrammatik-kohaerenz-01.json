@@ -1,0 +1,188 @@
+{
+"format": "deutschduo-pack",
+"id": "textgrammatik-kohaerenz-01",
+"rule": "Textgrammatik & Kohärenz",
+"lesson": {
+"title": "Textgrammatik und Kohärenz",
+"level": "B1+",
+"summary": "La cohérence textuelle permet de relier les phrases et les paragraphes afin que le lecteur puisse suivre clairement les informations, les relations logiques et le développement d'une idée. Il ne suffit donc pas de construire des phrases grammaticalement correctes : il faut également assurer les liens entre les différentes parties du texte.",
+"sections": [
+{
+"heading": "1. Reprendre une information de manière claire",
+"body": "Lorsqu'une information a déjà été introduite, on peut la reprendre avec un pronom, un groupe nominal ou un mot de référence. Le choix doit rester suffisamment clair pour que le lecteur sache immédiatement à quoi renvoie chaque élément. Les pronoms personnels, démonstratifs et relatifs permettent d'éviter les répétitions inutiles. Dans un texte formel, il faut cependant éviter les références ambiguës. Par exemple, dans „Die Abteilung hat einen neuen Mitarbeiter eingestellt. Er beginnt am Montag“, le pronom „Er“ reprend clairement le nouvel employé."
+},
+{
+"heading": "2. Pronomen und Verweiswörter",
+"body": "Les pronoms et les mots de reprise établissent un lien entre une information déjà mentionnée et une nouvelle phrase. Des formes comme „dieser“, „diese“, „das“, „dort“, „dabei“, „dadurch“ ou „darauf“ peuvent reprendre une situation, un objet ou une idée précédente. Il faut toutefois vérifier le référent exact. Dans „Das Unternehmen hat die Arbeitszeiten geändert. Dadurch können die Mitarbeiter flexibler arbeiten“, „dadurch“ renvoie au changement des horaires et non à l'entreprise elle-même."
+},
+{
+"heading": "3. Konnektoren und Beziehungen logiques",
+"body": "Les connecteurs rendent explicite la relation entre deux informations. Il faut choisir le connecteur selon le sens voulu : opposition, cause, conséquence, addition, concession, condition ou chronologie. „deshalb“, „daher“ et „deswegen“ introduisent généralement une conséquence ; „obwohl“ introduit une concession ; „während“ peut exprimer une simultanéité ou une opposition selon le contexte ; „denn“ et „weil“ introduisent une cause mais n'ont pas la même structure syntaxique. Une bonne cohérence dépend donc à la fois du choix sémantique du connecteur et de la construction grammaticale qui le suit."
+},
+{
+"heading": "4. Cohésion lexicale et répétitions maîtrisées",
+"body": "Un texte cohérent reprend régulièrement son thème grâce au vocabulaire. Il est possible d'utiliser le même nom lorsque la précision est nécessaire, mais aussi des synonymes, des termes plus généraux ou des expressions appartenant au même champ lexical. Il faut éviter deux extrêmes : répéter mécaniquement le même mot dans chaque phrase ou remplacer systématiquement un terme par un prétendu synonyme qui ne possède pas exactement le même sens. Par exemple, dans un texte sur le travail, „Unternehmen“, „Arbeitgeber“, „Betrieb“ et „Firma“ peuvent parfois être utilisés comme termes liés, mais ils ne sont pas toujours parfaitement interchangeables."
+},
+{
+"heading": "5. Progression thématique",
+"body": "La progression thématique concerne la manière dont une information connue devient le point de départ d'une nouvelle information. Une phrase peut reprendre le thème précédent et ajouter un nouvel élément : „Das Unternehmen führt flexible Arbeitszeiten ein. Diese Regelung betrifft zunächst nur die Verwaltung.“ La nouvelle information devient ensuite le point de départ de la phrase suivante. Cette organisation permet au lecteur de suivre progressivement le raisonnement. Dans un texte argumentatif, il est particulièrement utile de présenter d'abord le problème, puis les explications, les conséquences et enfin la position ou la conclusion."
+},
+{
+"heading": "6. Auslassungen und Ersetzungen",
+"body": "Pour éviter des répétitions, l'allemand permet parfois de ne pas répéter une information déjà évidente ou de la remplacer par une expression plus courte. Dans une coordination, un élément identique peut être omis : „Viele Mitarbeiter arbeiten im Homeoffice, andere im Büro.“ Le verbe „arbeiten“ n'est pas répété dans la seconde partie, mais reste parfaitement compréhensible. On peut également employer une forme de remplacement comme „dies“, „das“, „dazu“ ou „dabei“. Ces procédés rendent le texte plus fluide, mais ils ne doivent pas supprimer une information nécessaire à la compréhension."
+},
+{
+"heading": "7. Paragraphes, structure et cohérence dans les textes formels",
+"body": "Un paragraphe cohérent développe normalement une idée ou une fonction principale. Dans un texte professionnel ou argumentatif, une organisation claire peut suivre une progression telle que : introduction du sujet, explication du problème, arguments ou informations, conséquences, proposition ou conclusion. Les phrases d'un même paragraphe doivent contribuer au même thème. Pour améliorer la cohérence, il faut donc vérifier les références, les relations logiques, les répétitions, la progression des idées et la fonction de chaque paragraphe. Cette compétence est particulièrement importante pour les courriels professionnels, les prises de position et les textes de type examen B2."
+}
+],
+"examples": [
+{
+"de": "Das Unternehmen hat die Arbeitszeiten geändert. Dadurch können die Mitarbeiter flexibler arbeiten.",
+"fr": "L'entreprise a modifié les horaires de travail. Grâce à cela, les employés peuvent travailler de manière plus flexible.",
+"note": "„Dadurch“ reprend l'action mentionnée dans la phrase précédente et établit une relation de conséquence."
+},
+{
+"de": "Die neue Mitarbeiterin beginnt am Montag. Sie übernimmt zunächst die Betreuung der Kunden.",
+"fr": "La nouvelle employée commence lundi. Elle prend d'abord en charge le suivi des clients.",
+"note": "Le pronom „Sie“ reprend clairement „die neue Mitarbeiterin“ et évite une répétition inutile."
+},
+{
+"de": "Obwohl die Kosten gestiegen sind, möchte das Unternehmen das Projekt fortsetzen.",
+"fr": "Bien que les coûts aient augmenté, l'entreprise souhaite poursuivre le projet.",
+"note": "„Obwohl“ établit une relation de concession entre les deux informations."
+},
+{
+"de": "Viele Beschäftigte arbeiten inzwischen im Homeoffice, andere im Büro.",
+"fr": "De nombreux employés travaillent désormais à domicile, d'autres au bureau.",
+"note": "Le verbe „arbeiten“ est omis dans la seconde partie parce qu'il est facilement récupérable."
+},
+{
+"de": "Das Unternehmen bietet flexible Arbeitszeiten an. Diese Regelung gilt zunächst nur für die Verwaltung.",
+"fr": "L'entreprise propose des horaires de travail flexibles. Cette mesure ne s'applique d'abord qu'à l'administration.",
+"note": "„Diese Regelung“ reprend l'information précédente sous une forme nominale plus précise."
+},
+{
+"de": "Viele junge Menschen möchten flexibler arbeiten. Deshalb gewinnen Teilzeitmodelle zunehmend an Bedeutung.",
+"fr": "De nombreux jeunes souhaitent travailler de manière plus flexible. C'est pourquoi les modèles à temps partiel gagnent progressivement en importance.",
+"note": "„Deshalb“ relie le souhait exprimé dans la première phrase à sa conséquence."
+}
+],
+"pitfalls": [
+"Utiliser un pronom dont le référent n'est pas clairement identifiable : le lecteur ne doit pas devoir deviner à quel nom „er“, „sie“, „dies“ ou „dabei“ renvoie.",
+"Employer un connecteur uniquement parce qu'il semble approprié en français : il faut vérifier la relation logique réelle et la structure grammaticale exigée en allemand.",
+"Chercher à éviter toute répétition en utilisant des synonymes approximatifs : une répétition contrôlée peut être préférable à un terme lexicalement imprécis.",
+"Relier toutes les phrases avec des connecteurs : la cohérence peut aussi être créée par la reprise lexicale, les pronoms, la progression thématique et la structure des paragraphes."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Das Unternehmen hat die Arbeitszeiten geändert. ___ können die Mitarbeiter ihre Termine besser organisieren.",
+"answers": ["Dadurch"],
+"explanation": "„Dadurch“ reprend le changement mentionné dans la première phrase et introduit sa conséquence."
+},
+{
+"type": "gap",
+"prompt": "___ die Kosten gestiegen sind, wird das Projekt fortgesetzt.",
+"answers": ["Obwohl"],
+"explanation": "„Obwohl“ introduit une concession : les coûts ont augmenté, mais le projet continue."
+},
+{
+"type": "gap",
+"prompt": "Die neue Regelung gilt zunächst für die Verwaltung. ___ soll sie später auf alle Abteilungen ausgeweitet werden.",
+"answers": ["Danach"],
+"explanation": "„Danach“ établit ici une relation chronologique entre les deux étapes."
+},
+{
+"type": "gap",
+"prompt": "Viele Beschäftigte wünschen sich mehr Flexibilität. ___ gewinnen hybride Arbeitsmodelle an Bedeutung.",
+"answers": ["Deshalb"],
+"explanation": "„Deshalb“ introduit la conséquence logique du souhait exprimé dans la première phrase."
+},
+{
+"type": "gap",
+"prompt": "Das Unternehmen bietet neue Weiterbildungskurse an. ___ richten sich vor allem an junge Mitarbeiter.",
+"answers": ["Diese"],
+"explanation": "„Diese“ reprend le groupe nominal précédent et assure la continuité du thème."
+},
+{
+"type": "choice",
+"prompt": "Welcher Satz stellt eine klare Konsequenz her?",
+"options": [
+"Obwohl die Nachfrage gestiegen ist, wurde die Produktion reduziert.",
+"Die Nachfrage ist stark gestiegen. Deshalb wird die Produktion erweitert.",
+"Die Nachfrage ist stark gestiegen, während die Preise unverändert geblieben sind.",
+"Die Nachfrage ist stark gestiegen, denn das Produkt ist beliebt."
+],
+"answer": 1,
+"explanation": "„Deshalb“ introduit explicitement la conséquence de l'augmentation de la demande."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung vermeidet eine unklare Referenz?",
+"options": [
+"Anna sprach mit Maria über ihre neue Aufgabe. Sie war sehr zufrieden.",
+"Anna sprach mit Maria über die neue Aufgabe. Anna war damit sehr zufrieden.",
+"Anna sprach mit Maria über die neue Aufgabe. Sie war damit zufrieden.",
+"Anna sprach mit Maria über ihre neue Aufgabe. Das war zufrieden."
+],
+"answer": 1,
+"explanation": "Dans cette formulation, le référent de „Anna“ est explicite et il n'y a pas d'ambiguïté sur la personne concernée."
+},
+{
+"type": "choice",
+"prompt": "Welche Variante zeigt eine passende lexikalische Wiederaufnahme?",
+"options": [
+"Das Unternehmen hat einen neuen Mitarbeiter eingestellt. Der neue Mitarbeiter beginnt am Montag.",
+"Das Unternehmen hat einen neuen Mitarbeiter eingestellt. Das neue Wetter beginnt am Montag.",
+"Das Unternehmen hat einen neuen Mitarbeiter eingestellt. Der neue Tisch beginnt am Montag.",
+"Das Unternehmen hat einen neuen Mitarbeiter eingestellt. Die neue Straße beginnt am Montag."
+],
+"answer": 0,
+"explanation": "La répétition contrôlée du groupe nominal reste cohérente et précise. Elle peut être préférable à un remplacement lexical artificiel."
+},
+{
+"type": "choice",
+"prompt": "Welche Aussage beschreibt eine gute thematische Progression?",
+"options": [
+"Jeder Satz beginnt mit einem völlig neuen Thema.",
+"Neue Informationen werden eingeführt und können anschließend zum Ausgangspunkt der nächsten Aussage werden.",
+"Alle Sätze müssen dasselbe Nomen wiederholen.",
+"Jeder Satz muss mit einem Konnektor beginnen."
+],
+"answer": 1,
+"explanation": "Une progression thématique efficace reprend des informations connues tout en ajoutant progressivement de nouvelles informations."
+},
+{
+"type": "order",
+"sentence": "Das Unternehmen führt flexible Arbeitszeiten ein."
+},
+{
+"type": "order",
+"sentence": "Dadurch können die Mitarbeiter ihre Arbeitszeit besser planen."
+},
+{
+"type": "order",
+"sentence": "Deshalb erwarten viele Beschäftigte eine höhere Zufriedenheit."
+},
+{
+"type": "transform",
+"prompt": "Évitez la répétition du verbe en utilisant une ellipse : „Viele Mitarbeiter arbeiten im Homeoffice, andere arbeiten im Büro.“",
+"answers": [
+"Viele Mitarbeiter arbeiten im Homeoffice, andere im Büro."
+],
+"explanation": "Le deuxième „arbeiten“ peut être omis parce que son sens reste parfaitement récupérable."
+},
+{
+"type": "transform",
+"prompt": "Remplacez la répétition du groupe nominal par une reprise appropriée : „Das Unternehmen hat eine neue Regelung eingeführt. Die neue Regelung gilt ab Januar.“",
+"answers": [
+"Das Unternehmen hat eine neue Regelung eingeführt. Diese Regelung gilt ab Januar.",
+"Das Unternehmen hat eine neue Regelung eingeführt. Sie gilt ab Januar."
+],
+"explanation": "„Diese Regelung“ ou „sie“ reprend l'information déjà introduite et rend le texte plus fluide sans perdre en clarté."
+}
+]
+}
+

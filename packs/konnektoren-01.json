@@ -1,0 +1,184 @@
+{
+"format": "deutschduo-pack",
+"id": "konnektoren-01",
+"rule": "konnektoren",
+"lesson": {
+"title": "Konnektoren im B2",
+"level": "B1+",
+"summary": "Les connecteurs permettent de relier les idées et de rendre un raisonnement plus précis, logique et nuancé. Au niveau B2, il faut notamment maîtriser les relations de cause, conséquence, opposition, concession, condition et restriction ainsi que leur influence sur l'ordre des mots.",
+"sections": [
+{
+"heading": "Cause et conséquence",
+"body": "Pour exprimer une cause, on peut utiliser des connecteurs comme « da » et « zumal » ou des groupes prépositionnels comme « aufgrund ». Pour exprimer une conséquence, on utilise notamment « daher », « deshalb », « somit » ou « folglich ». Il faut distinguer la cause de la conséquence et placer correctement les connecteurs dans la phrase."
+},
+{
+"heading": "Opposition et concession",
+"body": "L'opposition peut être exprimée avec « dagegen », « hingegen » ou « während », tandis que la concession est notamment exprimée avec « obwohl », « dennoch », « trotzdem » ou « zwar ... aber ». La concession indique qu'un fait ne produit pas la conséquence normalement attendue : « Obwohl die Kosten gestiegen sind, bleibt die Nachfrage hoch. »"
+},
+{
+"heading": "Condition et restriction",
+"body": "La condition peut être introduite par « sofern », « vorausgesetzt, dass » ou « falls ». Une restriction peut être exprimée par « insofern », « soweit » ou « es sei denn ». Ces connecteurs permettent de préciser dans quelles circonstances une affirmation est valable : « Die Maßnahme kann erfolgreich sein, sofern alle Beteiligten zusammenarbeiten. »"
+},
+{
+"heading": "Position du verbe et structure de la phrase",
+"body": "Les connecteurs n'ont pas tous le même effet sur l'ordre des mots. Après une conjonction de subordination comme « obwohl », « während » ou « sofern », le verbe conjugué se place à la fin de la proposition. En revanche, des adverbes connecteurs comme « deshalb », « dennoch » ou « somit » occupent une position dans la phrase principale et le verbe conjugué reste en deuxième position."
+},
+{
+"heading": "Nuances B2 et enchaînement argumentatif",
+"body": "Au niveau B2, il ne suffit pas de choisir un connecteur grammaticalement correct : il faut choisir celui qui exprime précisément la relation logique voulue. Dans un texte argumentatif, on peut enchaîner plusieurs relations : « Die Maßnahme ist teuer. Dennoch könnte sie langfristig Kosten senken. Daher sollte ihre Einführung geprüft werden. »"
+}
+],
+"examples": [
+{
+"de": "Da die Nachfrage deutlich gestiegen ist, müssen die Produktionskapazitäten erweitert werden.",
+"fr": "Comme la demande a nettement augmenté, les capacités de production doivent être développées.",
+"note": "Le connecteur introduit une cause et entraîne le placement du verbe conjugué à la fin de la proposition."
+},
+{
+"de": "Die Nachfrage ist deutlich gestiegen. Daher müssen die Produktionskapazitäten erweitert werden.",
+"fr": "La demande a nettement augmenté. C'est pourquoi les capacités de production doivent être développées.",
+"note": "Le connecteur exprime ici une conséquence et le verbe de la proposition principale reste en deuxième position."
+},
+{
+"de": "Obwohl die Kosten gestiegen sind, bleibt die Nachfrage relativ stabil.",
+"fr": "Bien que les coûts aient augmenté, la demande reste relativement stable.",
+"note": "La concession présente un fait qui contraste avec le résultat attendu."
+},
+{
+"de": "Die Kosten sind gestiegen. Dennoch bleibt die Nachfrage relativ stabil.",
+"fr": "Les coûts ont augmenté. Pourtant, la demande reste relativement stable.",
+"note": "Le connecteur exprime une concession dans une nouvelle proposition principale."
+},
+{
+"de": "Die Reform kann erfolgreich sein, sofern alle Beteiligten bereit sind, zusammenzuarbeiten.",
+"fr": "La réforme peut réussir à condition que toutes les parties soient prêtes à collaborer.",
+"note": "Le connecteur introduit une condition nécessaire à la validité de l'affirmation."
+}
+],
+"pitfalls": [
+"Un francophone peut confondre un connecteur de cause avec un connecteur de conséquence alors que les deux relations logiques sont opposées.",
+"Après une conjonction de subordination, le verbe conjugué doit être placé à la fin, tandis qu'un adverbe connecteur comme « dennoch » conserve la structure d'une proposition principale.",
+"Des connecteurs comme « obwohl » et « trotzdem » expriment tous deux une concession, mais ils ne se construisent pas de la même manière."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "___ die Kosten erheblich gestiegen sind, wurde das Projekt nicht eingestellt.",
+"answers": [
+"Obwohl"
+],
+"explanation": "La phrase exprime une concession : l'augmentation des coûts ne produit pas la conséquence attendue."
+},
+{
+"type": "gap",
+"prompt": "Die Nachfrage ist stark gestiegen. ___ müssen die Produktionskapazitäten erweitert werden.",
+"answers": [
+"Daher"
+],
+"explanation": "Le second énoncé présente la conséquence du fait mentionné dans le premier."
+},
+{
+"type": "gap",
+"prompt": "Die Maßnahme kann erfolgreich sein, ___ alle Beteiligten eng zusammenarbeiten.",
+"answers": [
+"sofern"
+],
+"explanation": "Le connecteur introduit une condition nécessaire à la réussite de la mesure."
+},
+{
+"type": "gap",
+"prompt": "Die Regierung wollte die Reform schnell umsetzen, ___ die Opposition erhebliche Bedenken äußerte.",
+"answers": [
+"während"
+],
+"explanation": "Le connecteur met en parallèle deux positions ou situations qui s'opposent ici."
+},
+{
+"type": "gap",
+"prompt": "Die Ergebnisse waren nicht eindeutig. ___ sollte die Studie weitergeführt werden.",
+"answers": [
+"Dennoch"
+],
+"explanation": "Le connecteur exprime une concession : malgré le caractère incertain des résultats, l'étude devrait continuer."
+},
+{
+"type": "choice",
+"prompt": "___ die Preise weiter steigen, müssen viele Haushalte ihre Ausgaben reduzieren.",
+"options": [
+"Falls",
+"Dennoch",
+"Daher"
+],
+"answer": 0,
+"explanation": "La phrase introduit une condition concernant une éventuelle hausse supplémentaire des prix."
+},
+{
+"type": "choice",
+"prompt": "Die Regierung hat die Förderung erhöht. ___ können mehr Unternehmen an dem Programm teilnehmen.",
+"options": [
+"Dadurch",
+"Obwohl",
+"Während"
+],
+"answer": 0,
+"explanation": "Le connecteur indique le résultat ou l'effet produit par l'augmentation du financement."
+},
+{
+"type": "choice",
+"prompt": "___ die Reform teuer ist, könnte sie langfristig erhebliche Einsparungen ermöglichen.",
+"options": [
+"Obwohl",
+"Deshalb",
+"Somit"
+],
+"answer": 0,
+"explanation": "La phrase oppose le coût immédiat de la réforme à ses économies potentielles à long terme."
+},
+{
+"type": "choice",
+"prompt": "Welche Satzstruktur ist korrekt?",
+"options": [
+"Die Nachfrage ist gestiegen, deshalb müssen die Kapazitäten erweitert werden.",
+"Die Nachfrage ist gestiegen, deshalb die Kapazitäten müssen erweitert werden.",
+"Die Nachfrage ist gestiegen, deshalb erweitert die Kapazitäten werden müssen."
+],
+"answer": 0,
+"explanation": "Le connecteur fonctionne ici comme un adverbe dans une proposition principale ; le verbe conjugué reste donc en deuxième position."
+},
+{
+"type": "order",
+"sentence": "Obwohl die wirtschaftliche Lage schwierig ist, investieren viele Unternehmen weiterhin in Innovationen.",
+"explanation": "La proposition concessive introduite par une conjonction de subordination place le verbe conjugué à la fin."
+},
+{
+"type": "order",
+"sentence": "Die Kosten sind erheblich gestiegen. Dennoch hält die Regierung an ihrem ursprünglichen Plan fest.",
+"explanation": "Le connecteur introduit une proposition principale et exprime une concession par rapport à l'information précédente."
+},
+{
+"type": "order",
+"sentence": "Die Maßnahme wird nur dann erfolgreich sein, sofern alle Beteiligten eng zusammenarbeiten.",
+"explanation": "La condition précise dans quelles circonstances la réussite de la mesure est possible."
+},
+{
+"type": "transform",
+"prompt": "Reliez les deux phrases avec un connecteur de conséquence : Die Nachfrage nach Wohnraum ist stark gestiegen. Die Mieten steigen ebenfalls.",
+"answers": [
+"Die Nachfrage nach Wohnraum ist stark gestiegen, daher steigen die Mieten ebenfalls.",
+"Die Nachfrage nach Wohnraum ist stark gestiegen. Daher steigen die Mieten ebenfalls."
+],
+"explanation": "Le second énoncé présente une conséquence du premier ; le connecteur de conséquence peut être intégré à la même phrase ou introduire une nouvelle proposition."
+},
+{
+"type": "transform",
+"prompt": "Reliez les deux phrases avec un connecteur de concession : Die Reform ist umstritten. Sie könnte langfristig Vorteile bringen.",
+"answers": [
+"Obwohl die Reform umstritten ist, könnte sie langfristig Vorteile bringen.",
+"Die Reform ist umstritten. Dennoch könnte sie langfristig Vorteile bringen."
+],
+"explanation": "Les deux formulations expriment la même relation de concession, mais la première utilise une proposition subordonnée tandis que la seconde utilise un adverbe connecteur."
+}
+]
+}
+

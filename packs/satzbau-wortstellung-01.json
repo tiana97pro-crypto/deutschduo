@@ -1,0 +1,187 @@
+{
+"format": "deutschduo-pack",
+"id": "satzbau-wortstellung-01",
+"rule": "Satzbau und Wortstellung",
+"lesson": {
+"title": "Satzbau und Wortstellung",
+"level": "B1+",
+"summary": "La construction de la phrase et l'ordre des mots suivent des règles essentielles en allemand, particulièrement importantes dans les phrases longues et complexes de niveau B2. Sous-points travaillés : position du verbe conjugué en deuxième position dans la phrase principale ; inversion après un élément placé en première position ; position finale du verbe dans la proposition subordonnée ; structure en cadre verbal avec les verbes séparables et les verbes modaux ; ordre des compléments au datif et à l'accusatif ; ordre des différents compléments circonstanciels ; construction de phrases longues et complexes ; erreurs fréquentes des francophones liées à l'ordre des mots.",
+"sections": [
+{
+"heading": "1. Le verbe conjugué dans la phrase principale",
+"body": "Dans une phrase principale allemande, le verbe conjugué occupe normalement la deuxième position. Cela ne signifie pas que le sujet doit toujours être placé en première position. Un autre élément peut être placé au début de la phrase ; dans ce cas, le verbe conjugué vient immédiatement après et le sujet suit généralement. Comparez : « Die Konferenz beginnt heute um neun Uhr. » et « Heute beginnt die Konferenz um neun Uhr. » Dans les deux phrases, le verbe conjugué « beginnt » reste en deuxième position."
+},
+{
+"heading": "2. L'inversion après un élément placé en première position",
+"body": "Lorsqu'un élément autre que le sujet occupe la première position, le verbe conjugué reste en deuxième position. Le sujet vient donc souvent après le verbe. C'est ce qu'on appelle l'inversion : « Morgen fährt der Zug nach Berlin. » et non « Morgen der Zug fährt nach Berlin. » Cette règle s'applique également lorsqu'une proposition subordonnée entière est placée en première position : « Wenn das Wetter besser wird, fahren wir ans Meer. » Après la virgule, le verbe conjugué de la proposition principale vient immédiatement après la proposition subordonnée placée en tête."
+},
+{
+"heading": "3. La position finale du verbe dans la subordonnée et le cadre verbal",
+"body": "Dans une proposition subordonnée introduite par une conjonction de subordination, le verbe conjugué se place à la fin : « Ich weiß, dass er heute arbeitet. » Lorsque plusieurs éléments verbaux sont présents, ils se trouvent également dans la partie finale de la subordonnée : « Ich weiß, dass die Mitarbeiter morgen länger arbeiten müssen. » Dans une phrase principale, les verbes séparables forment un cadre verbal : « Der Zug kommt um 18 Uhr an. » Avec un verbe modal, l'infinitif se place généralement à la fin : « Ich muss morgen länger arbeiten. »"
+},
+{
+"heading": "4. La position des compléments et des indications",
+"body": "Lorsque plusieurs compléments apparaissent dans une même phrase, leur ordre doit être naturel et compréhensible. Avec deux groupes nominaux, le complément au datif précède généralement le complément à l'accusatif : « Ich gebe dem Kunden die Unterlagen. » Avec deux pronoms, l'accusatif précède généralement le datif : « Ich gebe sie ihm. » Les indications de temps, de cause, de manière et de lieu peuvent être déplacées selon le contexte et l'accent communicatif. Dans une phrase neutre, on rencontre souvent l'ordre temporel – causal – modal – local : « Wir sind gestern wegen des Wetters mit dem Bus in die Stadt gefahren. » Cette organisation n'est toutefois pas une règle absolue."
+},
+{
+"heading": "5. La construction de phrases complexes au niveau B2",
+"body": "Au niveau B2, plusieurs règles de construction doivent souvent être appliquées simultanément. Une phrase peut commencer par une proposition subordonnée, puis se poursuivre par une inversion dans la proposition principale : « Nachdem wir die Ergebnisse geprüft hatten, haben wir die Entscheidung getroffen. » Dans la subordonnée, le verbe conjugué « hatten » est placé à la fin. Après la virgule, le verbe conjugué « haben » vient immédiatement, avant le sujet « wir ». Une bonne maîtrise de l'ordre des mots permet ainsi de construire des phrases longues sans perdre leur structure."
+}
+],
+"examples": [
+{
+"de": "Die Abteilung beginnt morgen mit der neuen Arbeitsphase.",
+"fr": "Le service commence demain la nouvelle phase de travail.",
+"note": "Le verbe conjugué « beginnt » occupe la deuxième position."
+},
+{
+"de": "Morgen beginnt die Abteilung mit der neuen Arbeitsphase.",
+"fr": "Demain, le service commence la nouvelle phase de travail.",
+"note": "« Morgen » occupe la première position ; le verbe « beginnt » vient donc immédiatement après, avant le sujet."
+},
+{
+"de": "Nachdem wir die Unterlagen geprüft hatten, haben wir den Antrag abgeschickt.",
+"fr": "Après avoir vérifié les documents, nous avons envoyé la demande.",
+"note": "La proposition subordonnée est placée en première position. Dans la principale qui suit, « haben » vient immédiatement après la virgule, avant le sujet « wir »."
+},
+{
+"de": "Ich weiß, dass die Mitarbeiter morgen länger arbeiten müssen.",
+"fr": "Je sais que les employés doivent travailler plus longtemps demain.",
+"note": "Dans la subordonnée, les deux éléments verbaux « arbeiten müssen » sont placés à la fin."
+},
+{
+"de": "Ich gebe dem Kunden die Unterlagen morgen persönlich.",
+"fr": "Je remets personnellement les documents au client demain.",
+"note": "Lorsque le complément au datif et celui à l'accusatif sont des groupes nominaux, le datif « dem Kunden » précède généralement l'accusatif « die Unterlagen »."
+},
+{
+"de": "Ich gebe sie ihm morgen persönlich.",
+"fr": "Je les lui remets personnellement demain.",
+"note": "Lorsque les deux compléments sont des pronoms, l'accusatif « sie » précède généralement le datif « ihm »."
+}
+],
+"pitfalls": [
+"Reproduire directement l'ordre des mots français après avoir placé un élément en première position : « Morgen ich fahre » est incorrect ; il faut dire « Morgen fahre ich ».",
+"Oublier de placer le verbe conjugué à la fin d'une proposition subordonnée, ou inverser l'ordre des éléments verbaux dans une construction comme « arbeiten muss ».",
+"Ne pas distinguer l'ordre des compléments lorsqu'ils sont des groupes nominaux et lorsqu'ils sont des pronoms : « Ich gebe dem Kunden die Unterlagen », mais « Ich gebe sie ihm »."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Morgen _______ die neue Mitarbeiterin ihre erste Präsentation. (halten)",
+"answers": [
+"hält"
+],
+"explanation": "« Morgen » occupe la première position. Le verbe conjugué « hält » doit donc occuper la deuxième position."
+},
+{
+"type": "gap",
+"prompt": "Ich weiß, dass er morgen länger _______. (arbeiten müssen)",
+"answers": [
+"arbeiten muss"
+],
+"explanation": "Dans la subordonnée, les éléments verbaux sont placés à la fin. Avec le verbe modal « müssen », l'infinitif « arbeiten » précède le verbe conjugué « muss »."
+},
+{
+"type": "gap",
+"prompt": "Nachdem wir die Unterlagen geprüft hatten, _______ wir den Antrag abgeschickt. (haben)",
+"answers": [
+"haben"
+],
+"explanation": "Lorsqu'une subordonnée est placée en première position, le verbe conjugué de la principale vient immédiatement après la virgule : « haben wir ... »."
+},
+{
+"type": "gap",
+"prompt": "Ich gebe _______ Kunden die Rechnung morgen persönlich. (der)",
+"answers": [
+"dem"
+],
+"explanation": "Le groupe « der Kunde » est ici au datif, car il désigne le destinataire de l'action de « geben » : « dem Kunden »."
+},
+{
+"type": "gap",
+"prompt": "Der Zug kommt um 18 Uhr _______. (ankommen)",
+"answers": [
+"an"
+],
+"explanation": "« Ankommen » est un verbe séparable. Dans la phrase principale, la particule « an » est séparée du verbe et placée à la fin."
+},
+{
+"type": "choice",
+"prompt": "Welche Wortstellung ist korrekt?",
+"options": [
+"Morgen fährt der Bus um acht Uhr nach Berlin.",
+"Morgen der Bus fährt um acht Uhr nach Berlin.",
+"Morgen fährt um acht Uhr der Bus nach Berlin."
+],
+"answer": 0,
+"explanation": "La première proposition est correcte : « Morgen » occupe la première position et le verbe conjugué « fährt » vient immédiatement après."
+},
+{
+"type": "choice",
+"prompt": "Welche Variante ist im Nebensatz korrekt?",
+"options": [
+"..., weil er heute nicht kommen kann.",
+"..., weil er kann heute nicht kommen.",
+"..., weil er heute kann nicht kommen."
+],
+"answer": 0,
+"explanation": "Dans une subordonnée, les éléments verbaux se placent à la fin : « kommen kann »."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist bei zwei Pronomen korrekt?",
+"options": [
+"Ich gebe ihm es morgen.",
+"Ich gebe es ihm morgen.",
+"Ich gebe morgen ihm es."
+],
+"answer": 1,
+"explanation": "Avec deux pronoms, l'accusatif « es » précède généralement le datif « ihm » : « Ich gebe es ihm morgen. »"
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist korrekt?",
+"options": [
+"Nachdem wir angekommen waren, haben wir das Hotel gesucht.",
+"Nachdem wir angekommen waren, wir haben das Hotel gesucht.",
+"Nachdem wir waren angekommen, haben wir das Hotel gesucht."
+],
+"answer": 0,
+"explanation": "La subordonnée se termine par « waren ». Dans la principale qui suit, le verbe conjugué « haben » vient immédiatement après la virgule."
+},
+{
+"type": "order",
+"sentence": "Heute beginnt die Besprechung um zehn Uhr.",
+"explanation": "« Heute » occupe la première position et le verbe conjugué « beginnt » vient en deuxième position."
+},
+{
+"type": "order",
+"sentence": "Wenn das Wetter besser wird, fahren wir morgen ans Meer.",
+"explanation": "Dans la subordonnée, « wird » est placé à la fin. Dans la principale, « fahren » vient immédiatement après la virgule, avant le sujet « wir »."
+},
+{
+"type": "order",
+"sentence": "Ich muss den Bericht bis morgen fertigstellen.",
+"explanation": "Avec le verbe modal « müssen », l'infinitif « fertigstellen » est placé à la fin de la phrase principale."
+},
+{
+"type": "transform",
+"prompt": "Placez « Morgen » en première position sans changer le sens : « Die Mitarbeiter besprechen morgen den neuen Plan. »",
+"answers": [
+"Morgen besprechen die Mitarbeiter den neuen Plan."
+],
+"explanation": "Après avoir placé « Morgen » en première position, le verbe conjugué « besprechen » doit rester en deuxième position. Le sujet vient donc après le verbe."
+},
+{
+"type": "transform",
+"prompt": "Commencez par la proposition subordonnée « Nachdem wir alle Möglichkeiten geprüft hatten » : « Wir haben die Entscheidung getroffen, nachdem wir alle Möglichkeiten geprüft hatten. »",
+"answers": [
+"Nachdem wir alle Möglichkeiten geprüft hatten, haben wir die Entscheidung getroffen."
+],
+"explanation": "Lorsque la subordonnée est placée en première position, le verbe conjugué « haben » vient immédiatement après la virgule, avant le sujet « wir »."
+}
+]
+}
+

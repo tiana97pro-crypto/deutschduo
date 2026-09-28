@@ -1,0 +1,182 @@
+{
+"format": "deutschduo-pack",
+"id": "adjektivdeklination-01",
+"rule": "adjektivdeklination",
+"lesson": {
+"title": "Adjektivdeklination im B2",
+"level": "B1+",
+"summary": "La déclinaison des adjectifs permet de marquer correctement le genre, le nombre et le cas dans les groupes nominaux. Au niveau B2, il faut surtout maîtriser les trois modèles de déclinaison, les groupes sans déterminant et les structures nominales plus complexes.",
+"sections": [
+{
+"heading": "Les trois modèles de déclinaison",
+"body": "La terminaison de l'adjectif dépend du déterminant qui précède le nom. Après un déterminant défini, la plupart des informations grammaticales sont déjà indiquées par le déterminant et l'adjectif porte souvent une terminaison faible. Après un déterminant indéfini ou possessif, certaines informations doivent être indiquées par l'adjectif. Sans déterminant, l'adjectif porte généralement la terminaison forte."
+},
+{
+"heading": "Déterminant défini et adjectif",
+"body": "Après « der », « die », « das » et leurs formes fléchies, l'adjectif reçoit généralement une terminaison faible : « der neue Arbeitsplatz », « mit dem neuen Arbeitsplatz », « die sozialen Veränderungen ». Il faut toutefois vérifier le cas et le nombre avant de choisir la terminaison."
+},
+{
+"heading": "Déterminant indéfini et possessif",
+"body": "Après « ein », « eine », « kein » ou un possessif, l'adjectif porte parfois une terminaison forte lorsque le déterminant ne marque pas suffisamment le genre ou le cas : « ein wichtiger Faktor », « eine wichtige Entscheidung », « mit einem wichtigen Faktor ». Les possessifs suivent le même principe que le déterminant indéfini."
+},
+{
+"heading": "Groupes sans déterminant",
+"body": "Lorsqu'aucun déterminant ne précède le groupe nominal, l'adjectif porte les marques grammaticales principales : « wichtiger gesellschaftlicher Wandel », « mit wichtigen gesellschaftlichen Akteuren ». Cette construction est fréquente dans les titres, les articles et les textes formels."
+},
+{
+"heading": "Nuances B2 : plusieurs adjectifs et groupes complexes",
+"body": "Lorsque plusieurs adjectifs précèdent le même nom, ils suivent généralement le même modèle de déclinaison : « die langfristigen wirtschaftlichen Folgen ». Dans les groupes nominaux complexes, il faut identifier le déterminant, le genre, le nombre et le cas avant de choisir les terminaisons. La maîtrise B2 consiste surtout à automatiser cette analyse même dans des phrases longues."
+}
+],
+"examples": [
+{
+"de": "Die langfristigen wirtschaftlichen Folgen sind noch nicht absehbar.",
+"fr": "Les conséquences économiques à long terme ne sont pas encore prévisibles.",
+"note": "Après un déterminant défini au pluriel, les adjectifs prennent ici la terminaison faible."
+},
+{
+"de": "Eine nachhaltige wirtschaftliche Entwicklung ist langfristig notwendig.",
+"fr": "Un développement économique durable est nécessaire à long terme.",
+"note": "Après un déterminant indéfini au féminin, l'adjectif porte la terminaison correspondant au genre et au cas."
+},
+{
+"de": "Ein wichtiger gesellschaftlicher Wandel steht bevor.",
+"fr": "Une importante transformation sociale est imminente.",
+"note": "Au masculin nominatif, le déterminant indéfini ne marque pas suffisamment le cas ; l'adjectif porte donc la terminaison forte."
+},
+{
+"de": "Mit wichtigen internationalen Partnern arbeitet die Organisation seit Jahren zusammen.",
+"fr": "L'organisation travaille depuis des années avec d'importants partenaires internationaux.",
+"note": "Après une préposition imposant le datif, les adjectifs prennent ici la terminaison correspondant au pluriel."
+},
+{
+"de": "Nachhaltige öffentliche Investitionen sind für die Zukunft entscheidend.",
+"fr": "Les investissements publics durables sont décisifs pour l'avenir.",
+"note": "Sans déterminant, les adjectifs portent les informations grammaticales nécessaires."
+}
+],
+"pitfalls": [
+"Un francophone peut choisir la terminaison de l'adjectif en fonction du nom alors qu'elle dépend aussi du déterminant et du cas.",
+"Après un déterminant indéfini ou possessif, il faut vérifier si le déterminant marque déjà clairement le genre et le cas avant de choisir la terminaison.",
+"Sans déterminant, l'adjectif doit souvent porter lui-même l'information grammaticale principale."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Die ___ wirtschaftlichen Folgen der Reform sind noch nicht absehbar. (langfristig)",
+"answers": [
+"langfristigen"
+],
+"explanation": "Le groupe nominal est au pluriel avec un déterminant défini ; l'adjectif prend donc la terminaison faible correspondante."
+},
+{
+"type": "gap",
+"prompt": "Eine ___ gesellschaftliche Debatte ist notwendig. (offen)",
+"answers": [
+"offene"
+],
+"explanation": "Le groupe nominal est féminin au nominatif après un déterminant indéfini ; l'adjectif porte la terminaison correspondante."
+},
+{
+"type": "gap",
+"prompt": "Ein ___ Faktor muss berücksichtigt werden. (entscheidend)",
+"answers": [
+"entscheidender"
+],
+"explanation": "Au masculin nominatif, le déterminant indéfini ne marque pas la terminaison du cas ; l'adjectif porte donc la marque forte."
+},
+{
+"type": "gap",
+"prompt": "Mit ___ internationalen Organisationen arbeitet die Regierung zusammen. (wichtig)",
+"answers": [
+"wichtigen"
+],
+"explanation": "La préposition impose le datif et le groupe nominal est au pluriel ; l'adjectif prend la terminaison correspondante."
+},
+{
+"type": "gap",
+"prompt": "___ öffentliche Investitionen können langfristig neue Arbeitsplätze schaffen. (gezielt)",
+"answers": [
+"Gezielte"
+],
+"explanation": "Sans déterminant au pluriel, l'adjectif porte la marque grammaticale nécessaire."
+},
+{
+"type": "choice",
+"prompt": "Die Regierung plant eine ___ Reform des Bildungssystems.",
+"options": [
+"umfassende",
+"umfassenden",
+"umfassender"
+],
+"answer": 0,
+"explanation": "Le groupe nominal est féminin à l'accusatif après un déterminant indéfini ; la terminaison correcte est celle du féminin accusatif."
+},
+{
+"type": "choice",
+"prompt": "Mit einem ___ Konzept könnte das Problem langfristig gelöst werden.",
+"options": [
+"innovativen",
+"innovatives",
+"innovativer"
+],
+"answer": 0,
+"explanation": "Le groupe nominal est neutre au datif après un déterminant indéfini ; l'adjectif prend la terminaison faible correspondante."
+},
+{
+"type": "choice",
+"prompt": "___ wirtschaftliche Maßnahmen sind dringend erforderlich.",
+"options": [
+"Nachhaltige",
+"Nachhaltigen",
+"Nachhaltiger"
+],
+"answer": 0,
+"explanation": "Sans déterminant, le groupe nominal pluriel au nominatif exige ici la terminaison forte de l'adjectif."
+},
+{
+"type": "choice",
+"prompt": "Die Auswirkungen des ___ gesellschaftlichen Wandels werden intensiv diskutiert.",
+"options": [
+"schnellen",
+"schneller",
+"schnellem"
+],
+"answer": 0,
+"explanation": "Le groupe nominal est masculin au génitif après un déterminant défini ; l'adjectif prend la terminaison faible."
+},
+{
+"type": "order",
+"sentence": "Die zunehmenden sozialen und wirtschaftlichen Probleme erfordern politische Maßnahmen.",
+"explanation": "Les deux adjectifs précèdent un nom pluriel introduit par un déterminant défini et prennent la même terminaison faible."
+},
+{
+"type": "order",
+"sentence": "Ein nachhaltiger gesellschaftlicher Wandel braucht langfristige politische Strategien.",
+"explanation": "Dans le premier groupe nominal masculin au nominatif, les adjectifs portent les marques fortes nécessaires après un déterminant indéfini."
+},
+{
+"type": "order",
+"sentence": "Mit gezielten öffentlichen Investitionen könnten neue Arbeitsplätze geschaffen werden.",
+"explanation": "Le groupe nominal pluriel est au datif après une préposition et ne possède pas de déterminant ; les adjectifs portent donc les marques fortes correspondantes."
+},
+{
+"type": "transform",
+"prompt": "Complétez correctement le groupe nominal : eine Reform, die umfassend und langfristig ist → eine ___ und ___ Reform.",
+"answers": [
+"umfassende und langfristige"
+],
+"explanation": "Les deux adjectifs précèdent un nom féminin au nominatif après un déterminant indéfini et prennent donc la terminaison correspondante."
+},
+{
+"type": "transform",
+"prompt": "Transformez le groupe nominal avec déterminant en groupe nominal sans déterminant : die nachhaltigen öffentlichen Investitionen → ___ ___ ___",
+"answers": [
+"nachhaltige öffentliche Investitionen"
+],
+"explanation": "Lorsque le déterminant disparaît, les adjectifs doivent porter les marques grammaticales nécessaires au pluriel nominatif."
+}
+]
+}
+

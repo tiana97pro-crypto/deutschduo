@@ -1,0 +1,185 @@
+{
+"format": "deutschduo-pack",
+"id": "verbalisierung-01",
+"rule": "Verbalisierung",
+"lesson": {
+"title": "Verbalisierung",
+"level": "B1+",
+"summary": "La verbalisation consiste à remplacer des expressions nominales, souvent utilisées dans un langage administratif, professionnel ou académique, par des formulations verbales plus directes et naturelles. Cette transformation permet de rendre un texte plus clair, plus dynamique et souvent plus facile à comprendre. Pour un apprenant francophone, il est important de reconnaître les correspondances entre les noms abstraits et les verbes allemands et de maîtriser les prépositions, les cas et la construction de la phrase après transformation.",
+"sections": [
+{
+"heading": "1. Transformer une expression nominale en formulation verbale",
+"body": "En allemand formel, une action peut être exprimée avec un nom abstrait : « die Durchführung der Untersuchung », « die Entscheidung über den Antrag » ou « die Verbesserung der Arbeitsbedingungen ». Dans une formulation verbale, on utilise directement le verbe correspondant : « die Untersuchung durchführen », « über den Antrag entscheiden » ou « die Arbeitsbedingungen verbessern ». La verbalisation rend généralement la phrase plus directe. Il faut cependant conserver les informations grammaticales de l’expression nominale, notamment le complément et sa préposition."
+},
+{
+"heading": "2. Faire attention aux prépositions et aux cas",
+"body": "Lorsqu’un nom est remplacé par un verbe, la construction peut changer. Il ne suffit donc pas de traduire le nom mot à mot. Par exemple, « die Teilnahme an einer Konferenz » devient « an einer Konferenz teilnehmen ». Le complément reste introduit par « an », mais le verbe « teilnehmen » exige le datif. De même, « die Entscheidung über den Antrag » devient « über den Antrag entscheiden ». Il faut apprendre la construction verbale complète et pas seulement le verbe isolé."
+},
+{
+"heading": "3. Verbaliser dans les textes professionnels et administratifs",
+"body": "Les formulations nominales sont fréquentes dans les courriels professionnels, les rapports et les textes administratifs. La verbalisation permet souvent de simplifier ces formulations. Par exemple, « Nach der Prüfung der Unterlagen erfolgt die Auszahlung » peut devenir « Nachdem wir die Unterlagen geprüft haben, zahlen wir das Geld aus ». La version verbale introduit une action clairement exprimée et permet également de préciser le sujet. Ce procédé est particulièrement utile pour améliorer la clarté d'un texte de niveau B2."
+},
+{
+"heading": "4. Choisir entre style nominal et style verbal",
+"body": "La verbalisation ne signifie pas qu’il faut supprimer toutes les expressions nominales. Le style nominal peut être approprié dans des titres, des tableaux ou certains textes très formels. Dans un texte argumentatif, une présentation ou une correspondance professionnelle, les formulations verbales sont souvent plus lisibles. Il faut donc savoir passer d’une structure à l’autre selon le contexte. Une bonne maîtrise de la verbalisation aide aussi à varier le style et à éviter une accumulation de noms abstraits."
+}
+],
+"examples": [
+{
+"de": "Die Durchführung der Untersuchung dauert mehrere Wochen.",
+"fr": "La réalisation de l'étude dure plusieurs semaines.",
+"note": "La formulation nominale « die Durchführung » peut être verbalisée avec « durchführen » : « Die Untersuchung wird durchgeführt und dauert mehrere Wochen »."
+},
+{
+"de": "Die Teilnehmer nehmen an einer internationalen Konferenz teil.",
+"fr": "Les participants prennent part à une conférence internationale.",
+"note": "« Die Teilnahme an » correspond au verbe « an etwas teilnehmen », qui se construit avec le datif."
+},
+{
+"de": "Wir entscheiden über den Antrag erst nächste Woche.",
+"fr": "Nous déciderons de la demande seulement la semaine prochaine.",
+"note": "« Die Entscheidung über den Antrag » devient « über den Antrag entscheiden »."
+},
+{
+"de": "Das Unternehmen verbessert die Arbeitsbedingungen.",
+"fr": "L'entreprise améliore les conditions de travail.",
+"note": "« Die Verbesserung der Arbeitsbedingungen » peut être exprimée directement avec le verbe « verbessern »."
+},
+{
+"de": "Nachdem die Unterlagen geprüft worden waren, wurde der Antrag bearbeitet.",
+"fr": "Après que les documents ont été vérifiés, la demande a été traitée.",
+"note": "Une construction nominale comme « nach der Prüfung der Unterlagen » peut être remplacée par une proposition avec le verbe « prüfen »."
+},
+{
+"de": "Die Mitarbeiter müssen die neuen Vorschriften beachten.",
+"fr": "Les employés doivent respecter les nouvelles règles.",
+"note": "« Die Beachtung der neuen Vorschriften » peut être verbalisée par « die Vorschriften beachten »."
+}
+],
+"pitfalls": [
+"Traduire directement un nom abstrait français ou allemand sans vérifier la construction du verbe correspondant, notamment la préposition et le cas exigés.",
+"Conserver une préposition incorrecte après la transformation, par exemple utiliser l'accusatif après « teilnehmen an » alors que « teilnehmen » exige le datif.",
+"Multiplier les nominalisations dans un texte B2 au lieu d'utiliser des verbes lorsque ceux-ci rendent l'action plus claire et plus naturelle."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Verbalisieren Sie: Die Durchführung des Projekts beginnt im September. → Im September ______ wir das Projekt.",
+"answers": [
+"führen"
+],
+"explanation": "Le nom « Durchführung » est remplacé par le verbe « durchführen ». Comme le sujet est « wir », le verbe conjugué est « führen » et le préfixe séparable « durch » se place en fin de proposition principale."
+},
+{
+"type": "gap",
+"prompt": "Verbalisieren Sie: Die Teilnahme an der Sitzung ist verpflichtend. → Alle Mitarbeiter müssen an der Sitzung ______.",
+"answers": [
+"teilnehmen"
+],
+"explanation": "« Die Teilnahme an » correspond au verbe « an etwas teilnehmen ». Après « müssen », le verbe reste à l'infinitif."
+},
+{
+"type": "gap",
+"prompt": "Verbalisieren Sie: Die Entscheidung über den Antrag erfolgt morgen. → Wir ______ morgen über den Antrag.",
+"answers": [
+"entscheiden"
+],
+"explanation": "Le groupe nominal « die Entscheidung über den Antrag » devient « über den Antrag entscheiden »."
+},
+{
+"type": "gap",
+"prompt": "Verbalisieren Sie: Die Verbesserung der Arbeitsbedingungen ist dringend notwendig. → Das Unternehmen muss die Arbeitsbedingungen dringend ______.",
+"answers": [
+"verbessern"
+],
+"explanation": "Le nom « Verbesserung » est remplacé par le verbe « verbessern ». Après « muss », on utilise l'infinitif."
+},
+{
+"type": "gap",
+"prompt": "Verbalisieren Sie: Nach der Prüfung der Unterlagen informieren wir Sie über das Ergebnis. → Nachdem wir die Unterlagen ______ haben, informieren wir Sie über das Ergebnis.",
+"answers": [
+"geprüft"
+],
+"explanation": "« Nach der Prüfung der Unterlagen » devient « Nachdem wir die Unterlagen geprüft haben ». La proposition introduite par « nachdem » utilise ici le Perfekt."
+},
+{
+"type": "choice",
+"prompt": "Welche verbale Formulierung entspricht « die Genehmigung des Antrags »?",
+"options": [
+"den Antrag genehmigen",
+"den Antrag genehmigen lassen",
+"auf den Antrag genehmigen"
+],
+"answer": 0,
+"explanation": "« Die Genehmigung des Antrags » correspond directement à « den Antrag genehmigen ». La préposition « auf » n'est pas correcte avec ce verbe dans cette construction."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist die korrekte Verbalisierung von « die Teilnahme an der Diskussion »?",
+"options": [
+"an der Diskussion teilnehmen",
+"die Diskussion teilnehmen",
+"mit der Diskussion teilnehmen"
+],
+"answer": 0,
+"explanation": "Le verbe « teilnehmen » se construit avec « an » et le datif : « an der Diskussion teilnehmen »."
+},
+{
+"type": "choice",
+"prompt": "Welche verbale Formulierung entspricht « die Vorbereitung auf die Prüfung »?",
+"options": [
+"sich auf die Prüfung vorbereiten",
+"sich für die Prüfung vorbereiten",
+"die Prüfung vorbereiten sich"
+],
+"answer": 0,
+"explanation": "Le verbe « sich vorbereiten » se construit ici avec « auf » et l'accusatif : « sich auf die Prüfung vorbereiten »."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist korrekt?",
+"options": [
+"Wir müssen die Auswirkungen der Maßnahme analysieren.",
+"Wir müssen an die Auswirkungen der Maßnahme analysieren.",
+"Wir müssen die Auswirkungen der Maßnahme auf analysieren."
+],
+"answer": 0,
+"explanation": "Le nom « die Analyse der Auswirkungen » peut être verbalisé par « die Auswirkungen analysieren ». Le verbe « analysieren » prend ici directement l'accusatif."
+},
+{
+"type": "order",
+"sentence": "Die Mitarbeiter müssen die neuen Sicherheitsvorschriften beachten.",
+"explanation": "La phrase verbalise « die Beachtung der neuen Sicherheitsvorschriften ». Le verbe « beachten » prend directement l'accusatif."
+},
+{
+"type": "order",
+"sentence": "Nach der Prüfung der Unterlagen entscheidet die Behörde über den Antrag.",
+"explanation": "La phrase contient la construction verbale « die Unterlagen prüfen » et « über den Antrag entscheiden ». Les deux verbes conservent leurs compléments corrects."
+},
+{
+"type": "order",
+"sentence": "Die Studierenden nehmen aktiv an der Diskussion teil.",
+"explanation": "La structure « an etwas teilnehmen » exige le datif et le verbe séparable « teilnehmen » place « teil » à la fin de la proposition principale."
+},
+{
+"type": "transform",
+"prompt": "Verbalisez la formulation suivante : « Die Durchführung einer Umfrage ist für die Studie erforderlich. »",
+"answers": [
+"Für die Studie muss man eine Umfrage durchführen.",
+"Für die Studie müssen wir eine Umfrage durchführen."
+],
+"explanation": "Le nom « Durchführung » est remplacé par le verbe « durchführen ». La formulation verbale rend l'action explicite."
+},
+{
+"type": "transform",
+"prompt": "Verbalisez la formulation suivante : « Nach der Beendigung des Projekts werden die Ergebnisse veröffentlicht. »",
+"answers": [
+"Nachdem das Projekt beendet worden ist, werden die Ergebnisse veröffentlicht.",
+"Nachdem das Projekt beendet wurde, werden die Ergebnisse veröffentlicht."
+],
+"explanation": "« Nach der Beendigung des Projekts » devient une proposition avec le verbe « beenden ». Le passif est conservé, car le projet subit l'action."
+}
+]
+}
+

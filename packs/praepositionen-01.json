@@ -1,0 +1,182 @@
+{
+"format": "deutschduo-pack",
+"id": "praepositionen-01",
+"rule": "praepositionen",
+"lesson": {
+"title": "Präpositionen im B2",
+"level": "B1+",
+"summary": "Au niveau B2, il faut maîtriser les prépositions qui déterminent le cas ainsi que les prépositions et expressions prépositionnelles fréquentes dans la langue formelle. Une attention particulière est nécessaire pour les prépositions avec le génitif, les prépositions régissant le datif ou l'accusatif et les expressions figées.",
+"sections": [
+{
+"heading": "Prépositions et cas",
+"body": "Chaque préposition impose généralement un cas précis. Certaines exigent le datif, comme « mit », « nach », « gegenüber » et « aufgrund » dans certains emplois, tandis que d'autres exigent l'accusatif, comme « durch », « gegen », « ohne » et « trotz » dans certains usages. Il faut apprendre la préposition avec le cas qu'elle régit plutôt que de traduire directement depuis le français."
+},
+{
+"heading": "Prépositions spatiales à double cas",
+"body": "Les prépositions comme « an », « auf », « in », « über », « unter », « vor » et « zwischen » peuvent être suivies du datif ou de l'accusatif. Le datif indique généralement une position sans déplacement vers un lieu, tandis que l'accusatif indique une direction ou un changement de lieu : « Die Menschen sind auf dem Platz » mais « Die Menschen gehen auf den Platz »."
+},
+{
+"heading": "Prépositions avec le génitif",
+"body": "Dans le registre formel, plusieurs prépositions sont couramment construites avec le génitif, notamment « aufgrund », « trotz », « während », « innerhalb », « außerhalb », « angesichts » et « hinsichtlich ». Elles sont particulièrement fréquentes dans les textes journalistiques, administratifs et argumentatifs : « Aufgrund der steigenden Kosten wurde das Projekt verschoben. »"
+},
+{
+"heading": "Expressions prépositionnelles et registre formel",
+"body": "Certaines expressions prépositionnelles sont très fréquentes dans les textes B2 : « im Hinblick auf », « im Gegensatz zu », « im Vergleich zu », « im Rahmen von », « mit Blick auf » et « unter Berücksichtigung von ». Elles permettent de préciser la relation entre plusieurs informations et donnent souvent un registre plus formel."
+},
+{
+"heading": "Nuances B2 et prépositions proches",
+"body": "Des prépositions proches ne sont pas toujours interchangeables. « Aufgrund » indique une cause, « trotz » une concession, « während » une simultanéité ou une opposition selon le contexte, et « hinsichtlich » le domaine ou l'aspect considéré. Le choix doit donc dépendre du sens recherché et non uniquement de la traduction française."
+}
+],
+"examples": [
+{
+"de": "Aufgrund der steigenden Kosten wurde das Projekt verschoben.",
+"fr": "En raison de l'augmentation des coûts, le projet a été reporté.",
+"note": "La préposition introduit une cause et régit ici le génitif."
+},
+{
+"de": "Trotz der schwierigen wirtschaftlichen Lage investieren viele Unternehmen weiter.",
+"fr": "Malgré la situation économique difficile, de nombreuses entreprises continuent d'investir.",
+"note": "La préposition exprime une concession et introduit ici un groupe nominal au génitif."
+},
+{
+"de": "Die Beschäftigten diskutieren auf der Versammlung über die geplanten Veränderungen.",
+"fr": "Les employés discutent des changements prévus lors de la réunion.",
+"note": "La préposition spatiale indique ici une position et entraîne donc le datif."
+},
+{
+"de": "Die Beschäftigten gehen auf die Versammlung, um über die geplanten Veränderungen zu diskutieren.",
+"fr": "Les employés se rendent à la réunion afin de discuter des changements prévus.",
+"note": "La même préposition spatiale est suivie de l'accusatif lorsqu'elle indique une direction."
+},
+{
+"de": "Im Hinblick auf die kommenden Veränderungen müssen Unternehmen ihre Strategien anpassen.",
+"fr": "Compte tenu des changements à venir, les entreprises doivent adapter leurs stratégies.",
+"note": "Cette expression prépositionnelle appartient surtout au registre formel et est suivie de l'accusatif."
+}
+],
+"pitfalls": [
+"Un francophone peut choisir le cas en fonction de la traduction française alors qu'il est déterminé par la préposition allemande.",
+"Avec les prépositions spatiales à double cas, il faut distinguer une position d'une direction ou d'un changement de lieu.",
+"Les prépositions formelles comme « aufgrund », « trotz » et « hinsichtlich » sont souvent suivies du génitif dans la langue standard écrite."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Aufgrund ___ steigenden Kosten wurde die Investition verschoben.",
+"answers": [
+"der"
+],
+"explanation": "La préposition utilisée introduit ici un groupe nominal au génitif."
+},
+{
+"type": "gap",
+"prompt": "Trotz ___ schwierigen wirtschaftlichen Lage bleiben die Unternehmen optimistisch.",
+"answers": [
+"der"
+],
+"explanation": "La préposition exprime une concession et le groupe nominal est au génitif."
+},
+{
+"type": "gap",
+"prompt": "Die Bürger versammeln sich auf ___ zentralen Platz der Stadt.",
+"answers": [
+"dem"
+],
+"explanation": "La phrase décrit une position et non un déplacement ; la préposition spatiale est donc suivie du datif."
+},
+{
+"type": "gap",
+"prompt": "Die Demonstranten gehen auf ___ zentralen Platz der Stadt.",
+"answers": [
+"den"
+],
+"explanation": "La phrase décrit un déplacement vers un lieu ; la préposition spatiale est donc suivie de l'accusatif."
+},
+{
+"type": "gap",
+"prompt": "Im Hinblick ___ die aktuellen Entwicklungen müssen neue Maßnahmen geprüft werden.",
+"answers": [
+"auf"
+],
+"explanation": "L'expression prépositionnelle complète est « im Hinblick auf » et introduit un groupe nominal à l'accusatif."
+},
+{
+"type": "choice",
+"prompt": "___ der hohen Nachfrage wurde die Produktion ausgeweitet.",
+"options": [
+"Aufgrund",
+"Trotz",
+"Gegenüber"
+],
+"answer": 0,
+"explanation": "La phrase exprime une cause : la production a été développée en raison de la forte demande."
+},
+{
+"type": "choice",
+"prompt": "___ der Kritik setzte die Regierung das Programm fort.",
+"options": [
+"Trotz",
+"Aufgrund",
+"Innerhalb"
+],
+"answer": 0,
+"explanation": "La phrase exprime une concession : le programme a continué malgré les critiques."
+},
+{
+"type": "choice",
+"prompt": "Die Mitarbeiter warten ___ dem Eingang auf ihre Kollegen.",
+"options": [
+"vor",
+"gegen",
+"durch"
+],
+"answer": 0,
+"explanation": "La préposition indique ici une position spatiale et convient au sens de la phrase."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist korrekt?",
+"options": [
+"im Gegensatz zu den bisherigen Ergebnissen",
+"im Gegensatz den bisherigen Ergebnissen",
+"im Gegensatz auf die bisherigen Ergebnisse"
+],
+"answer": 0,
+"explanation": "L'expression fixe correcte est « im Gegensatz zu » et elle est suivie ici du datif pluriel."
+},
+{
+"type": "order",
+"sentence": "Aufgrund der aktuellen wirtschaftlichen Lage müssen viele Unternehmen ihre Investitionspläne überprüfen.",
+"explanation": "La préposition introduit une cause et le groupe nominal qui suit est au génitif."
+},
+{
+"type": "order",
+"sentence": "Trotz der erheblichen Kosten soll das Projekt im kommenden Jahr umgesetzt werden.",
+"explanation": "La préposition exprime une concession et introduit un groupe nominal au génitif."
+},
+{
+"type": "order",
+"sentence": "Im Vergleich zu den vergangenen Jahren hat sich die Situation deutlich verbessert.",
+"explanation": "L'expression prépositionnelle établit une comparaison avec une période antérieure."
+},
+{
+"type": "transform",
+"prompt": "Remplacez la proposition causale par une expression prépositionnelle : Weil die Energiepreise gestiegen sind, müssen viele Haushalte sparen.",
+"answers": [
+"Aufgrund des Anstiegs der Energiepreise müssen viele Haushalte sparen."
+],
+"explanation": "La proposition causale est transformée en un groupe nominal introduit par une préposition exprimant la cause."
+},
+{
+"type": "transform",
+"prompt": "Remplacez la proposition concessive par une expression prépositionnelle : Obwohl die Kosten sehr hoch sind, wird das Projekt fortgesetzt.",
+"answers": [
+"Trotz der sehr hohen Kosten wird das Projekt fortgesetzt."
+],
+"explanation": "La proposition concessive est condensée en un groupe nominal introduit par une préposition exprimant la concession."
+}
+]
+}
+

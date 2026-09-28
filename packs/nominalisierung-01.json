@@ -1,0 +1,182 @@
+{
+"format": "deutschduo-pack",
+"id": "nominalisierung-01",
+"rule": "nominalisierung",
+"lesson": {
+"title": "Nominalisierung im B2",
+"level": "B1+",
+"summary": "La nominalisation transforme des verbes ou des adjectifs en noms et permet de produire un style plus formel et plus dense. Au niveau B2, il faut savoir former ces noms, choisir les déterminants et prépositions adaptés et reconnaître leur emploi dans les textes professionnels et argumentatifs.",
+"sections": [
+{
+"heading": "Transformer un verbe en nom",
+"body": "Un verbe peut être transformé en nom pour désigner une action, un processus ou un événement. Le nom obtenu prend une majuscule et son genre doit être appris avec lui : « entscheiden » devient « die Entscheidung », « entwickeln » devient « die Entwicklung ». Cette transformation est très fréquente dans les textes formels."
+},
+{
+"heading": "Transformer un adjectif en nom",
+"body": "Un adjectif peut être substantivé lorsqu'il désigne une personne ou une notion abstraite. Il prend alors une majuscule et reçoit une terminaison selon le genre, le nombre et le cas : « die Arbeitslosen », « etwas Neues », « mit den Betroffenen ». Il faut donc observer attentivement le déterminant et la fonction du groupe nominal."
+},
+{
+"heading": "Nominaliser une proposition",
+"body": "Une proposition introduite par une structure verbale peut souvent être condensée sous forme nominale. Par exemple, « Nachdem die Preise gestiegen waren, ... » peut devenir « Nach dem Anstieg der Preise ... ». Cette transformation permet de rendre le style plus compact et plus formel."
+},
+{
+"heading": "Prépositions et groupes nominaux",
+"body": "La nominalisation entraîne souvent un changement de construction avec une préposition : « weil die Nachfrage gestiegen ist » peut devenir « aufgrund des Anstiegs der Nachfrage ». Il faut donc maîtriser les prépositions fréquentes du langage formel ainsi que le cas qu'elles exigent."
+},
+{
+"heading": "Nuances B2 : style nominal et style verbal",
+"body": "Le style nominal est particulièrement fréquent dans les rapports, les articles et les textes administratifs, car il permet de regrouper beaucoup d'informations. Il ne faut toutefois pas l'utiliser partout : une phrase trop nominale peut devenir difficile à comprendre. Au niveau B2, l'objectif est surtout de savoir reconnaître, produire et transformer ces structures selon le contexte."
+}
+],
+"examples": [
+{
+"de": "Die Regierung beschloss neue Maßnahmen.",
+"fr": "Le gouvernement a décidé de nouvelles mesures.",
+"note": "La forme verbale décrit directement l'action ; sa nominalisation correspond à « die Entscheidung »."
+},
+{
+"de": "Nach dem Anstieg der Energiepreise wurden weitere Maßnahmen beschlossen.",
+"fr": "Après la hausse des prix de l'énergie, de nouvelles mesures ont été décidées.",
+"note": "Le groupe nominal condense une proposition temporelle et donne à la phrase un registre plus formel."
+},
+{
+"de": "Aufgrund der steigenden Nachfrage müssen die Produktionskapazitäten erweitert werden.",
+"fr": "En raison de la demande croissante, les capacités de production doivent être augmentées.",
+"note": "La préposition introduit ici une cause et impose le cas approprié au groupe nominal."
+},
+{
+"de": "Die Arbeitslosen erhalten zusätzliche Unterstützung.",
+"fr": "Les chômeurs reçoivent un soutien supplémentaire.",
+"note": "L'adjectif substantivé désigne ici un groupe de personnes et prend une majuscule."
+},
+{
+"de": "Die Einführung der neuen Regelung wurde mehrfach verschoben.",
+"fr": "L'introduction de la nouvelle réglementation a été reportée à plusieurs reprises.",
+"note": "La nominalisation permet de transformer une action en un groupe nominal pouvant être sujet de la phrase."
+}
+],
+"pitfalls": [
+"Un francophone peut oublier que les noms issus d'une nominalisation prennent une majuscule et qu'ils doivent être appris avec leur genre.",
+"Lorsqu'une proposition est nominalisée, la préposition et le cas du groupe nominal peuvent changer et doivent être vérifiés.",
+"Le style nominal ne doit pas être utilisé systématiquement : une phrase trop dense peut devenir moins claire qu'une formulation verbale."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Die Regierung hat neue Maßnahmen ___. → Die Regierung hat eine neue ___ beschlossen.",
+"answers": [
+"Entscheidung"
+],
+"explanation": "Le verbe de la première formulation est transformé en nom pour créer une formulation plus nominale."
+},
+{
+"type": "gap",
+"prompt": "Nachdem die Preise gestiegen waren, wurden neue Maßnahmen beschlossen. → Nach dem ___ der Preise wurden neue Maßnahmen beschlossen.",
+"answers": [
+"Anstieg"
+],
+"explanation": "La proposition temporelle est condensée en un groupe nominal qui désigne le processus correspondant."
+},
+{
+"type": "gap",
+"prompt": "Weil die Nachfrage stark gestiegen ist, müssen die Kapazitäten erweitert werden. → Aufgrund des starken ___ der Nachfrage müssen die Kapazitäten erweitert werden.",
+"answers": [
+"Anstiegs"
+],
+"explanation": "La cause exprimée par une proposition est transformée en groupe nominal après une préposition qui exige ici le génitif."
+},
+{
+"type": "gap",
+"prompt": "Die Menschen, die von der Reform betroffen sind, erhalten Unterstützung. → Die ___ erhalten Unterstützung.",
+"answers": [
+"Betroffenen"
+],
+"explanation": "L'expression désignant les personnes concernées est condensée en un adjectif substantivé au pluriel."
+},
+{
+"type": "gap",
+"prompt": "Die Regierung führte die neue Regelung ein. → Die ___ der neuen Regelung erfolgte im Januar.",
+"answers": [
+"Einführung"
+],
+"explanation": "Le verbe est transformé en nom afin de créer un groupe nominal qui devient le sujet de la phrase."
+},
+{
+"type": "choice",
+"prompt": "Welche Nominalisierung passt? Die Preise sind stark gestiegen. → Der starke ___ der Preise belastet die Haushalte.",
+"options": [
+"Anstieg",
+"Ansteigen",
+"gestiegen"
+],
+"answer": 0,
+"explanation": "Il faut ici un nom désignant le processus d'augmentation et pouvant être précédé de l'adjectif."
+},
+{
+"type": "choice",
+"prompt": "Welche Form ist korrekt? Die Menschen, die von der Entscheidung betroffen sind, protestieren.",
+"options": [
+"Die Betroffenen protestieren.",
+"Die Betroffene protestieren.",
+"Die Betroffen protestieren."
+],
+"answer": 0,
+"explanation": "L'adjectif substantivé désigne ici plusieurs personnes et prend la forme appropriée du pluriel."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist korrekt?",
+"options": [
+"Aufgrund des Anstiegs der Kosten wurde das Projekt verschoben.",
+"Aufgrund dem Anstieg der Kosten wurde das Projekt verschoben.",
+"Aufgrund den Anstieg der Kosten wurde das Projekt verschoben."
+],
+"answer": 0,
+"explanation": "La préposition choisie introduit ici un groupe nominal au génitif."
+},
+{
+"type": "choice",
+"prompt": "Welche Nominalisierung passt? Die Regierung hat beschlossen, die Infrastruktur auszubauen.",
+"options": [
+"die Entscheidung zum Ausbau der Infrastruktur",
+"die Entscheidung zum ausbauen der Infrastruktur",
+"die Entscheidung zu der ausgebaut Infrastruktur"
+],
+"answer": 0,
+"explanation": "L'action exprimée par le verbe est transformée en nom et intégrée dans un groupe nominal correctement construit."
+},
+{
+"type": "order",
+"sentence": "Aufgrund des starken Anstiegs der Nachfrage müssen die Produktionskapazitäten erweitert werden.",
+"explanation": "La cause est exprimée par un groupe nominal formel qui permet de condenser une proposition causale."
+},
+{
+"type": "order",
+"sentence": "Nach der Einführung der neuen Regelung änderten sich die Arbeitsbedingungen erheblich.",
+"explanation": "La relation temporelle est exprimée par une préposition suivie d'un groupe nominal."
+},
+{
+"type": "order",
+"sentence": "Die von der Reform Betroffenen fordern eine erneute Prüfung der Entscheidung.",
+"explanation": "L'adjectif substantivé désigne les personnes concernées et permet de condenser une proposition relative."
+},
+{
+"type": "transform",
+"prompt": "Transformez en style nominal : Nachdem die Energiepreise deutlich gestiegen waren, erhöhte die Regierung die Unterstützung für Haushalte.",
+"answers": [
+"Nach dem deutlichen Anstieg der Energiepreise erhöhte die Regierung die Unterstützung für Haushalte."
+],
+"explanation": "La proposition temporelle est transformée en groupe nominal introduit par une préposition et exprimant le même rapport temporel."
+},
+{
+"type": "transform",
+"prompt": "Transformez en style nominal : Weil die Nachfrage nach Fachkräften zunimmt, investieren viele Unternehmen stärker in Ausbildung.",
+"answers": [
+"Aufgrund der zunehmenden Nachfrage nach Fachkräften investieren viele Unternehmen stärker in Ausbildung."
+],
+"explanation": "La proposition causale est remplacée par un groupe nominal introduit par une préposition et contenant un adjectif dérivé du verbe."
+}
+]
+}
+

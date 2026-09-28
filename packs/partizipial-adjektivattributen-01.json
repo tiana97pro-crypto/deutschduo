@@ -1,0 +1,187 @@
+{
+"format": "deutschduo-pack",
+"id": "partizipial-adjektivattributen-01",
+"rule": "Partizipial- und Adjektivattribute",
+"lesson": {
+"title": "Partizipial- und Adjektivattribute",
+"level": "B1+",
+"summary": "Cette leçon travaille l’emploi des participes comme attributs devant un nom, leur déclinaison et leur combinaison avec d’autres éléments. L’objectif est de comprendre et de produire des groupes nominaux complexes typiques du niveau B2.",
+"sections": [
+{
+"heading": "1. Participe présent comme attribut",
+"body": "Le participe présent décrit généralement une action ou un processus en cours au moment où l’on considère le nom. Il se forme à partir de l’infinitif et de la terminaison « -end », puis reçoit les mêmes terminaisons qu’un adjectif lorsqu’il est placé devant un nom. Exemple : « die steigenden Preise »."
+},
+{
+"heading": "2. Participe passé comme attribut",
+"body": "Le participe passé placé devant un nom décrit souvent le résultat d’une action ou une action déjà accomplie. Il fonctionne alors comme un adjectif et doit être correctement décliné. Exemple : « die beschlossenen Maßnahmen »."
+},
+{
+"heading": "3. Déclinaison des attributs participiaux",
+"body": "Lorsqu’un participe est placé devant un nom, il suit les mêmes règles de déclinaison qu’un adjectif. La terminaison dépend donc du genre, du nombre, du cas et du déterminant qui précède le groupe nominal. Exemple : « mit den neu entwickelten Technologien »."
+},
+{
+"heading": "4. Attribut participial étendu",
+"body": "Un participe peut être accompagné de compléments qui précisent l’action ou le processus. L’ensemble forme alors un groupe nominal plus complexe, très fréquent dans les textes écrits de niveau B2. Exemple : « die von mehreren Experten vorgeschlagene Lösung »."
+},
+{
+"heading": "5. Attribut participial et proposition relative",
+"body": "Un groupe participial peut souvent être reformulé à l’aide d’une proposition relative. Le participe présent correspond généralement à une action en cours ou simultanée, tandis que le participe passé exprime souvent une action achevée ou son résultat. Cette transformation permet de passer d’un style plus compact à une formulation plus explicite."
+}
+],
+"examples": [
+{
+"de": "Die steigenden Lebenshaltungskosten belasten viele Familien.",
+"fr": "La hausse du coût de la vie pèse sur de nombreuses familles.",
+"note": "Le participe présent décrit ici une évolution en cours."
+},
+{
+"de": "Die beschlossenen Maßnahmen treten im Januar in Kraft.",
+"fr": "Les mesures adoptées entreront en vigueur en janvier.",
+"note": "Le participe passé indique que les mesures ont déjà été adoptées."
+},
+{
+"de": "Mit den neu entwickelten Technologien können Unternehmen effizienter arbeiten.",
+"fr": "Grâce aux nouvelles technologies développées, les entreprises peuvent travailler plus efficacement.",
+"note": "Le participe passé est décliné après une préposition et un déterminant au datif pluriel."
+},
+{
+"de": "Die von mehreren Fachleuten kritisierte Entscheidung wurde erneut überprüft.",
+"fr": "La décision critiquée par plusieurs spécialistes a été réexaminée.",
+"note": "Le groupe participial développé condense une information qui pourrait être exprimée par une proposition relative."
+},
+{
+"de": "Die derzeit in vielen Städten entstehenden Wohnungen sollen bezahlbar bleiben.",
+"fr": "Les logements actuellement construits dans de nombreuses villes doivent rester abordables.",
+"note": "Le participe présent décrit ici un processus actuellement en cours."
+},
+{
+"de": "Die im vergangenen Jahr eingeführte Regelung gilt weiterhin.",
+"fr": "La réglementation introduite l’année dernière reste en vigueur.",
+"note": "Le participe passé permet de condenser une information antérieure."
+}
+],
+"pitfalls": [
+"Un participe utilisé devant un nom se décline comme un adjectif : sa terminaison dépend du déterminant, du genre, du nombre et du cas.",
+"Le participe présent décrit généralement un processus ou une action en cours, tandis que le participe passé met souvent l’accent sur une action achevée ou sur son résultat.",
+"Dans un attribut participial développé, les compléments qui précisent l’action doivent rester rattachés au nom qu’ils décrivent."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Die ___ Energiepreise sorgen für Diskussionen. (steigen)",
+"answers": [
+"steigenden"
+],
+"explanation": "Le participe présent est utilisé pour décrire une évolution en cours et reçoit ici la terminaison correspondant au groupe nominal."
+},
+{
+"type": "gap",
+"prompt": "Die gestern ___ Maßnahmen wurden sofort umgesetzt. (beschließen)",
+"answers": [
+"beschlossenen"
+],
+"explanation": "Le participe passé décrit des mesures qui ont déjà été adoptées. La terminaison correspond au pluriel avec déterminant défini."
+},
+{
+"type": "gap",
+"prompt": "Wir diskutieren über die neu ___ Vorschläge. (entwickeln)",
+"answers": [
+"entwickelten"
+],
+"explanation": "Le participe passé est employé comme attribut et reçoit la terminaison correspondant à l’accusatif pluriel après une préposition qui exige ce cas."
+},
+{
+"type": "gap",
+"prompt": "Die an dem Projekt ___ Wissenschaftler präsentieren heute ihre Ergebnisse. (arbeiten)",
+"answers": [
+"arbeitenden"
+],
+"explanation": "Le participe présent décrit des personnes qui sont actuellement engagées dans le processus indiqué."
+},
+{
+"type": "gap",
+"prompt": "Die von der Kommission ___ Empfehlungen wurden veröffentlicht. (formulieren)",
+"answers": [
+"formulierten"
+],
+"explanation": "Le participe passé forme un attribut développé et s’accorde avec le groupe nominal pluriel."
+},
+{
+"type": "choice",
+"prompt": "Welche Form ist korrekt?",
+"options": [
+"die schnell wachsende Stadt",
+"die schnell wachsenden Stadt",
+"die schnell gewachsene Stadt"
+],
+"answer": 0,
+"explanation": "Le participe présent décrit une croissance en cours et reçoit la terminaison adaptée au groupe nominal féminin singulier."
+},
+{
+"type": "choice",
+"prompt": "Welche Form ist korrekt?",
+"options": [
+"die gestern verabschiedete Reform",
+"die gestern verabschieden Reform",
+"die gestern verabschiedenden Reform"
+],
+"answer": 0,
+"explanation": "Le participe passé décrit ici une réforme qui a déjà été adoptée."
+},
+{
+"type": "choice",
+"prompt": "Welche Form ist korrekt?",
+"options": [
+"mit den neu entwickelten Verfahren",
+"mit den neu entwickelnden Verfahren",
+"mit die neu entwickelten Verfahren"
+],
+"answer": 0,
+"explanation": "Le participe passé exprime ici des procédures déjà développées et la forme doit être correctement déclinée après la préposition."
+},
+{
+"type": "choice",
+"prompt": "Welche Form beschreibt einen Vorgang, der gerade stattfindet?",
+"options": [
+"die neu eröffneten Geschäfte",
+"die neu eröffnenden Geschäfte",
+"die neu eröffnete Geschäfte"
+],
+"answer": 1,
+"explanation": "Le participe présent permet de présenter le processus comme étant en cours."
+},
+{
+"type": "order",
+"sentence": "Die von mehreren Experten vorgeschlagene Lösung wurde angenommen.",
+"explanation": "Le groupe participial placé avant le nom condense une information qui pourrait être exprimée par une proposition relative."
+},
+{
+"type": "order",
+"sentence": "Die derzeit in vielen Regionen entstehenden Arbeitsplätze sind besonders wichtig.",
+"explanation": "Le participe présent présente ici la création des emplois comme un processus actuellement en cours."
+},
+{
+"type": "order",
+"sentence": "Die im letzten Jahr eingeführten Maßnahmen zeigen bereits Wirkung.",
+"explanation": "Le participe passé présente les mesures comme ayant été introduites auparavant."
+},
+{
+"type": "transform",
+"prompt": "Transformez la proposition relative en groupe participial : Die Reform, die von mehreren Experten vorgeschlagen wurde, soll bald umgesetzt werden.",
+"answers": [
+"Die von mehreren Experten vorgeschlagene Reform soll bald umgesetzt werden."
+],
+"explanation": "La proposition relative est condensée en un groupe participial placé avant le nom."
+},
+{
+"type": "transform",
+"prompt": "Transformez la proposition relative en groupe participial : Die Unternehmen, die derzeit neue Mitarbeiter suchen, bieten flexible Arbeitszeiten an.",
+"answers": [
+"Die derzeit neue Mitarbeiter suchenden Unternehmen bieten flexible Arbeitszeiten an."
+],
+"explanation": "La proposition relative décrit une action en cours ; elle est donc condensée avec un participe présent."
+}
+]
+}
+

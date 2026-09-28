@@ -1,0 +1,183 @@
+{
+"format": "deutschduo-pack",
+"id": "nomen-verb-verbindungen-01",
+"rule": "Nomen-Verb-Verbindungen",
+"lesson": {
+"title": "Nomen-Verb-Verbindungen",
+"level": "B1+",
+"summary": "Les Nomen-Verb-Verbindungen sont des expressions fixes composées d'un nom et d'un verbe, très fréquentes dans l'allemand professionnel, administratif, académique et argumentatif. Elles permettent d'exprimer des actions ou des idées de manière précise et souvent plus formelle. Sous-points travaillés : reconnaître les principales combinaisons nom-verbe ; mémoriser leur sens global ; maîtriser les prépositions et les cas associés ; distinguer les expressions proches ; utiliser correctement les articles et les formes du nom ; conjuguer le verbe et placer correctement les éléments dans la phrase ; employer ces constructions dans des situations de niveau B2.",
+"sections": [
+{
+"heading": "1. Reconnaître une Nomen-Verb-Verbindung",
+"body": "Une Nomen-Verb-Verbindung est une combinaison relativement fixe, par exemple « eine Entscheidung treffen », « eine Frage stellen », « Verantwortung übernehmen » ou « Maßnahmen ergreifen ». Le sens de l'expression doit souvent être appris comme une unité, car il ne suffit pas toujours de traduire séparément le nom et le verbe. Ces expressions sont particulièrement fréquentes dans les textes professionnels et les discussions argumentées."
+},
+{
+"heading": "2. Apprendre la construction complète",
+"body": "Il faut mémoriser l'expression avec son article, son éventuelle préposition et le cas demandé. Par exemple, on dit « Einfluss auf etwas haben » avec l'accusatif après « auf », mais « an einer Diskussion teilnehmen » avec le datif. De même, « zur Verfügung stehen » et « in Betracht ziehen » possèdent des constructions qu'il faut retenir comme des blocs. Pour un francophone, apprendre uniquement le verbe ou le nom isolément entraîne facilement des erreurs de préposition."
+},
+{
+"heading": "3. Utiliser les expressions dans différents temps et avec des modaux",
+"body": "La partie verbale se conjugue normalement selon le temps et le sujet : « Die Regierung ergreift Maßnahmen », « Die Regierung hat Maßnahmen ergriffen » ou « Die Regierung wird Maßnahmen ergreifen ». Avec un verbe modal, le verbe de la combinaison reste généralement à l'infinitif : « Wir müssen Maßnahmen ergreifen ». Il faut donc maîtriser à la fois l'expression fixe et la syntaxe générale de la phrase."
+},
+{
+"heading": "4. Employer les Nomen-Verb-Verbindungen au niveau B2",
+"body": "Ces expressions sont particulièrement utiles pour argumenter, présenter un problème ou décrire des processus. On peut par exemple « eine Entscheidung treffen », « Kritik an etwas üben », « einen Beitrag leisten », « eine Rolle spielen » ou « eine Lösung in Betracht ziehen ». Elles permettent de produire un allemand plus naturel et plus précis dans une lettre formelle, une présentation, un essai ou une discussion."
+}
+],
+"examples": [
+{
+"de": "Die Regierung muss dringend Maßnahmen ergreifen.",
+"fr": "Le gouvernement doit prendre des mesures de toute urgence.",
+"note": "« Maßnahmen ergreifen » est une expression fixe signifiant prendre des mesures. Après « muss », « ergreifen » reste à l'infinitif."
+},
+{
+"de": "Diese Entscheidung hat großen Einfluss auf unsere Arbeit.",
+"fr": "Cette décision a une grande influence sur notre travail.",
+"note": "« Einfluss auf etwas haben » se construit avec « auf » et l'accusatif."
+},
+{
+"de": "Wir müssen eine Entscheidung treffen.",
+"fr": "Nous devons prendre une décision.",
+"note": "On utilise « eine Entscheidung treffen » et non une traduction littérale avec un verbe correspondant au français « décider »."
+},
+{
+"de": "Die Mitarbeiter leisten einen wichtigen Beitrag zum Projekt.",
+"fr": "Les employés apportent une contribution importante au projet.",
+"note": "« einen Beitrag leisten » est une expression fixe. « zum Projekt » est la contraction de « zu dem Projekt »."
+},
+{
+"de": "Die neuen Regeln stehen ab Januar zur Verfügung.",
+"fr": "Les nouvelles règles sont disponibles à partir de janvier.",
+"note": "« zur Verfügung stehen » est une expression fixe utilisée notamment pour indiquer qu'une chose est disponible."
+},
+{
+"de": "Wir ziehen auch eine andere Lösung in Betracht.",
+"fr": "Nous envisageons également une autre solution.",
+"note": "« etwas in Betracht ziehen » signifie envisager quelque chose. Le complément est à l'accusatif."
+}
+],
+"pitfalls": [
+"Traduire littéralement le verbe français au lieu d'utiliser la combinaison allemande fixe, par exemple chercher un équivalent direct de « prendre une décision » sans mémoriser « eine Entscheidung treffen ».",
+"Oublier la préposition ou utiliser le mauvais cas dans des expressions comme « Einfluss auf etwas haben » ou « Kritik an etwas üben ».",
+"Apprendre uniquement le nom sans l'article et sans la construction complète, ce qui provoque ensuite des erreurs de déclinaison ou de préposition."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Die Regierung muss dringend Maßnahmen ______, um die Situation zu verbessern.",
+"answers": [
+"ergreifen"
+],
+"explanation": "L'expression fixe est « Maßnahmen ergreifen ». Après « muss », le verbe reste à l'infinitif."
+},
+{
+"type": "gap",
+"prompt": "Diese Entscheidung hat großen Einfluss ______ die zukünftige Entwicklung des Unternehmens.",
+"answers": [
+"auf"
+],
+"explanation": "L'expression « Einfluss auf etwas haben » exige la préposition « auf » suivie de l'accusatif."
+},
+{
+"type": "gap",
+"prompt": "Nach langen Verhandlungen haben die beiden Seiten endlich eine Entscheidung ______.",
+"answers": [
+"getroffen"
+],
+"explanation": "L'expression « eine Entscheidung treffen » se met ici au Perfekt : « haben ... getroffen »."
+},
+{
+"type": "gap",
+"prompt": "Die Studierenden möchten einen Beitrag ______ der Diskussion leisten.",
+"answers": [
+"zur"
+],
+"explanation": "L'expression est « einen Beitrag zu etwas leisten ». « zur » est la contraction de « zu der » et convient ici avec « der Diskussion »."
+},
+{
+"type": "gap",
+"prompt": "Wir sollten diese Möglichkeit unbedingt in Betracht ______.",
+"answers": [
+"ziehen"
+],
+"explanation": "L'expression fixe est « etwas in Betracht ziehen ». Après « sollten », on utilise l'infinitif « ziehen »."
+},
+{
+"type": "choice",
+"prompt": "Welche Ergänzung ist korrekt: « Die Maßnahme spielt eine wichtige ______ bei der Lösung des Problems. »",
+"options": [
+"Rolle",
+"Entscheidung",
+"Verfügung"
+],
+"answer": 0,
+"explanation": "L'expression fixe est « eine wichtige Rolle spielen », qui signifie jouer un rôle important."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist korrekt?",
+"options": [
+"Kritik an der Entscheidung üben",
+"Kritik auf die Entscheidung üben",
+"Kritik über der Entscheidung üben"
+],
+"answer": 0,
+"explanation": "L'expression « Kritik an etwas üben » se construit avec « an » et le datif."
+},
+{
+"type": "choice",
+"prompt": "Welche Nomen-Verb-Verbindung passt am besten? « Wir sollten die neuen Fakten bei unserer Entscheidung ______. »",
+"options": [
+"in Betracht ziehen",
+"zur Verfügung stehen",
+"eine Rolle spielen"
+],
+"answer": 0,
+"explanation": "« etwas in Betracht ziehen » signifie prendre quelque chose en considération ou l'envisager."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist grammatisch korrekt?",
+"options": [
+"Die Informationen stehen den Kunden zur Verfügung.",
+"Die Informationen stehen den Kunden zu Verfügung.",
+"Die Informationen stehen für den Kunden zur Verfügungen."
+],
+"answer": 0,
+"explanation": "L'expression fixe est « jemandem zur Verfügung stehen ». Le bénéficiaire « den Kunden » est au datif."
+},
+{
+"type": "order",
+"sentence": "Das neue Gesetz spielt eine wichtige Rolle bei der Verbesserung der Arbeitsbedingungen.",
+"explanation": "La phrase utilise la Nomen-Verb-Verbindung « eine Rolle spielen ». « bei » est suivi ici du datif."
+},
+{
+"type": "order",
+"sentence": "Die Universität hat einen wichtigen Beitrag zur Forschung geleistet.",
+"explanation": "La construction « einen Beitrag leisten » est ici au Perfekt : « hat ... geleistet ». « zur Forschung » correspond à « zu der Forschung »."
+},
+{
+"type": "order",
+"sentence": "Die Verantwortlichen müssen Verantwortung für die Folgen übernehmen.",
+"explanation": "L'expression « Verantwortung für etwas übernehmen » exige « für » avec l'accusatif."
+},
+{
+"type": "transform",
+"prompt": "Reformulez avec une Nomen-Verb-Verbindung : « Wir entscheiden morgen über den Vorschlag. »",
+"answers": [
+"Wir treffen morgen eine Entscheidung über den Vorschlag."
+],
+"explanation": "Le verbe « entscheiden » est remplacé par la combinaison fixe « eine Entscheidung treffen ». La construction « über den Vorschlag » est conservée."
+},
+{
+"type": "transform",
+"prompt": "Reformulez avec une Nomen-Verb-Verbindung : « Das Problem beeinflusst die Entwicklung des Projekts stark. »",
+"answers": [
+"Das Problem hat großen Einfluss auf die Entwicklung des Projekts."
+],
+"explanation": "Le verbe « beeinflussen » est reformulé avec « Einfluss auf etwas haben ». Le complément après « auf » reste à l'accusatif."
+}
+]
+}
+

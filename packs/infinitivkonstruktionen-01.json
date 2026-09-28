@@ -1,0 +1,182 @@
+{
+"format": "deutschduo-pack",
+"id": "infinitivkonstruktionen-01",
+"rule": "infinitivkonstruktionen",
+"lesson": {
+"title": "Infinitivkonstruktionen im B2",
+"level": "B1+",
+"summary": "Les constructions à l'infinitif permettent de relier des idées de manière concise et sont très fréquentes dans la langue écrite. Au niveau B2, il faut maîtriser notamment les constructions exprimant le but, l'absence d'une action et l'alternative, ainsi que les structures plus complexes avec des verbes et des adjectifs.",
+"sections": [
+{
+"heading": "Le but avec une construction à l'infinitif",
+"body": "Pour exprimer le but, on utilise « um ... zu » lorsque le sujet de la proposition principale et celui de l'action exprimée à l'infinitif sont les mêmes. L'infinitif se place à la fin : « Die Stadt investiert in den öffentlichen Verkehr, um die Umweltbelastung zu reduzieren. »"
+},
+{
+"heading": "L'absence d'une action",
+"body": "La construction « ohne ... zu » indique qu'une action n'a pas lieu en même temps qu'une autre. Elle peut remplacer une proposition exprimant l'absence d'une action lorsque le sujet reste le même : « Er verließ die Sitzung, ohne eine Erklärung abzugeben. »"
+},
+{
+"heading": "L'alternative avec une construction à l'infinitif",
+"body": "La construction « anstatt ... zu » ou « statt ... zu » exprime une alternative : une action est réalisée à la place d'une autre. Exemple : « Die Regierung sollte handeln, anstatt das Problem weiter zu verschieben. » Lorsque le sujet est différent, ces constructions ne conviennent généralement pas et une proposition subordonnée est nécessaire."
+},
+{
+"heading": "Constructions complexes avec l'infinitif",
+"body": "Au niveau B2, l'infinitif peut être accompagné de compléments et de verbes modaux ou de structures qui rendent la phrase plus dense. Avec certains verbes, adjectifs et noms, une construction à l'infinitif permet également d'exprimer une intention, une possibilité, une nécessité ou une évaluation : « Es ist wichtig, die langfristigen Folgen zu berücksichtigen. »"
+},
+{
+"heading": "Nuances B2 et choix de la construction",
+"body": "Il faut choisir la construction selon le rapport logique entre les deux actions et selon leur sujet. « um ... zu » exprime principalement le but, « ohne ... zu » l'absence d'une action et « anstatt ... zu » une alternative. Lorsque les sujets sont différents, il faut généralement employer une proposition subordonnée avec un verbe conjugué."
+}
+],
+"examples": [
+{
+"de": "Die Stadt erweitert das Verkehrsnetz, um den Pendlerverkehr zu entlasten.",
+"fr": "La ville étend le réseau de transport afin de réduire les difficultés liées aux déplacements domicile-travail.",
+"note": "La construction exprime le but et les deux actions ont le même sujet."
+},
+{
+"de": "Viele Unternehmen investieren in Weiterbildung, um langfristig Fachkräfte zu gewinnen.",
+"fr": "De nombreuses entreprises investissent dans la formation afin d'attirer des travailleurs qualifiés à long terme.",
+"note": "La construction permet de présenter de façon concise l'objectif de l'action principale."
+},
+{
+"de": "Er verließ die Konferenz, ohne auf die Kritik zu reagieren.",
+"fr": "Il quitta la conférence sans réagir aux critiques.",
+"note": "La construction exprime l'absence d'une action et le sujet reste le même dans les deux parties."
+},
+{
+"de": "Die Regierung sollte handeln, anstatt weitere Zeit zu verlieren.",
+"fr": "Le gouvernement devrait agir au lieu de perdre davantage de temps.",
+"note": "La construction présente une action comme alternative à celle qui est effectivement envisagée."
+},
+{
+"de": "Es ist notwendig, die sozialen Folgen dieser Entscheidung zu berücksichtigen.",
+"fr": "Il est nécessaire de prendre en compte les conséquences sociales de cette décision.",
+"note": "La construction à l'infinitif complète une expression impersonnelle d'évaluation ou de nécessité."
+}
+],
+"pitfalls": [
+"Un francophone peut utiliser une construction à l'infinitif alors que les deux actions ont des sujets différents, ce qui peut rendre la phrase incorrecte ou ambiguë.",
+"Il faut distinguer clairement le but, l'absence d'une action et l'alternative afin de choisir la construction appropriée.",
+"Dans une construction à l'infinitif, l'infinitif et la particule correspondante doivent être placés correctement à la fin du groupe verbal."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Die Regierung investiert mehr Geld, um die Infrastruktur ___ verbessern.",
+"answers": [
+"zu"
+],
+"explanation": "La construction exprime ici le but ; l'infinitif est introduit par la particule correspondante."
+},
+{
+"type": "gap",
+"prompt": "Er verließ die Sitzung, ohne auf die Kritik ___.",
+"answers": [
+"zu reagieren"
+],
+"explanation": "La construction exprime l'absence d'une action qui aurait pu accompagner l'action principale."
+},
+{
+"type": "gap",
+"prompt": "Die Verantwortlichen sollten handeln, anstatt das Problem weiter ___.",
+"answers": [
+"zu verschieben"
+],
+"explanation": "La construction présente une action comme alternative à une autre action envisagée."
+},
+{
+"type": "gap",
+"prompt": "Es ist wichtig, die langfristigen Folgen der Reform ___.",
+"answers": [
+"zu berücksichtigen"
+],
+"explanation": "La construction à l'infinitif complète une expression qui évalue l'importance d'une action."
+},
+{
+"type": "gap",
+"prompt": "Viele Unternehmen modernisieren ihre Anlagen, um wettbewerbsfähig ___.",
+"answers": [
+"zu bleiben"
+],
+"explanation": "La construction exprime l'objectif de l'action principale et conserve le même sujet."
+},
+{
+"type": "choice",
+"prompt": "Die Stadt baut neue Wohnungen, ___ den Wohnungsmarkt zu entlasten.",
+"options": [
+"um",
+"ohne",
+"anstatt"
+],
+"answer": 0,
+"explanation": "La phrase exprime le but de la construction de nouveaux logements."
+},
+{
+"type": "choice",
+"prompt": "Sie nahm an der Diskussion teil, ___ ihre eigene Position zu erklären.",
+"options": [
+"ohne",
+"um",
+"anstatt"
+],
+"answer": 0,
+"explanation": "La phrase indique qu'une action attendue n'a pas été réalisée."
+},
+{
+"type": "choice",
+"prompt": "Die Regierung sollte konkrete Maßnahmen ergreifen, ___ weitere Studien abzuwarten.",
+"options": [
+"anstatt",
+"um",
+"ohne"
+],
+"answer": 0,
+"explanation": "La construction exprime une alternative entre deux actions."
+},
+{
+"type": "choice",
+"prompt": "Welcher Satz ist korrekt?",
+"options": [
+"Es ist notwendig, die Ursachen genauer zu untersuchen.",
+"Es ist notwendig, die Ursachen genauer untersuchen.",
+"Es ist notwendig, die Ursachen zu genauer untersuchen."
+],
+"answer": 0,
+"explanation": "Après une expression d'évaluation ou de nécessité, la construction à l'infinitif utilise la particule placée directement devant l'infinitif."
+},
+{
+"type": "order",
+"sentence": "Die Regierung führt neue Maßnahmen ein, um die Energieversorgung langfristig zu sichern.",
+"explanation": "La première partie présente l'action principale et la construction finale indique son objectif."
+},
+{
+"type": "order",
+"sentence": "Viele junge Menschen verlassen ihre région sans avoir trouvé un emploi stable.",
+"explanation": "La construction avec l'infinitif permet d'exprimer l'absence d'une action accompagnant l'action principale."
+},
+{
+"type": "order",
+"sentence": "Die Unternehmen sollten investieren, anstatt kurzfristig weitere Kosten zu sparen.",
+"explanation": "La construction présente l'investissement comme une alternative à une autre stratégie."
+},
+{
+"type": "transform",
+"prompt": "Reliez les deux phrases avec une construction exprimant le but : Die Stadt baut neue Radwege. Sie will den Autoverkehr reduzieren.",
+"answers": [
+"Die Stadt baut neue Radwege, um den Autoverkehr zu reduzieren."
+],
+"explanation": "Les deux actions ont le même sujet et la seconde exprime le but de la première."
+},
+{
+"type": "transform",
+"prompt": "Reliez les deux phrases avec une construction exprimant l'absence d'une action : Er nahm an der Konferenz teil. Er stellte keine Fragen.",
+"answers": [
+"Er nahm an der Konferenz teil, ohne Fragen zu stellen."
+],
+"explanation": "Les deux actions ont le même sujet et la seconde n'a pas été réalisée ; la construction correspondante permet de condenser la phrase."
+}
+]
+}
+

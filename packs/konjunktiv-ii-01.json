@@ -1,0 +1,182 @@
+{
+"format": "deutschduo-pack",
+"id": "konjunktiv-ii-01",
+"rule": "konjunktiv-ii",
+"lesson": {
+"title": "Konjunktiv II im B2",
+"level": "B1+",
+"summary": "Le subjonctif II permet d'exprimer des situations irréelles, des hypothèses, des souhaits, des regrets, des conseils et des conditions. Au niveau B2, il faut aussi maîtriser les formes au passé et les nuances entre possibilité, hypothèse et distance.",
+"sections": [
+{
+"heading": "Formation et emploi au présent",
+"body": "Le subjonctif II se forme souvent à partir de la forme du prétérit, avec une modification vocalique pour certains verbes et des terminaisons spécifiques. Pour de nombreux verbes, la construction avec « würde » est également utilisée. Cette forme sert notamment à exprimer une situation hypothétique ou irréelle : « Wenn ich mehr Zeit hätte, würde ich mich stärker engagieren. »"
+},
+{
+"heading": "Hypothèses et conditions irréelles",
+"body": "Une condition irréelle au présent ou dans le futur se construit généralement avec une proposition introduite par « wenn » et le subjonctif II. La conséquence peut également être au subjonctif II : « Wenn mehr Menschen öffentliche Verkehrsmittel nutzen würden, könnte die Luftqualität verbessert werden. »"
+},
+{
+"heading": "Souhaits, regrets et conseils",
+"body": "Le subjonctif II permet d'exprimer un souhait ou un regret : « Ich wünschte, die Situation wäre anders. » Pour donner un conseil de manière plus atténuée, on utilise notamment « sollte » ou « würde » : « Du solltest die Entscheidung noch einmal überdenken. »"
+},
+{
+"heading": "Situations irréelles dans le passé",
+"body": "Pour parler d'une situation qui ne s'est pas réalisée dans le passé, on utilise le subjonctif II passé avec « hätte » ou « wäre » suivi du participe passé. Par exemple : « Wenn die Behörden früher reagiert hätten, hätte man größere Schäden verhindern können. »"
+},
+{
+"heading": "Nuances B2 : possibilité, hypothèse et distance",
+"body": "Au niveau B2, le subjonctif II sert aussi à présenter une affirmation avec prudence ou à prendre une certaine distance. Des formes comme « könnte », « dürfte » et « müsste » permettent d'exprimer respectivement une possibilité, une probabilité ou une déduction. « Die Maßnahme könnte langfristig positive Auswirkungen haben. »"
+}
+],
+"examples": [
+{
+"de": "Wenn ich mehr Zeit hätte, würde ich mich stärker für dieses Projekt engagieren.",
+"fr": "Si j'avais plus de temps, je m'engagerais davantage dans ce projet.",
+"note": "La condition et sa conséquence décrivent une situation hypothétique qui n'est pas présentée comme réelle."
+},
+{
+"de": "Wenn die Regierung früher gehandelt hätte, wären die Folgen möglicherweise weniger schwerwiegend gewesen.",
+"fr": "Si le gouvernement avait agi plus tôt, les conséquences auraient peut-être été moins graves.",
+"note": "Le subjonctif II passé exprime une condition irréelle concernant une situation passée."
+},
+{
+"de": "Ich wünschte, die Öffentlichkeit wäre besser über die Risiken informiert.",
+"fr": "J'aimerais que le public soit mieux informé des risques.",
+"note": "La construction avec « ich wünschte » introduit un souhait concernant une situation considérée comme différente de la réalité."
+},
+{
+"de": "An deiner Stelle würde ich die Auswirkungen dieser Entscheidung genauer prüfen.",
+"fr": "À ta place, j'examinerais plus attentivement les conséquences de cette décision.",
+"note": "Le subjonctif II permet ici de formuler un conseil de manière hypothétique et atténuée."
+},
+{
+"de": "Die neue Regelung könnte langfristig zu höheren Kosten führen.",
+"fr": "La nouvelle réglementation pourrait entraîner des coûts plus élevés à long terme.",
+"note": "La forme utilisée exprime une possibilité sans présenter l'affirmation comme certaine."
+}
+],
+"pitfalls": [
+"Un francophone peut utiliser l'indicatif après une condition irréelle alors que la situation doit être présentée comme hypothétique.",
+"Pour une situation irréelle passée, il faut utiliser une forme composée avec l'auxiliaire approprié et le participe passé.",
+"Il faut distinguer une possibilité prudente exprimée par « könnte » d'une conséquence certaine présentée à l'indicatif."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Wenn mehr Menschen öffentliche Verkehrsmittel nutzen würden, ___ die Umweltbelastung geringer.",
+"answers": [
+"wäre"
+],
+"explanation": "La conséquence d'une condition irréelle au présent se construit ici avec le subjonctif II de l'auxiliaire correspondant."
+},
+{
+"type": "gap",
+"prompt": "Wenn die Behörden früher reagiert hätten, ___ man größere Schäden verhindern können.",
+"answers": [
+"hätte"
+],
+"explanation": "Il s'agit d'une condition irréelle dans le passé ; la conséquence utilise ici le subjonctif II passé avec l'auxiliaire approprié."
+},
+{
+"type": "gap",
+"prompt": "An deiner Stelle ___ ich die Entscheidung noch einmal überdenken.",
+"answers": [
+"würde"
+],
+"explanation": "La construction avec « würde » permet ici de formuler un conseil hypothétique et atténué."
+},
+{
+"type": "gap",
+"prompt": "Ich wünschte, die Verantwortlichen ___ die Folgen früher erkannt.",
+"answers": [
+"hätten"
+],
+"explanation": "Le souhait concerne une action passée qui n'a pas eu lieu ; on utilise donc le subjonctif II passé."
+},
+{
+"type": "gap",
+"prompt": "Die neue Regelung ___ zu erheblichen Veränderungen auf dem Arbeitsmarkt führen.",
+"answers": [
+"könnte"
+],
+"explanation": "La forme choisie exprime une possibilité et permet de présenter la conséquence avec prudence."
+},
+{
+"type": "choice",
+"prompt": "Wenn ich mehr Einfluss ___, würde ich eine andere Lösung vorschlagen.",
+"options": [
+"hätte",
+"habe",
+"hatte"
+],
+"answer": 0,
+"explanation": "La condition décrit une situation hypothétique au présent et exige le subjonctif II."
+},
+{
+"type": "choice",
+"prompt": "Wenn die Organisation besser vorbereitet gewesen wäre, ___ sie schneller reagieren können.",
+"options": [
+"hätte",
+"würde",
+"könnte"
+],
+"answer": 0,
+"explanation": "La phrase décrit une conséquence irréelle dans le passé ; la construction correcte utilise le subjonctif II passé."
+},
+{
+"type": "choice",
+"prompt": "An Ihrer Stelle ___ ich zunächst weitere Informationen einholen.",
+"options": [
+"würde",
+"werde",
+"wurde"
+],
+"answer": 0,
+"explanation": "La construction avec « würde » permet de donner un conseil de manière hypothétique et polie."
+},
+{
+"type": "choice",
+"prompt": "Die Maßnahme ___ langfristig positive Auswirkungen haben.",
+"options": [
+"könnte",
+"kann",
+"konnte"
+],
+"answer": 0,
+"explanation": "La forme choisie exprime une possibilité future sans présenter le résultat comme certain."
+},
+{
+"type": "order",
+"sentence": "Wenn die Stadt mehr in den öffentlichen Verkehr investieren würde, könnten die Verkehrsprobleme langfristig reduziert werden.",
+"explanation": "La proposition conditionnelle décrit une situation hypothétique et la proposition principale exprime une conséquence possible."
+},
+{
+"type": "order",
+"sentence": "Wenn die Verantwortlichen früher gehandelt hätten, wären viele Probleme vermeidbar gewesen.",
+"explanation": "La condition irréelle passée utilise le subjonctif II passé et la conséquence décrit un résultat qui n'a pas eu lieu."
+},
+{
+"type": "order",
+"sentence": "Ich wünschte, die politischen Entscheidungen würden stärker auf wissenschaftlichen Erkenntnissen beruhen.",
+"explanation": "La construction exprime un souhait concernant une situation considérée comme différente de la réalité actuelle."
+},
+{
+"type": "transform",
+"prompt": "Transformez la phrase pour exprimer une condition irréelle : Die Stadt hat nicht genügend Wohnungen gebaut, deshalb sind die Mieten stark gestiegen.",
+"answers": [
+"Wenn die Stadt genügend Wohnungen gebaut hätte, wären die Mieten nicht so stark gestiegen."
+],
+"explanation": "Les deux faits appartiennent au passé et la phrase transformée présente une autre possibilité qui ne s'est pas réalisée."
+},
+{
+"type": "transform",
+"prompt": "Formulez un conseil plus atténué avec le subjonctif II : Du solltest die langfristigen Folgen dieser Entscheidung genauer prüfen.",
+"answers": [
+"An deiner Stelle würde ich die langfristigen Folgen dieser Entscheidung genauer prüfen."
+],
+"explanation": "La formulation avec « à ta place » et le subjonctif II rend le conseil plus indirect et moins catégorique."
+}
+]
+}
+

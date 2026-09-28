@@ -1,0 +1,184 @@
+{
+"format": "deutschduo-pack",
+"id": "praepositionaladverbien-01",
+"rule": "Präpositionaladverbien",
+"lesson": {
+"title": "Präpositionaladverbien",
+"level": "B1+",
+"summary": "Les Präpositionaladverbien permettent de remplacer un complément introduit par une préposition lorsqu'il désigne une chose, une idée ou une situation. Ils sont très fréquents dans les questions, les réponses et les textes de niveau B2. 
+Sous-points travaillés : reconnaître les formes en « da(r)- » et « wo(r)- » ; distinguer les formes utilisées pour les choses et celles utilisées pour les personnes ; choisir la préposition correcte ; former correctement les variantes avec voyelle ; utiliser les Präpositionaladverbien dans les questions et les réponses ; éviter les répétitions ; les employer dans des contextes professionnels, administratifs et argumentatifs.",
+"sections": [
+{
+"heading": "1. Former les Präpositionaladverbien avec da(r)-",
+"body": "Lorsqu'une préposition se rapporte à une chose, une idée ou une situation, on peut souvent la combiner avec « da(r)- ». On obtient par exemple « damit », « dafür », « darauf », « darüber », « davon » ou « daran ». Si la préposition commence par une voyelle, on ajoute « r » : « darauf », « darüber », « daran », « darin ». Ces formes permettent d'éviter de répéter le groupe nominal : « Ich denke an das Problem » devient « Ich denke daran »."
+},
+{
+"heading": "2. Poser des questions avec wo(r)-",
+"body": "Pour demander à propos de quelle chose ou de quelle situation on parle, on utilise « wo(r)- » avec la préposition correspondante : « Woran denkst du? », « Worauf wartest du? », « Womit bist du einverstanden? » ou « Worüber sprechen Sie? ». Lorsque la préposition commence par une voyelle, on utilise « wor- » suivi directement de la préposition : « worauf », « worüber », « woran ». Ces formes sont particulièrement importantes dans les conversations et les examens oraux."
+},
+{
+"heading": "3. Ne pas utiliser ces formes pour les personnes",
+"body": "Les Präpositionaladverbien en « da(r)- » et « wo(r)- » s'emploient normalement pour des choses, des idées ou des situations, et non pour désigner une personne. Pour une personne, il faut conserver la préposition et utiliser le pronom personnel approprié : « Ich spreche mit ihm », et non « damit » lorsque « mit » désigne une personne. De même, « An wen denkst du? » concerne une personne, tandis que « Woran denkst du? » concerne une chose ou une idée."
+},
+{
+"heading": "4. Les utiliser pour structurer un discours de niveau B2",
+"body": "Les Präpositionaladverbien sont très utiles pour relier une phrase à une information déjà mentionnée : « Wir haben über das Problem gesprochen. Darüber müssen wir noch einmal diskutieren. » Ils permettent également de construire des réponses précises : « Ich bin damit einverstanden », « Wir müssen darauf achten » ou « Das hängt davon ab ». Dans un texte argumentatif ou professionnel, ils évitent les répétitions et rendent les relations entre les idées plus naturelles."
+}
+],
+"examples": [
+{
+"de": "Wir müssen über das Problem sprechen. Darüber haben wir gestern schon diskutiert.",
+"fr": "Nous devons parler du problème. Nous en avons déjà discuté hier.",
+"note": "« darüber » remplace « über das Problem » parce que le complément désigne une chose."
+},
+{
+"de": "Ich warte auf den Bus. Darauf warte ich schon seit zwanzig Minuten.",
+"fr": "J'attends le bus. Cela fait déjà vingt minutes que j'attends.",
+"note": "« darauf » remplace un complément en « auf » qui désigne une chose."
+},
+{
+"de": "Woran denkst du gerade?",
+"fr": "À quoi penses-tu en ce moment ?",
+"note": "« woran » correspond à « an was » dans une question portant sur une chose ; la forme standard est « woran »."
+},
+{
+"de": "Ich bin mit dem Vorschlag einverstanden. Ich bin damit einverstanden.",
+"fr": "Je suis d'accord avec la proposition. Je suis d'accord avec cela.",
+"note": "« damit » remplace « mit dem Vorschlag » et évite la répétition."
+},
+{
+"de": "Die Ergebnisse hängen von mehreren Faktoren ab. Davon hängt auch unsere Entscheidung ab.",
+"fr": "Les résultats dépendent de plusieurs facteurs. Notre décision en dépend également.",
+"note": "« davon » remplace « von mehreren Faktoren » ; le verbe séparable « abhängen » place « ab » en fin de proposition principale."
+},
+{
+"de": "Mit wem hast du gesprochen? – Ich habe mit meiner Kollegin gesprochen.",
+"fr": "Avec qui as-tu parlé ? – J'ai parlé avec ma collègue.",
+"note": "Pour une personne, on utilise « mit wem » et non « womit »."
+}
+],
+"pitfalls": [
+"Utiliser « damit », « davon » ou « daran » pour une personne alors qu'il faut employer la préposition suivie d'un pronom personnel, par exemple « mit ihm ».",
+"Confondre la question portant sur une chose (« Woran denkst du? ») avec celle portant sur une personne (« An wen denkst du? »).",
+"Oublier le « r » lorsque la préposition commence par une voyelle, par exemple écrire « daauf » au lieu de « darauf » ou « woüber » au lieu de « worüber »."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Wir müssen über dieses Problem sprechen. Wir müssen noch einmal ______ diskutieren.",
+"answers": [
+"darüber"
+],
+"explanation": "« Darüber » remplace « über dieses Problem » et se rapporte ici à une chose."
+},
+{
+"type": "gap",
+"prompt": "Ich warte auf die Antwort. Ich warte schon seit zwei Tagen ******.",******
+******"answers": [******
+******"darauf"******
+******],******
+******"explanation": "« Darauf » remplace « auf die Antwort ». La préposition « auf » commence par une voyelle, d'où la présence du « r »."******
+******},******
+******{******
+******"type": "gap",******
+******"prompt": "****** denkst du gerade? – Ich denke an meine bevorstehende Prüfung.",
+"answers": [
+"Woran"
+],
+"explanation": "La question porte sur une chose ou une situation introduite par « an » : « Woran denkst du? »."
+},
+{
+"type": "gap",
+"prompt": "Die Entscheidung hängt von den Ergebnissen ab. Sie hängt vollständig ______ ab.",
+"answers": [
+"davon"
+],
+"explanation": "« Davon » remplace « von den Ergebnissen ». La construction complète est « von etwas abhängen »."
+},
+{
+"type": "gap",
+"prompt": "Ich bin mit diesem Vorschlag einverstanden. Ich bin ______ einverstanden.",
+"answers": [
+"damit"
+],
+"explanation": "« Damit » remplace « mit diesem Vorschlag ». Il s'agit d'une chose et non d'une personne."
+},
+{
+"type": "choice",
+"prompt": "Welche Frage passt zu « Ich denke an meine Zukunft »?",
+"options": [
+"Woran denkst du?",
+"An wen denkst du?",
+"Womit denkst du?"
+],
+"answer": 0,
+"explanation": "« Meine Zukunft » désigne une chose ou une idée ; la question correspondante est donc « Woran denkst du? »."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist korrekt, wenn « mit » eine Person bezeichnet?",
+"options": [
+"Ich spreche mit ihm.",
+"Ich spreche damit.",
+"Ich spreche womit."
+],
+"answer": 0,
+"explanation": "Pour une personne, on utilise « mit ihm ». « Damit » et « womit » servent normalement à désigner une chose ou une situation."
+},
+{
+"type": "choice",
+"prompt": "Welche Antwort passt zu « Worauf wartest du? »?",
+"options": [
+"Ich warte darauf.",
+"Ich warte daran.",
+"Ich warte davon."
+],
+"answer": 0,
+"explanation": "Le verbe « warten » se construit avec « auf ». Le Präpositionaladverb correspondant est donc « darauf »."
+},
+{
+"type": "choice",
+"prompt": "Welche Form ist korrekt?",
+"options": [
+"Worüber sprechen Sie?",
+"Woüber sprechen Sie?",
+"Darüber sprechen Sie?"
+],
+"answer": 0,
+"explanation": "Avec « über », la forme interrogative correcte est « worüber »."
+},
+{
+"type": "order",
+"sentence": "Darüber müssen wir morgen noch einmal sprechen.",
+"explanation": "« Darüber » reprend une chose ou une situation déjà mentionnée. Il occupe ici la première position, ce qui entraîne l'inversion entre le verbe et le sujet."
+},
+{
+"type": "order",
+"sentence": "Worauf müssen wir bei diesem Projekt besonders achten?",
+"explanation": "« Worauf » permet de demander quelle chose est concernée par « auf etwas achten ». Le verbe conjugué occupe la deuxième position dans la question avec mot interrogatif."
+},
+{
+"type": "order",
+"sentence": "Davon hängt ab, ob wir den Termin verschieben müssen.",
+"explanation": "« Davon abhängen » signifie dépendre de cela. Le verbe séparable « abhängen » place « ab » en fin de proposition principale."
+},
+{
+"type": "transform",
+"prompt": "Remplacez le groupe souligné par un Präpositionaladverb : « Wir sprechen morgen über *die neue Regelung*. »",
+"answers": [
+"Wir sprechen morgen darüber."
+],
+"explanation": "« Über die neue Regelung » est remplacé par « darüber » parce que le complément désigne une chose."
+},
+{
+"type": "transform",
+"prompt": "Remplacez le groupe souligné par un Präpositionaladverb : « Die weitere Entwicklung hängt von *den Ergebnissen der Untersuchung* ab. »",
+"answers": [
+"Die weitere Entwicklung hängt davon ab."
+],
+"explanation": "« Von den Ergebnissen der Untersuchung » est remplacé par « davon ». La construction verbale « von etwas abhängen » est conservée."
+}
+]
+}
+

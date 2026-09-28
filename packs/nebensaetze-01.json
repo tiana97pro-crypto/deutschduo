@@ -1,0 +1,183 @@
+{
+"format": "deutschduo-pack",
+"id": "nebensaetze-01",
+"rule": "Nebensätze",
+"lesson": {
+"title": "Nebensätze",
+"level": "B1+",
+"summary": "Les Nebensätze sont essentiels pour construire des phrases complexes de niveau B2 et exprimer clairement la cause, la condition, le but, la conséquence, la concession, le temps ou la manière. Sous-points travaillés : reconnaître une proposition subordonnée ; maîtriser la position du verbe conjugué en fin de subordonnée ; utiliser les principales conjonctions de subordination ; distinguer les subordonnées temporelles, causales, conditionnelles, concessives et finales ; construire correctement une phrase principale suivie ou précédée d'une subordonnée ; utiliser « dass », « weil », « obwohl », « wenn », « während », « nachdem », « bevor » et « damit » ; gérer l'inversion après une subordonnée placée en première position ; employer les Nebensätze dans des situations de niveau B2.",
+"sections": [
+{
+"heading": "1. La règle fondamentale : le verbe à la fin",
+"body": "Dans une Nebensatz introduite par une conjonction de subordination, le verbe conjugué se place normalement à la fin. Par exemple : « Ich weiß, dass er heute arbeitet. » ou « Wir bleiben zu Hause, weil es regnet. » Cette règle est fondamentale. Avec un verbe modal, l'infinitif et le modal se placent également à la fin : « ..., weil ich morgen arbeiten muss. » Au Perfekt, l'auxiliaire se trouve en dernière position : « ..., weil er die Aufgabe erledigt hat. »"
+},
+{
+"heading": "2. Les principales relations logiques",
+"body": "Les Nebensätze permettent de préciser la relation logique entre deux informations. « weil » introduit une cause, « obwohl » une concession, « wenn » une condition ou une situation répétée, « damit » un but et « sodass » une conséquence. Pour le temps, on utilise notamment « wenn », « als », « bevor », « nachdem » et « während ». Il faut choisir la conjonction en fonction de la relation exacte entre les deux propositions."
+},
+{
+"heading": "3. La position d'une subordonnée dans la phrase",
+"body": "Une subordonnée peut se trouver après ou avant la proposition principale. Si elle vient après, la structure est par exemple : « Wir bleiben zu Hause, weil es regnet. » Si elle vient en première position, la proposition principale commence directement par le verbe : « Weil es regnet, bleiben wir zu Hause. » Après la virgule, il ne faut donc pas remettre le sujet avant le verbe : la subordonnée occupe déjà la première position de la phrase complète."
+},
+{
+"heading": "4. Construire des phrases complexes au niveau B2",
+"body": "À partir du niveau B2, il est important de combiner plusieurs informations sans produire une suite de phrases simples. On peut par exemple expliquer une décision, présenter une condition ou nuancer une affirmation : « Obwohl die Kosten gestiegen sind, wollen wir das Projekt fortsetzen, weil es langfristig Vorteile bringt. » La maîtrise des Nebensätze permet donc de construire des arguments plus précis et plus cohérents dans les textes, les présentations et les discussions."
+}
+],
+"examples": [
+{
+"de": "Ich weiß, dass die Besprechung morgen stattfindet.",
+"fr": "Je sais que la réunion a lieu demain.",
+"note": "Après « dass », le verbe conjugué « stattfindet » se trouve à la fin de la subordonnée."
+},
+{
+"de": "Wir verschieben den Termin, weil der zuständige Mitarbeiter krank ist.",
+"fr": "Nous reportons le rendez-vous parce que le collaborateur responsable est malade.",
+"note": "« weil » introduit une cause et place « ist » à la fin de la subordonnée."
+},
+{
+"de": "Obwohl die Aufgabe schwierig war, hat sie sie erfolgreich gelöst.",
+"fr": "Bien que la tâche ait été difficile, elle l'a résolue avec succès.",
+"note": "La subordonnée concessive est placée en première position ; la proposition principale commence donc par le verbe « hat »."
+},
+{
+"de": "Wenn ich mehr Zeit habe, besuche ich meine Großeltern.",
+"fr": "Si j'ai plus de temps, je rends visite à mes grands-parents.",
+"note": "« wenn » introduit ici une condition. Comme la subordonnée vient en premier, « besuche » précède le sujet « ich » dans la proposition principale."
+},
+{
+"de": "Nachdem wir die Unterlagen geprüft hatten, trafen wir eine Entscheidung.",
+"fr": "Après avoir vérifié les documents, nous avons pris une décision.",
+"note": "« nachdem » indique qu'une action est antérieure à une autre. Le Plusquamperfekt « geprüft hatten » marque cette antériorité."
+},
+{
+"de": "Wir arbeiten sorgfältig, damit keine Fehler entstehen.",
+"fr": "Nous travaillons soigneusement afin qu'aucune erreur ne se produise.",
+"note": "« damit » introduit un but. Le verbe conjugué « entstehen » est placé à la fin de la subordonnée."
+}
+],
+"pitfalls": [
+"Laisser le verbe conjugué en deuxième position dans une subordonnée, par exemple écrire « weil es ist teuer » au lieu de « weil es teuer ist ».",
+"Oublier l'inversion dans la proposition principale lorsque la subordonnée est placée en première position : « Weil es regnet, bleiben wir zu Hause. »",
+"Confondre des conjonctions proches comme « wenn » et « als », ou utiliser « obwohl » alors qu'une relation de cause avec « weil » est nécessaire."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Ich bleibe heute zu Hause, weil ich morgen früh arbeiten ______.",
+"answers": [
+"muss"
+],
+"explanation": "Dans une subordonnée avec « weil », le verbe modal conjugué « muss » se place à la fin."
+},
+{
+"type": "gap",
+"prompt": "Obwohl die Prüfung schwierig ______, haben alle Teilnehmer gute Ergebnisse erzielt.",
+"answers": [
+"war"
+],
+"explanation": "« Obwohl » introduit une subordonnée concessive. Le verbe « war » doit être placé à la fin."
+},
+{
+"type": "gap",
+"prompt": "Wenn ich morgen früher ______, kann ich dich zum Bahnhof bringen.",
+"answers": [
+"aufstehe"
+],
+"explanation": "« Wenn » introduit ici une condition. Le verbe conjugué « aufstehe » est placé à la fin de la subordonnée."
+},
+{
+"type": "gap",
+"prompt": "Nachdem wir die Unterlagen geprüft ______, haben wir den Antrag abgeschickt.",
+"answers": [
+"hatten"
+],
+"explanation": "La subordonnée avec « nachdem » exprime une action antérieure. Le Plusquamperfekt est formé ici avec « geprüft hatten »."
+},
+{
+"type": "gap",
+"prompt": "Wir erklären die Regeln noch einmal, damit alle Teilnehmer sie ______.",
+"answers": [
+"verstehen"
+],
+"explanation": "« Damit » introduit un but. Le verbe conjugué « verstehen » se trouve à la fin de la subordonnée."
+},
+{
+"type": "choice",
+"prompt": "Welche Form ist grammatisch korrekt?",
+"options": [
+"Ich gehe nicht zur Arbeit, weil ich krank bin.",
+"Ich gehe nicht zur Arbeit, weil ich bin krank.",
+"Ich gehe nicht zur Arbeit, weil krank ich bin."
+],
+"answer": 0,
+"explanation": "Après « weil », le verbe conjugué doit être placé à la fin : « weil ich krank bin »."
+},
+{
+"type": "choice",
+"prompt": "Welche Konjunktion passt? « ______ es stark regnete, fand die Veranstaltung draußen statt. »",
+"options": [
+"Obwohl",
+"Damit",
+"Weil"
+],
+"answer": 0,
+"explanation": "La phrase exprime une opposition entre la pluie et le maintien de l'événement. « Obwohl » introduit donc une concession."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist korrekt?",
+"options": [
+"Wenn ich Zeit habe, besuche ich dich.",
+"Wenn ich Zeit habe, ich besuche dich.",
+"Wenn habe ich Zeit, besuche ich dich."
+],
+"answer": 0,
+"explanation": "La subordonnée est en première position. Dans la proposition principale, le verbe conjugué « besuche » vient immédiatement après la virgule."
+},
+{
+"type": "choice",
+"prompt": "Welche Konjunktion passt? « Wir verschieben den Termin, ______ der zuständige Mitarbeiter nicht kommen kann. »",
+"options": [
+"weil",
+"obwohl",
+"damit"
+],
+"answer": 0,
+"explanation": "La deuxième proposition donne la cause du report. « Weil » est donc la conjonction appropriée."
+},
+{
+"type": "order",
+"sentence": "Obwohl die Kosten gestiegen sind, wollen wir das Projekt fortsetzen.",
+"explanation": "La subordonnée concessive « obwohl die Kosten gestiegen sind » est placée en première position. La proposition principale commence donc par « wollen »."
+},
+{
+"type": "order",
+"sentence": "Bevor wir eine Entscheidung treffen, müssen wir alle Informationen prüfen.",
+"explanation": "« Bevor » introduit une action antérieure à une autre. Le verbe « treffen » est à la fin de la subordonnée et « müssen » commence la proposition principale après la virgule."
+},
+{
+"type": "order",
+"sentence": "Während die anderen Kollegen arbeiten, bereitet sie die Präsentation vor.",
+"explanation": "« Während » exprime la simultanéité. Comme la subordonnée est placée en première position, le verbe « bereitet » précède le sujet dans la proposition principale."
+},
+{
+"type": "transform",
+"prompt": "Reliez les deux phrases avec « weil » : « Wir bleiben zu Hause. Das Wetter ist schlecht. »",
+"answers": [
+"Wir bleiben zu Hause, weil das Wetter schlecht ist."
+],
+"explanation": "« Weil » introduit la cause et place le verbe « ist » à la fin de la subordonnée."
+},
+{
+"type": "transform",
+"prompt": "Commencez par la subordonnée avec « obwohl » : « Die Aufgabe war schwierig. Sie hat sie erfolgreich gelöst. »",
+"answers": [
+"Obwohl die Aufgabe schwierig war, hat sie sie erfolgreich gelöst."
+],
+"explanation": "« Obwohl » exprime la concession. Comme la subordonnée est placée en première position, la proposition principale commence par « hat »."
+}
+]
+}
+

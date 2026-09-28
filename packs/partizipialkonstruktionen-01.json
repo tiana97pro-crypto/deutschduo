@@ -1,0 +1,182 @@
+{
+"format": "deutschduo-pack",
+"id": "partizipialkonstruktionen-01",
+"rule": "partizipialkonstruktionen",
+"lesson": {
+"title": "Partizipialkonstruktionen im B2",
+"level": "B1+",
+"summary": "Les constructions participiales permettent de condenser une proposition et de rendre le style écrit plus précis et plus formel. Au niveau B2, il faut maîtriser le participe présent, le participe passé employé comme adjectif et les expansions nominales plus complexes.",
+"sections": [
+{
+"heading": "Le participe présent",
+"body": "Le participe présent se forme avec le suffixe « -end » ajouté au radical de l'infinitif : « arbeiten » donne « arbeitend », « steigen » donne « steigend ». Il décrit généralement une action simultanée et peut être employé comme adjectif : « Die steigenden Preise belasten viele Haushalte. »"
+},
+{
+"heading": "Le participe passé comme adjectif",
+"body": "Le participe passé peut caractériser un nom en décrivant une action déjà accomplie ou son résultat. Il est alors décliné comme un adjectif : « die veröffentlichte Studie », « die getroffenen Entscheidungen ». Cette construction est particulièrement fréquente dans les textes journalistiques et administratifs."
+},
+{
+"heading": "Les expansions nominales complexes",
+"body": "Une construction participiale peut être accompagnée de plusieurs compléments et ainsi condenser une proposition relative. Par exemple, « die von der Regierung im vergangenen Jahr beschlossene Reform » correspond à une formulation développée dans laquelle la réforme est précisée par plusieurs informations."
+},
+{
+"heading": "Participe et simultanéité",
+"body": "Le participe présent permet de présenter deux actions comme simultanées lorsqu'elles concernent le même élément. Il peut ainsi remplacer une proposition circonstancielle plus longue : « Die Daten analysierend, suchten die Forscher nach möglichen Zusammenhängen. » Dans un texte formel, cette construction doit rester clairement rattachée au sujet de la phrase."
+},
+{
+"heading": "Nuances B2 et transformation",
+"body": "La maîtrise B2 consiste notamment à savoir passer d'une proposition relative à une construction participiale et inversement. Il faut distinguer une action en cours avec le participe présent d'une action accomplie ou d'un résultat avec le participe passé : « die wachsende Nachfrage » décrit une évolution, tandis que « die gestiegene Nachfrage » présente une augmentation déjà réalisée."
+}
+],
+"examples": [
+{
+"de": "Die steigenden Lebenshaltungskosten belasten viele Familien.",
+"fr": "La hausse du coût de la vie pèse sur de nombreuses familles.",
+"note": "Le participe présent décrit ici une évolution en cours et caractérise le nom auquel il se rapporte."
+},
+{
+"de": "Die von der Regierung beschlossene Reform tritt im Januar in Kraft.",
+"fr": "La réforme décidée par le gouvernement entre en vigueur en janvier.",
+"note": "Le participe passé permet de condenser une proposition relative et indique une action déjà réalisée."
+},
+{
+"de": "Die kürzlich veröffentlichten Ergebnisse sorgen für Diskussionen.",
+"fr": "Les résultats publiés récemment suscitent des discussions.",
+"note": "Le participe passé est employé comme adjectif et reçoit les marques de déclinaison nécessaires."
+},
+{
+"de": "Die auf den Straßen demonstrierenden Menschen fordern politische Veränderungen.",
+"fr": "Les personnes qui manifestent dans les rues demandent des changements politiques.",
+"note": "Le participe présent décrit une action simultanée et permet de condenser une proposition relative."
+},
+{
+"de": "Die bereits seit Monaten diskutierte Reform soll nun umgesetzt werden.",
+"fr": "La réforme discutée depuis plusieurs mois doit maintenant être mise en œuvre.",
+"note": "Plusieurs compléments peuvent précéder le nom dans une expansion participiale complexe."
+}
+],
+"pitfalls": [
+"Un francophone peut confondre une action en cours exprimée par le participe présent avec une action déjà accomplie exprimée par le participe passé.",
+"Une construction participiale complexe doit être clairement rattachée au nom ou au sujet qu'elle décrit pour éviter toute ambiguïté.",
+"Le participe employé comme adjectif doit recevoir les marques de déclinaison correspondant au nom qu'il accompagne."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Die ___ Preise belasten besonders Haushalte mit geringem Einkommen. (steigen)",
+"answers": [
+"steigenden"
+],
+"explanation": "Le participe présent décrit ici une évolution en cours et reçoit la terminaison correspondant au groupe nominal."
+},
+{
+"type": "gap",
+"prompt": "Die von der Kommission ___ Reform tritt im kommenden Jahr in Kraft. (beschließen)",
+"answers": [
+"beschlossene"
+],
+"explanation": "Le participe passé décrit une action déjà réalisée et fonctionne ici comme un adjectif devant un nom féminin."
+},
+{
+"type": "gap",
+"prompt": "Die kürzlich ___ Daten liefern wichtige Hinweise. (veröffentlichen)",
+"answers": [
+"veröffentlichten"
+],
+"explanation": "Le participe passé est employé comme adjectif devant un nom pluriel et reçoit la terminaison appropriée."
+},
+{
+"type": "gap",
+"prompt": "Die auf eine Lösung ___ Experten arbeiten seit Wochen an dem Problem. (warten)",
+"answers": [
+"wartenden"
+],
+"explanation": "Le participe présent décrit les personnes pendant qu'elles accomplissent simultanément l'action indiquée."
+},
+{
+"type": "gap",
+"prompt": "Die seit Monaten ___ Verhandlungen sollen bald abgeschlossen werden. (führen)",
+"answers": [
+"geführten"
+],
+"explanation": "Le participe passé permet de caractériser une action qui a été menée pendant plusieurs mois et reçoit la déclinaison nécessaire."
+},
+{
+"type": "choice",
+"prompt": "Die ___ Nachfrage nach Wohnraum führt zu steigenden Preisen.",
+"options": [
+"wachsende",
+"gewachsene",
+"wachsen"
+],
+"answer": 0,
+"explanation": "La phrase décrit une demande qui continue d'augmenter ; le participe présent convient donc ici."
+},
+{
+"type": "choice",
+"prompt": "Die gestern ___ Entscheidung wurde von vielen Bürgern kritisiert.",
+"options": [
+"getroffene",
+"treffende",
+"getroffen"
+],
+"answer": 0,
+"explanation": "La décision a déjà été prise ; le participe passé est donc utilisé comme adjectif devant le nom."
+},
+{
+"type": "choice",
+"prompt": "Die an der Studie ___ Wissenschaftler präsentierten ihre Ergebnisse.",
+"options": [
+"beteiligten",
+"beteiligenden",
+"beteiligt"
+],
+"answer": 0,
+"explanation": "Les scientifiques ont été associés à l'étude ; le participe passé caractérise donc les personnes concernées."
+},
+{
+"type": "choice",
+"prompt": "Welche Form entspricht der Aussage: Die Reform wurde von der Regierung im vergangenen Jahr beschlossen?",
+"options": [
+"die von der Regierung im vergangenen Jahr beschlossene Reform",
+"die von der Regierung im vergangenen Jahr beschließende Reform",
+"die von der Regierung im vergangenen Jahr beschließen Reform"
+],
+"answer": 0,
+"explanation": "La construction participiale condense ici une proposition relative au passif et décrit une action déjà réalisée."
+},
+{
+"type": "order",
+"sentence": "Die von unabhängigen Experten durchgeführte Untersuchung liefert wichtige Ergebnisse.",
+"explanation": "L'expansion participiale précède le nom et regroupe plusieurs informations qui pourraient être exprimées dans une proposition relative."
+},
+{
+"type": "order",
+"sentence": "Die seit Jahren steigenden Mietpreise belasten immer mehr Haushalte.",
+"explanation": "Le participe présent décrit une évolution progressive et peut être accompagné d'indications de durée."
+},
+{
+"type": "order",
+"sentence": "Die kürzlich veröffentlichten Zahlen haben eine öffentliche Debatte ausgelöst.",
+"explanation": "Le participe passé caractérise les chiffres déjà publiés et reçoit la déclinaison correspondant au groupe nominal pluriel."
+},
+{
+"type": "transform",
+"prompt": "Transformez la proposition relative en construction participiale : Die Reform, die von der Regierung im vergangenen Jahr beschlossen wurde, tritt bald in Kraft.",
+"answers": [
+"Die von der Regierung im vergangenen Jahr beschlossene Reform tritt bald in Kraft."
+],
+"explanation": "La proposition relative est condensée en une expansion utilisant le participe passé et ses compléments."
+},
+{
+"type": "transform",
+"prompt": "Transformez la proposition relative en construction participiale : Die Menschen, die gegen die geplante Reform demonstrieren, fordern eine öffentliche Diskussion.",
+"answers": [
+"Die gegen die geplante Reform demonstrierenden Menschen fordern eine öffentliche Diskussion."
+],
+"explanation": "La proposition relative décrit une action simultanée ; elle est donc condensée avec le participe présent placé avant le nom."
+}
+]
+}
+

@@ -1,0 +1,188 @@
+{
+"format": "deutschduo-pack",
+"id": "tempusgebrauch-01",
+"rule": "Tempusgebrauch",
+"lesson": {
+"title": "Tempusgebrauch",
+"level": "B1+",
+"summary": "Le choix du temps verbal en allemand dépend du moment de l'action, de son déroulement, de son rapport avec le présent et du type de texte ou de situation. Au niveau B2, il faut notamment savoir choisir entre Präsens, Perfekt, Präteritum, Plusquamperfekt et Futur I, sans transposer mécaniquement les habitudes du français. Sous-points travaillés : emploi du Präsens pour le présent et certains événements futurs ; emploi du Perfekt dans la langue courante pour les événements passés ; emploi du Präteritum, notamment dans les récits et avec certains verbes fréquents ; emploi du Plusquamperfekt pour une action antérieure à une autre action passée ; emploi du Futur I pour le futur et certaines suppositions ; distinction entre temps grammatical et contexte ; cohérence des temps dans les récits et les textes professionnels.",
+"sections": [
+{
+"heading": "1. Le Präsens : présent et futur proche",
+"body": "Le Präsens sert à exprimer une action ou une situation actuelle, mais il peut également désigner un événement futur lorsque le contexte indique clairement qu'il s'agit du futur. Cette utilisation est très fréquente en allemand, notamment avec une indication de temps : « Morgen fahre ich nach Berlin. » Il n'est donc pas toujours nécessaire d'utiliser le Futur I pour parler d'un événement à venir."
+},
+{
+"heading": "2. Le Perfekt et le Präteritum pour parler du passé",
+"body": "Dans la langue parlée, le Perfekt est généralement le temps privilégié pour raconter des événements passés : « Ich habe gestern mit meiner Kollegin gesprochen. » Le Präteritum est particulièrement fréquent dans les textes écrits et les récits. Il est également très courant à l'oral avec certains verbes, notamment « sein », « haben » et les verbes modaux : « Ich war gestern krank. », « Wir mussten lange warten. » Le choix entre les deux temps dépend donc aussi du registre et du verbe utilisé."
+},
+{
+"heading": "3. Le Plusquamperfekt : une action antérieure dans le passé",
+"body": "Le Plusquamperfekt sert à présenter une action qui avait déjà eu lieu avant une autre action passée. Il permet de clarifier la chronologie dans un récit : « Nachdem ich die E-Mail gelesen hatte, rief ich ihn an. » L'action de lire l'e-mail est antérieure à l'appel. Le Plusquamperfekt se forme avec le Präteritum de « haben » ou « sein » et le participe passé."
+},
+{
+"heading": "4. Le Futur I : futur et supposition",
+"body": "Le Futur I permet d'exprimer un événement futur, en particulier lorsqu'une indication de temps ou une intention prospective rend le futur explicite. Il peut également servir à formuler une supposition concernant le présent : « Er wird jetzt zu Hause sein. » Dans de nombreux contextes futurs, le Präsens est toutefois plus naturel lorsque le moment futur est déjà précisé : « Nächste Woche beginnt der Kurs. »"
+},
+{
+"heading": "5. La cohérence des temps dans les phrases et les récits",
+"body": "Dans un texte, les temps doivent permettre au lecteur de comprendre clairement la chronologie. Il ne faut pas choisir un temps uniquement parce qu'il correspond directement au temps utilisé en français. Dans un récit au passé, par exemple, le Präteritum peut servir de temps narratif principal, tandis que le Plusquamperfekt marque une action encore antérieure. Dans un échange courant, le Perfekt peut être utilisé pour raconter les événements passés, alors que le Präsens peut rester le temps de référence pour la situation actuelle."
+}
+],
+"examples": [
+{
+"de": "Ich arbeite heute von zu Hause.",
+"fr": "Je travaille aujourd'hui depuis chez moi.",
+"note": "Le Präsens exprime ici une situation actuelle."
+},
+{
+"de": "Morgen fahre ich nach München.",
+"fr": "Demain, je vais à Munich.",
+"note": "Le Präsens peut exprimer un événement futur lorsque le moment est clairement indiqué."
+},
+{
+"de": "Ich habe gestern mit dem Kunden gesprochen.",
+"fr": "J'ai parlé avec le client hier.",
+"note": "Le Perfekt est très courant dans la langue parlée pour raconter un événement passé."
+},
+{
+"de": "Als Kind war ich oft bei meinen Großeltern.",
+"fr": "Quand j'étais enfant, j'étais souvent chez mes grands-parents.",
+"note": "Le Präteritum de « sein » est très courant, y compris dans la langue parlée."
+},
+{
+"de": "Nachdem wir die Unterlagen geprüft hatten, trafen wir eine Entscheidung.",
+"fr": "Après avoir vérifié les documents, nous avons pris une décision.",
+"note": "Le Plusquamperfekt « geprüft hatten » indique que la vérification est antérieure à la décision."
+},
+{
+"de": "Er wird jetzt wahrscheinlich schon zu Hause sein.",
+"fr": "Il doit probablement déjà être chez lui maintenant.",
+"note": "Le Futur I exprime ici une supposition concernant la situation actuelle, et non un futur certain."
+}
+],
+"pitfalls": [
+"Utiliser systématiquement le Futur I pour parler du futur alors que le Präsens est plus naturel avec une indication temporelle claire, par exemple « Morgen fahre ich nach Berlin. »",
+"Employer le Perfekt dans tous les contextes passés sans tenir compte du registre, du type de texte ou des verbes pour lesquels le Präteritum est particulièrement fréquent, comme « sein », « haben » et les verbes modaux.",
+"Confondre le Plusquamperfekt avec le simple passé : il sert à montrer qu'une action était déjà terminée avant une autre action passée."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Morgen _______ ich mit dem Zug nach Hamburg. (fahren)",
+"answers": [
+"fahre"
+],
+"explanation": "Le Präsens peut exprimer un événement futur lorsque le moment est clairement indiqué par « Morgen »."
+},
+{
+"type": "gap",
+"prompt": "Gestern _______ ich lange mit meiner Kollegin gesprochen. (haben)",
+"answers": [
+"habe"
+],
+"explanation": "Dans la langue courante, le Perfekt est très fréquent pour raconter un événement passé : « habe ... gesprochen »."
+},
+{
+"type": "gap",
+"prompt": "Als ich ankam, _______ der Unterricht schon begonnen. (haben)",
+"answers": [
+"hatte"
+],
+"explanation": "Le Plusquamperfekt indique que le cours avait commencé avant mon arrivée : « hatte begonnen »."
+},
+{
+"type": "gap",
+"prompt": "Als Kind _______ ich jeden Sommer bei meinen Großeltern. (sein)",
+"answers": [
+"war"
+],
+"explanation": "Le Präteritum de « sein » est très fréquent, y compris dans la langue parlée."
+},
+{
+"type": "gap",
+"prompt": "Er _______ jetzt schon zu Hause sein. (werden)",
+"answers": [
+"wird"
+],
+"explanation": "Le Futur I peut exprimer une supposition concernant la situation actuelle : « Er wird jetzt schon zu Hause sein. »"
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung ist für einen klar angekündigten Termin in der Zukunft besonders natürlich?",
+"options": [
+"Morgen findet die Besprechung statt.",
+"Morgen wird die Besprechung stattfinden.",
+"Morgen hat die Besprechung stattgefunden."
+],
+"answer": 0,
+"explanation": "Avec une indication temporelle précise, le Präsens est très naturel pour parler d'un événement futur prévu."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung passt besonders gut zu einem gesprochenen Bericht über ein vergangenes Ereignis?",
+"options": [
+"Ich habe gestern den Bericht fertiggestellt.",
+"Ich stellte gestern den Bericht fertig.",
+"Ich hatte gestern den Bericht fertiggestellt."
+],
+"answer": 0,
+"explanation": "Dans la langue parlée, le Perfekt est généralement utilisé pour raconter un événement passé."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung zeigt, dass eine Handlung vor einer anderen vergangenen Handlung stattgefunden hatte?",
+"options": [
+"Nachdem ich gegessen hatte, ging ich spazieren.",
+"Nachdem ich gegessen habe, ging ich spazieren.",
+"Nachdem ich essen werde, ging ich spazieren."
+],
+"answer": 0,
+"explanation": "Le Plusquamperfekt « gegessen hatte » indique que le repas est antérieur à la promenade."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung drückt eine Vermutung über die Gegenwart aus?",
+"options": [
+"Er wird noch im Büro sein.",
+"Er war noch im Büro.",
+"Er ist gestern im Büro gewesen."
+],
+"answer": 0,
+"explanation": "Le Futur I « wird ... sein » peut exprimer une supposition concernant une situation actuelle."
+},
+{
+"type": "order",
+"sentence": "Morgen beginnt der neue Deutschkurs.",
+"explanation": "Le Präsens « beginnt » exprime ici un événement futur clairement situé dans le temps."
+},
+{
+"type": "order",
+"sentence": "Nachdem sie die E-Mail gelesen hatte, rief sie ihren Kollegen an.",
+"explanation": "Le Plusquamperfekt « gelesen hatte » marque l'action antérieure, tandis que le Präteritum « rief ... an » fait avancer le récit."
+},
+{
+"type": "order",
+"sentence": "Er wird wahrscheinlich noch bei der Arbeit sein.",
+"explanation": "Le Futur I sert ici à exprimer une supposition concernant la situation présente."
+},
+{
+"type": "transform",
+"prompt": "Exprimez le futur avec le Präsens, sans changer le sens : « Die Prüfung wird am Montag stattfinden. »",
+"answers": [
+"Die Prüfung findet am Montag statt."
+],
+"explanation": "Avec une indication temporelle précise comme « am Montag », le Präsens peut naturellement exprimer un événement futur."
+},
+{
+"type": "transform",
+"prompt": "Mettez la première action au Plusquamperfekt afin de montrer qu'elle est antérieure : « Ich prüfte die Unterlagen. Danach unterschrieb ich den Vertrag. »",
+"answers": [
+"Nachdem ich die Unterlagen geprüft hatte, unterschrieb ich den Vertrag.",
+"Ich unterschrieb den Vertrag, nachdem ich die Unterlagen geprüft hatte."
+],
+"explanation": "Le Plusquamperfekt « geprüft hatte » permet de présenter la vérification comme antérieure à la signature du contrat."
+}
+]
+}
+

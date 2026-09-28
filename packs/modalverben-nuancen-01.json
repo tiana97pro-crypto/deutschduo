@@ -1,0 +1,213 @@
+{
+"format": "deutschduo-pack",
+"id": "modalverben-nuancen-01",
+"rule": "Modalverben – Nuancen",
+"lesson": {
+"title": "Modalverben und ihre Nuancen",
+"level": "B1+",
+"summary": "Sous-points travaillés : unterscheiden zwischen müssen und sollen; können und dürfen; wollen und möchten; mögen und möchte; dürfen nicht und müssen nicht; sollen zur Wiedergabe fremder Informationen; brauchen + zu; Modalverben für Vermutungen und Wahrscheinlichkeiten; Modalverben in der Vergangenheit; angemessene Verwendung in beruflichen und sozialen Situationen. Les verbes modaux ne servent pas seulement à exprimer une obligation ou une possibilité. Selon le verbe, la construction et le contexte, ils permettent aussi de nuancer une demande, de rapporter une information, d'exprimer une supposition, de parler d'une action passée ou de distinguer une interdiction d'une absence d'obligation.",
+"sections": [
+{
+"heading": "1. Obligation, consigne et attente : müssen und sollen",
+"body": "müssen exprime une nécessité ou une obligation que le locuteur considère comme réelle ou imposée par la situation. sollen exprime généralement une consigne, une attente ou une recommandation venant d'une autre personne ou d'une règle extérieure. Comparez : „Ich muss den Bericht heute fertigstellen“ présente la situation comme une nécessité ; „Ich soll den Bericht heute fertigstellen“ indique qu'une autre personne ou une consigne attend cette action. Dans un contexte professionnel, cette différence permet de préciser si l'on parle de sa propre nécessité ou d'une tâche confiée par quelqu'un d'autre."
+},
+{
+"heading": "2. Capacité, possibilité et autorisation : können und dürfen",
+"body": "können exprime notamment une capacité ou une possibilité. dürfen exprime une autorisation. Ainsi, „Ich kann morgen kommen“ signifie que je suis en mesure de venir ou que cela m'est possible, tandis que „Ich darf morgen kommen“ signifie que j'ai l'autorisation de venir. À la forme négative, „nicht können“ peut indiquer une impossibilité ou une incapacité, alors que „nicht dürfen“ exprime une interdiction. Cette distinction est particulièrement utile dans les situations administratives, professionnelles et sociales."
+},
+{
+"heading": "3. Volonté, souhait et préférence : wollen, möchten, mögen",
+"body": "wollen exprime une volonté ou une intention relativement directe : „Ich will den Vertrag prüfen“. möchten sert à exprimer un souhait de manière plus polie et plus atténuée : „Ich möchte den Vertrag prüfen“. mögen exprime généralement une préférence ou un goût : „Ich mag diesen Vorschlag“. Il faut donc distinguer „Ich mag Kaffee“ de „Ich möchte einen Kaffee“ : dans le premier cas, on parle d'une préférence ; dans le second, on exprime le souhait d'obtenir ou de prendre quelque chose. Dans les échanges professionnels et sociaux, möchten est souvent préférable lorsque l'on formule une demande."
+},
+{
+"heading": "4. Une distinction essentielle : dürfen nicht et müssen nicht",
+"body": "Ces deux formes ne signifient pas la même chose. dürfen nicht exprime une interdiction : l'action n'est pas autorisée. müssen nicht exprime une absence d'obligation : l'action est possible, mais elle n'est pas nécessaire. Comparez „Sie dürfen das Dokument nicht weitergeben“ et „Sie müssen das Dokument nicht weitergeben“. La première phrase interdit la transmission ; la seconde indique que la transmission n'est pas obligatoire. Cette opposition est essentielle pour éviter des malentendus."
+},
+{
+"heading": "5. Sollen pour rapporter une information",
+"body": "sollen peut servir à rapporter une information dont le locuteur n'est pas lui-même témoin ou qu'il attribue à une autre source. „Er soll sehr erfahren sein“ signifie qu'on dit de lui qu'il est très expérimenté. Cette utilisation est différente de „Er muss sehr erfahren sein“, qui peut exprimer une forte supposition du locuteur. Dans un article, une conversation ou un contexte professionnel, sollen permet donc de signaler clairement que l'information vient d'une autre source."
+},
+{
+"heading": "6. Brauchen + zu et constructions au passé",
+"body": "brauchen + zu permet d'exprimer qu'une action n'est pas nécessaire, surtout avec une négation : „Du brauchst nicht zu warten“ signifie que tu n'as pas besoin d'attendre. Cette construction est proche de „Du musst nicht warten“, mais elle utilise un infinitif introduit par zu. Au passé, les verbes modaux permettent de parler d'une obligation, d'une possibilité ou d'une intention située dans le passé. Avec un autre verbe à l'infinitif, le parfait utilise généralement deux infinitifs : „Ich habe länger arbeiten müssen“. Dans une phrase principale au prétérit, on trouve également „Ich musste länger arbeiten“. Il est donc important de maîtriser à la fois le sens du modal et sa construction temporelle."
+},
+{
+"heading": "7. Modalverben pour les suppositions et la communication nuancée",
+"body": "Les verbes modaux peuvent également exprimer différents degrés de probabilité. müssen peut présenter une conclusion comme très probable : „Er muss schon zu Hause sein“. könnte présente une possibilité : „Er könnte schon zu Hause sein“. dürfte exprime souvent une probabilité assez élevée avec une formulation prudente : „Er dürfte schon zu Hause sein“. Ces nuances sont particulièrement utiles dans les échanges professionnels, les analyses et les discussions sociales, car elles permettent de ne pas présenter une supposition comme un fait certain."
+}
+],
+"examples": [
+{
+"de": "Ich muss heute länger arbeiten.",
+"fr": "Je dois travailler plus longtemps aujourd'hui.",
+"note": "Le locuteur présente le travail supplémentaire comme une nécessité."
+},
+{
+"de": "Ich soll heute länger arbeiten.",
+"fr": "Je suis censé travailler plus longtemps aujourd'hui.",
+"note": "L'attente ou la consigne vient d'une autre personne ou d'une règle."
+},
+{
+"de": "Ich kann morgen kommen.",
+"fr": "Je peux venir demain.",
+"note": "können exprime ici la possibilité ou la capacité de venir."
+},
+{
+"de": "Ich darf morgen kommen.",
+"fr": "J'ai le droit de venir demain.",
+"note": "dürfen exprime l'autorisation."
+},
+{
+"de": "Ich will den Vertrag selbst prüfen.",
+"fr": "Je veux vérifier moi-même le contrat.",
+"note": "wollen exprime une volonté directe."
+},
+{
+"de": "Ich möchte einen Termin vereinbaren.",
+"fr": "Je souhaiterais prendre rendez-vous.",
+"note": "möchten permet de formuler un souhait ou une demande de manière polie."
+},
+{
+"de": "Ich mag diesen Vorschlag.",
+"fr": "J'aime cette proposition.",
+"note": "mögen exprime ici une préférence, et non une demande."
+},
+{
+"de": "Du brauchst heute nicht zu kommen.",
+"fr": "Tu n'as pas besoin de venir aujourd'hui.",
+"note": "brauchen + zu, avec la négation, exprime l'absence de nécessité."
+},
+{
+"de": "Er könnte bereits angekommen sein.",
+"fr": "Il pourrait déjà être arrivé.",
+"note": "könnte présente une possibilité."
+},
+{
+"de": "Er dürfte bereits angekommen sein.",
+"fr": "Il devrait probablement être déjà arrivé.",
+"note": "dürfte exprime une probabilité assez élevée, avec une formulation prudente."
+},
+{
+"de": "Ich habe gestern länger arbeiten müssen.",
+"fr": "J'ai dû travailler plus longtemps hier.",
+"note": "Au parfait, un modal suivi d'un autre infinitif forme généralement une construction à deux infinitifs."
+}
+],
+"pitfalls": [
+"Confondre müssen et sollen : müssen présente une nécessité, tandis que sollen indique généralement une consigne, une attente ou une information venant d'une source extérieure.",
+"Confondre können et dürfen : können concerne notamment la capacité ou la possibilité, alors que dürfen concerne l'autorisation. De même, dürfen nicht exprime une interdiction, contrairement à müssen nicht.",
+"Confondre mögen et möchten : mögen exprime généralement une préférence ou un goût, tandis que möchten exprime un souhait ou une demande polie.",
+"Oublier zu après brauchen dans la construction brauchen + zu : „Du brauchst nicht zu warten“ est correct, alors que „Du brauchst nicht warten“ n'est pas la construction standard attendue dans ce contexte.",
+"Construire incorrectement le parfait avec un modal suivi d'un autre infinitif : on utilise généralement deux infinitifs, comme dans „Ich habe arbeiten müssen“."
+]
+},
+"exercises": [
+{
+"type": "gap",
+"prompt": "Der Arzt hat gesagt, dass ich mich heute schonen ___ .",
+"answers": ["soll"],
+"explanation": "sollen convient parce que la recommandation vient d'une autre personne, ici le médecin."
+},
+{
+"type": "gap",
+"prompt": "Du ___ morgen nicht kommen, wenn du keine Zeit hast.",
+"answers": ["musst"],
+"explanation": "müssen à la forme négative indique que l'action n'est pas nécessaire."
+},
+{
+"type": "gap",
+"prompt": "Die Tür ist noch offen. Er ___ also noch im Büro sein.",
+"answers": ["muss"],
+"explanation": "müssen exprime ici une forte supposition fondée sur un indice."
+},
+{
+"type": "gap",
+"prompt": "Du ___ heute nicht zu kommen. Wir können das Gespräch auch morgen führen.",
+"answers": ["brauchst"],
+"explanation": "brauchen + zu avec la négation exprime qu'une action n'est pas nécessaire."
+},
+{
+"type": "gap",
+"prompt": "Ich ___ gern einen Termin mit der Personalabteilung vereinbaren.",
+"answers": ["möchte"],
+"explanation": "möchte permet de formuler une demande polie dans un contexte professionnel."
+},
+{
+"type": "choice",
+"prompt": "Welche Aussage bedeutet, dass eine Handlung nicht erlaubt ist?",
+"options": [
+"Du musst hier nicht rauchen.",
+"Du darfst hier nicht rauchen.",
+"Du kannst hier nicht rauchen.",
+"Du sollst hier nicht rauchen."
+],
+"answer": 1,
+"explanation": "darfst nicht exprime une interdiction. müssen nicht indique seulement que l'action n'est pas obligatoire."
+},
+{
+"type": "choice",
+"prompt": "Welche Aussage beschreibt eine Erlaubnis?",
+"options": [
+"Du kannst das Gebäude betreten.",
+"Du darfst das Gebäude betreten.",
+"Du musst das Gebäude betreten.",
+"Du sollst das Gebäude betreten."
+],
+"answer": 1,
+"explanation": "dürfen exprime l'autorisation. können peut exprimer une possibilité ou une capacité, mais pas nécessairement une permission."
+},
+{
+"type": "choice",
+"prompt": "Welche Formulierung passt am besten zu einer höflichen beruflichen Bitte?",
+"options": [
+"Ich will einen Termin vereinbaren.",
+"Ich möchte einen Termin vereinbaren.",
+"Ich mag einen Termin vereinbaren.",
+"Ich soll einen Termin vereinbaren."
+],
+"answer": 1,
+"explanation": "möchte permet de formuler une demande de manière polie et atténuée."
+},
+{
+"type": "choice",
+"prompt": "Welche Aussage gibt eine Information wieder, die der Sprecher von einer anderen Quelle hat?",
+"options": [
+"Er muss sehr erfahren sein.",
+"Er könnte sehr erfahren sein.",
+"Er soll sehr erfahren sein.",
+"Er darf sehr erfahren sein."
+],
+"answer": 2,
+"explanation": "sollen permet de rapporter une information attribuée à une autre source."
+},
+{
+"type": "order",
+"sentence": "Du musst den Antrag bis Freitag einreichen."
+},
+{
+"type": "order",
+"sentence": "Er könnte bereits nach Hause gegangen sein."
+},
+{
+"type": "order",
+"sentence": "Wir dürfen diese vertraulichen Daten nicht weitergeben."
+},
+{
+"type": "transform",
+"prompt": "Transformez la phrase pour exprimer une absence de nécessité avec brauchen + zu : „Du musst heute nicht arbeiten.“",
+"answers": [
+"Du brauchst heute nicht zu arbeiten."
+],
+"explanation": "La construction brauchen + zu, avec la négation, permet d'exprimer qu'une action n'est pas nécessaire."
+},
+{
+"type": "transform",
+"prompt": "Transformez la phrase au parfait en conservant le sens d'obligation : „Ich musste gestern länger arbeiten.“",
+"answers": [
+"Ich habe gestern länger arbeiten müssen."
+],
+"explanation": "Avec un verbe modal accompagné d'un autre infinitif, le parfait utilise généralement deux infinitifs à la fin de la phrase."
+}
+]
+}
+
