@@ -72,20 +72,20 @@
 "explanation": "« Darüber » remplace « über dieses Problem » et se rapporte ici à une chose."
 },
 {
-"type": "gap",
-"prompt": "Ich warte auf die Antwort. Ich warte schon seit zwei Tagen ******.",******
-******"answers": [******
-******"darauf"******
-******],******
-******"explanation": "« Darauf » remplace « auf die Antwort ». La préposition « auf » commence par une voyelle, d'où la présence du « r »."******
-******},******
-******{******
-******"type": "gap",******
-******"prompt": "****** denkst du gerade? – Ich denke an meine bevorstehende Prüfung.",
-"answers": [
-"Woran"
-],
-"explanation": "La question porte sur une chose ou une situation introduite par « an » : « Woran denkst du? »."
+  "type": "gap",
+  "prompt": "Ich warte auf die Antwort. Ich warte schon seit zwei Tagen ___.",
+  "answers": [
+    "darauf"
+  ],
+  "explanation": "« Darauf » remplace « auf die Antwort ». Comme la préposition « auf » commence par une voyelle, on utilise la forme « darauf »."
+},
+{
+  "type": "gap",
+  "prompt": "___ denkst du gerade? – Ich denke an meine bevorstehende Prüfung.",
+  "answers": [
+    "Woran"
+  ],
+  "explanation": "La question porte sur une chose ou une situation introduite par « an » : « Woran denkst du? »."
 },
 {
 "type": "gap",
