@@ -39,6 +39,7 @@ const RULES = {
   praep_kasus: 'Prépositions et cas',
   praepositionen: 'Prépositions',
   praepositionaladverbien: 'Adverbes prépositionnels',
+'Präpositionaladverbien': 'Adverbes prépositionnels',
 
   konnektoren: 'Connecteurs et liaisons',
 
