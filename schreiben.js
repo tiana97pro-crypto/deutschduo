@@ -8,39 +8,7 @@ if (!window.DD) return;
 const DD = window.DD, $ = DD.$, esc = DD.esc, store = DD.store, toast = DD.toast;
 
 /* ---------- Règles de grammaire (identifiants partagés avec le futur module Grammatik) ---------- */
-const RULES = {
-  verb_nebensatz: 'Verbe en fin de subordonnée',
-  verb_hauptsatz: 'Verbe en 2e position',
-  inversion: 'Inversion sujet-verbe',
-  konjunktiv2: 'Subjonctif II',
-  konjunktiv1: 'Subjonctif I (discours rapporté)',
-  passiv: 'Passif',
-  partizip: 'Participes (attribut, présent)',
-  relativsatz: 'Propositions relatives',
-  adjektiv: 'Déclinaison des adjectifs',
-  artikel_genus: 'Article et genre',
-  kasus: 'Cas (Akkusativ, Dativ, Genitiv)',
-  wechselpraep: 'Prépositions à double cas',
-  praep_verb: 'Verbes à préposition',
-  praep_kasus: 'Prépositions et cas',
-  konnektoren: 'Connecteurs (weil, obwohl, deshalb…)',
-  infinitiv_zu: 'Infinitif avec zu',
-  nominalisierung: 'Nominalisation',
-  tempus: 'Temps (Perfekt, Präteritum, Plusquamperfekt)',
-  trennbar: 'Verbes séparables',
-  reflexiv: 'Verbes pronominaux',
-  negation: 'Négation',
-  pronomen: 'Pronoms',
-  mittelfeld: 'Ordre des mots (Mittelfeld)',
-  komparation: 'Comparatif et superlatif',
-  plural: 'Pluriel des noms',
-  modalverb: 'Verbes de modalité',
-  rechtschreibung: 'Orthographe',
-  zeichensetzung: 'Ponctuation (virgules)',
-  wortwahl: 'Choix du mot',
-  register: 'Registre de langue',
-  autre: 'Autre'
-};
+const RULES = window.DD_RULES;
 
 const TOPICS = [
   'Sollten soziale Netzwerke für Jugendliche unter 16 Jahren verboten werden?',
