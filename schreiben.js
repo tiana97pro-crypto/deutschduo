@@ -58,7 +58,10 @@ const SYSTEM = 'Tu es un professeur d\'allemand expérimenté, examinateur des �
   '(8) Réponds uniquement avec du JSON valide, sans texte autour.';
 
 function buildPrompt(text, topic){
-  const list = Object.keys(RULES).map(k => k + ' = ' + RULES[k]).join('\n');
+  const list = Object.keys(RULES)
+  .filter(k => /^[a-z0-9_]+$/.test(k))
+  .map(k => k + ' = ' + RULES[k])
+  .join('\n');
   return 'Sujet imposé : ' + (topic || '(libre)') + '\n\n' +
     'Identifiants autorisés pour "regle" :\n' + list + '\n\n' +
     'Texte de l\'apprenant :\n<<<TEXTE\n' + text + '\nTEXTE>>>\n\n' +
