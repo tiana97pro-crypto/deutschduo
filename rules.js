@@ -80,3 +80,14 @@ window.DD_RULES = {
 
   autre: 'Autre'
 };
+// Quand Schreiben signale une règle, Grammatik cherche aussi les fiches
+// classées sous ces règles voisines.
+window.DD_RULE_LINKS = {
+  modalverb: ['modalverben_nuancen'],
+  verb_nebensatz: ['nebensaetze'],
+  verb_hauptsatz: ['satzbau_wortstellung'],
+  inversion: ['satzbau_wortstellung'],
+  mittelfeld: ['satzbau_wortstellung'],
+  tempus: ['tempusgebrauch'],
+  nominalisierung: ['verbalisierung', 'nomen_verb_verbindungen']
+};
