@@ -110,6 +110,16 @@ function packsByRule(){
   Object.keys(packs).forEach(id => { const p = packs[id]; (m[p.rule] = m[p.rule] || []).push(p); });
   return m;
 }
+function packsForRule(rule){
+  const by = packsByRule();
+  const targets = [rule].concat((window.DD_RULE_LINKS || {})[rule] || []);
+  const labels = targets.map(k => RULES[k]).filter(Boolean);
+  let out = [];
+  Object.keys(by).forEach(k => {
+    if (targets.indexOf(k) !== -1 || labels.indexOf(RULES[k]) !== -1) out = out.concat(by[k]);
+  });
+  return out;
+}
 function weakCounts(){ return store.get('dd_errors', {}) || {}; }
 
 /* ---------- Générateurs par code (aucune requête IA) ---------- */
