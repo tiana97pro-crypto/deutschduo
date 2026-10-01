@@ -351,7 +351,7 @@ function renderDone(m){
 function render(box){
   if (DD.pending && DD.pending.rule){
     const rule = DD.pending.rule; DD.pending = null;
-    const list = packsByRule()[rule];
+    const list = packsForRule(rule);
     if (list && list.length){ curPack = list[0]; view = 'lesson'; }
     else { curRuleFilter = rule; view = 'hub'; }
   }
