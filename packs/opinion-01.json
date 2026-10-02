@@ -1,0 +1,228 @@
+{
+"format": "deutschduo-redemittel",
+"id": "opinion-01",
+"theme": "opinion",
+"title": "Eine Meinung äußern",
+"level": "B1+",
+"items": [
+{
+"de": "Ich denke, dass …",
+"fr": "Je pense que…",
+"exemple": "Ich denke, dass öffentliche Verkehrsmittel stärker gefördert werden sollten.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Ich glaube, dass …",
+"fr": "Je crois que…",
+"exemple": "Ich glaube, dass digitale Medien unseren Alltag stark verändert haben.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Meiner Meinung nach …",
+"fr": "À mon avis…",
+"exemple": "Meiner Meinung nach sollte die Regierung mehr in Bildung investieren.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "L'expression est en première position ; le verbe conjugué vient immédiatement après.",
+"regle": "inversion"
+},
+{
+"de": "Ich bin der Meinung, dass …",
+"fr": "Je suis d'avis que…",
+"exemple": "Ich bin der Meinung, dass flexible Arbeitszeiten für viele Beschäftigte sinnvoll sind.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Aus meiner Sicht …",
+"fr": "De mon point de vue…",
+"exemple": "Aus meiner Sicht bietet das Homeoffice sowohl Vorteile als auch Nachteile.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "L'expression est en première position ; le verbe conjugué vient immédiatement après.",
+"regle": "inversion"
+},
+{
+"de": "Ich persönlich bin der Ansicht, dass …",
+"fr": "Personnellement, je suis d'avis que…",
+"exemple": "Ich persönlich bin der Ansicht, dass Kinder früh lernen sollten, verantwortungsvoll mit Medien umzugehen.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Ich vertrete die Auffassung, dass …",
+"fr": "Je défends le point de vue selon lequel…",
+"exemple": "Ich vertrete die Auffassung, dass lebenslanges Lernen in der modernen Arbeitswelt unverzichtbar ist.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Construction soutenue suivie d'une proposition en « dass ».",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Ich bin davon überzeugt, dass …",
+"fr": "Je suis convaincu(e) que…",
+"exemple": "Ich bin davon überzeugt, dass eine gute Ausbildung die beruflichen Chancen verbessert.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Für mich steht fest, dass …",
+"fr": "Pour moi, il est certain que…",
+"exemple": "Für mich steht fest, dass nachhaltiger Konsum in Zukunft wichtiger wird.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Ich würde sagen, dass …",
+"fr": "Je dirais que…",
+"exemple": "Ich würde sagen, dass die Vorteile dieser Lösung überwiegen.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar"],
+"note": "« würde » est une forme du Konjunktiv II et permet de présenter son opinion de manière plus prudente.",
+"regle": "konjunktiv2"
+},
+{
+"de": "Meines Erachtens …",
+"fr": "À mon avis / selon moi…",
+"exemple": "Meines Erachtens muss die Gesellschaft stärker auf soziale Gerechtigkeit achten.",
+"registre": "formel",
+"textes": ["kommentar", "praesentation", "diskussion"],
+"note": "L'expression est en première position ; le verbe conjugué vient immédiatement après.",
+"regle": "inversion"
+},
+{
+"de": "Nach meiner Einschätzung …",
+"fr": "Selon mon évaluation / à mon avis…",
+"exemple": "Nach meiner Einschätzung wird sich dieser Trend in den nächsten Jahren fortsetzen.",
+"registre": "formel",
+"textes": ["kommentar", "praesentation", "grafikbeschreibung"],
+"note": "L'expression en première position entraîne l'inversion.",
+"regle": "inversion"
+},
+{
+"de": "Ich halte … für …",
+"fr": "Je considère … comme… / Je trouve …",
+"exemple": "Ich halte diese Maßnahme für besonders sinnvoll.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar"],
+"note": "Construction : halten + COD + für + adjectif ou nom.",
+"regle": "praep_kasus"
+},
+{
+"de": "Ich sehe … als … an",
+"fr": "Je considère … comme…",
+"exemple": "Ich sehe die Digitalisierung als große Chance für die Gesellschaft an.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar", "praesentation"],
+"note": "« ansehen » est un verbe séparable : au présent, la particule « an » se place en fin de proposition principale.",
+"regle": "trennbar"
+},
+{
+"de": "Es spricht vieles dafür, dass …",
+"fr": "Beaucoup de choses plaident en faveur du fait que…",
+"exemple": "Es spricht vieles dafür, dass Unternehmen flexiblere Arbeitszeiten anbieten.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Ich persönlich finde, dass …",
+"fr": "Personnellement, je trouve que…",
+"exemple": "Ich persönlich finde, dass jeder Mensch selbst über seinen Lebensstil entscheiden sollte.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Aus meiner persönlichen Perspektive …",
+"fr": "De mon point de vue personnel…",
+"exemple": "Aus meiner persönlichen Perspektive bietet diese Entwicklung mehr Chancen als Risiken.",
+"registre": "formel",
+"textes": ["kommentar", "praesentation", "diskussion"],
+"note": "L'expression est en première position ; le verbe conjugué vient immédiatement après.",
+"regle": "inversion"
+},
+{
+"de": "Wenn Sie mich fragen, …",
+"fr": "Si vous me demandez mon avis…",
+"exemple": "Wenn Sie mich fragen, sollte man diese Entscheidung noch einmal überdenken.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar"],
+"note": "La subordonnée introduite par « wenn » précède la principale ; après la virgule, le verbe conjugué de la principale vient immédiatement après.",
+"regle": "inversion"
+}
+],
+"exercices": [
+{
+"phrase": "___ sollte die Regierung mehr in den öffentlichen Verkehr investieren.",
+"options": [
+"Meiner Meinung nach",
+"Aus meiner Meinung",
+"Nach meiner Ansicht dass"
+],
+"reponse": 0
+},
+{
+"phrase": "___ bietet das Homeoffice sowohl Vorteile als auch Nachteile.",
+"options": [
+"Aus meine Sicht",
+"Aus meiner Sicht",
+"Aus Sicht meiner dass"
+],
+"reponse": 1
+},
+{
+"phrase": "Ich bin davon überzeugt, ___ eine gute Ausbildung die beruflichen Chancen verbessert.",
+"options": [
+"weil",
+"dass",
+"ob"
+],
+"reponse": 1
+},
+{
+"phrase": "___ muss die Gesellschaft stärker auf soziale Gerechtigkeit achten.",
+"options": [
+"Meines Erachtens",
+"Meines Erachtens dass",
+"Mein Erachtens nach dass"
+],
+"reponse": 0
+},
+{
+"phrase": "Ich ___ sagen, dass die Vorteile dieser Lösung überwiegen.",
+"options": [
+"würde",
+"werde",
+"hätte zu"
+],
+"reponse": 0
+},
+{
+"phrase": "Es spricht vieles dafür, ___ Unternehmen flexiblere Arbeitszeiten anbieten.",
+"options": [
+"dass",
+"damit",
+"weil"
+],
+"reponse": 0
+}
+]
+}
+
