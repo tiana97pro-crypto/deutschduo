@@ -394,6 +394,29 @@ document.addEventListener('click', e => {
   }
 });
 
+/* API pour les autres modules (panneau de Schreiben) */
+DD.redemittel = {
+  count: function(){ return allItems().length; },
+  textes: function(){
+    const seen = new Set();
+    allItems().forEach(it => it.textes.forEach(t => seen.add(t)));
+    return Object.keys(TEXTES).filter(t => seen.has(t))
+      .concat(Array.from(seen).filter(t => !TEXTES[t]))
+      .map(t => ({ id: t, label: txLabel(t) }));
+  },
+  groups: function(o){
+    o = o || {};
+    const max = o.max || 8, by = {};
+    allItems().forEach(it => {
+      if (o.texte && it.textes.indexOf(o.texte) === -1) return;
+      (by[it.theme] = by[it.theme] || []).push(it.de);
+    });
+    const order = Object.keys(THEMES).filter(t => by[t])
+      .concat(Object.keys(by).filter(t => !THEMES[t]));
+    return order.map(t => ({ theme: t, label: thLabel(t), items: by[t].slice(0, max) }));
+  }
+};
+  
 DD.register({ id: 'redemittel', label: 'Redemittel', render });
 loadPacks();
 })();
