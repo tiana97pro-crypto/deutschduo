@@ -1,0 +1,194 @@
+{
+  "format": "deutschduo-redemittel",
+  "id": "concession-01",
+  "theme": "concession",
+  "title": "Einräumen und Einschränken",
+  "level": "B1+",
+  "items": [
+    {
+      "de": "obwohl …",
+      "fr": "bien que… / quoique…",
+      "exemple": "Obwohl es stark geregnet hat, sind wir spazieren gegangen.",
+      "registre": "neutre",
+      "textes": ["lettre_informelle", "diskussion", "kommentar"],
+      "note": "« obwohl » introduit une subordonnée : le verbe conjugué va à la fin. Quand la subordonnée est placée en tête, la principale commence par le verbe (inversion).",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "trotzdem …",
+      "fr": "quand même / malgré cela…",
+      "exemple": "Es hat stark geregnet, trotzdem sind wir spazieren gegangen.",
+      "registre": "neutre",
+      "textes": ["diskussion", "kommentar", "lettre_informelle"],
+      "note": "« trotzdem » est un adverbe : il occupe la position 1 et entraîne l'inversion (verbe en position 2). Ne pas le confondre avec « obwohl », qui introduit une subordonnée.",
+      "regle": "inversion"
+    },
+    {
+      "de": "aber …",
+      "fr": "mais…",
+      "exemple": "Ich würde gerne mitkommen, aber ich habe leider keine Zeit.",
+      "registre": "neutre",
+      "textes": ["lettre_informelle", "diskussion", "kommentar"],
+      "note": "« aber » est une conjonction de coordination : elle occupe la position 0 et ne change pas l'ordre des mots dans la proposition qui suit.",
+      "regle": "konnektoren"
+    },
+    {
+      "de": "jedoch …",
+      "fr": "cependant… / toutefois…",
+      "exemple": "Das Angebot ist interessant, jedoch ist es zu teuer für uns.",
+      "registre": "formel",
+      "textes": ["kommentar", "diskussion", "lettre_formelle"],
+      "note": "« jedoch » peut se placer en position 1 (il entraîne alors l'inversion) ou après le verbe. Plus soutenu que « aber ».",
+      "regle": "inversion"
+    },
+    {
+      "de": "allerdings …",
+      "fr": "toutefois… / il est vrai que…",
+      "exemple": "Das Konzept überzeugt, allerdings gibt es noch offene Fragen.",
+      "registre": "formel",
+      "textes": ["kommentar", "diskussion", "praesentation"],
+      "note": "« allerdings » introduit une restriction ou une réserve. Placé en tête, il entraîne l'inversion.",
+      "regle": "inversion"
+    },
+    {
+      "de": "dennoch …",
+      "fr": "néanmoins… / pourtant…",
+      "exemple": "Die Lage ist schwierig, dennoch bleiben wir optimistisch.",
+      "registre": "formel",
+      "textes": ["kommentar", "praesentation", "zusammenfassung"],
+      "note": "« dennoch » est un adverbe qui occupe la position 1 et entraîne l'inversion. Registre plus soutenu que « trotzdem ».",
+      "regle": "inversion"
+    },
+    {
+      "de": "zwar …, aber …",
+      "fr": "certes…, mais…",
+      "exemple": "Das mag zwar stimmen, aber es erklärt nicht das ganze Problem.",
+      "registre": "neutre",
+      "textes": ["diskussion", "kommentar"],
+      "note": "« zwar » reconnaît partiellement un argument avant d'introduire une restriction avec « aber ». « zwar » se place après le verbe ou le sujet, jamais en tête absolue.",
+      "regle": "konnektoren"
+    },
+    {
+      "de": "einerseits …, andererseits …",
+      "fr": "d'une part…, d'autre part…",
+      "exemple": "Einerseits spart man Zeit, andererseits verliert man den persönlichen Kontakt.",
+      "registre": "neutre",
+      "textes": ["kommentar", "diskussion", "praesentation"],
+      "note": "Présente deux aspects opposés. Placés en tête de phrase, les deux adverbes entraînent l'inversion.",
+      "regle": "konnektoren"
+    },
+    {
+      "de": "im Gegensatz dazu …",
+      "fr": "en revanche / par opposition à cela…",
+      "exemple": "Im Gegensatz dazu steht die Meinung der Fachleute.",
+      "registre": "formel",
+      "textes": ["kommentar", "praesentation", "grafikbeschreibung"],
+      "note": "Le groupe prépositionnel antéposé entraîne l'inversion : le verbe conjugué vient immédiatement après.",
+      "regle": "inversion"
+    },
+    {
+      "de": "selbst wenn …",
+      "fr": "même si…",
+      "exemple": "Selbst wenn wir mehr Geld hätten, würden wir das Projekt nicht finanzieren.",
+      "registre": "formel",
+      "textes": ["diskussion", "kommentar", "hypothese"],
+      "note": "« selbst wenn » introduit une subordonnée concessive. Le Konjunktiv II apparaît souvent dans la principale (« würden »). Verbe en fin de subordonnée.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "auch wenn …",
+      "fr": "même si…",
+      "exemple": "Auch wenn es schwierig ist, sollten wir es versuchen.",
+      "registre": "neutre",
+      "textes": ["diskussion", "kommentar", "lettre_informelle"],
+      "note": "« auch wenn » introduit une subordonnée (verbe en fin). Plus courant à l'oral que « selbst wenn ».",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "wenngleich …",
+      "fr": "quoique… / bien que…",
+      "exemple": "Wenngleich die Ergebnisse positiv sind, gibt es noch Verbesserungsbedarf.",
+      "registre": "formel",
+      "textes": ["kommentar", "zusammenfassung", "lettre_formelle"],
+      "note": "« wenngleich » est une conjonction soutenue, équivalente à « obwohl ». Verbe en fin de subordonnée.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "so sehr … auch",
+      "fr": "quelque… que / aussi… que",
+      "exemple": "So sehr ich das Projekt auch befürworte, die Kosten sind nicht vertretbar.",
+      "registre": "formel",
+      "textes": ["kommentar", "diskussion", "praesentation"],
+      "note": "Structure concessive avec rejet du verbe en fin. « auch » suit immédiatement le sujet ou le verbe. Très soutenu.",
+      "regle": "konnektoren"
+    },
+    {
+      "de": "dessen ungeachtet …",
+      "fr": "malgré cela / nonobstant…",
+      "exemple": "Dessen ungeachtet hat die Regierung ihre Entscheidung verteidigt.",
+      "registre": "formel",
+      "textes": ["kommentar", "lettre_formelle", "zusammenfassung"],
+      "note": "Tournure très soutenue, quasi administrative. Placée en tête, elle entraîne l'inversion.",
+      "regle": "inversion"
+    },
+    {
+      "de": "es sei denn, …",
+      "fr": "à moins que…",
+      "exemple": "Wir treffen uns morgen, es sei denn, es regnet stark.",
+      "registre": "formel",
+      "textes": ["lettre_formelle", "diskussion", "lettre_informelle"],
+      "note": "« es sei denn » introduit une exception (concession restrictive). Le verbe de la subordonnée se place à la fin. Expression figée au subjonctif I.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "nichtsdestotrotz …",
+      "fr": "néanmoins… / malgré tout…",
+      "exemple": "Nichtsdestotrotz bleibt die Frage offen, wer die Kosten trägt.",
+      "registre": "formel",
+      "textes": ["kommentar", "zusammenfassung", "lettre_formelle"],
+      "note": "Adverbe de concession très soutenu, souvent critiqué comme lourd mais parfaitement correct. Placé en tête, il entraîne l'inversion.",
+      "regle": "inversion"
+    },
+    {
+      "de": "ungeachtet + Genitiv",
+      "fr": "sans tenir compte de / malgré…",
+      "exemple": "Ungeachtet der Kritik hält die Firma an ihrem Plan fest.",
+      "registre": "formel",
+      "textes": ["kommentar", "lettre_formelle", "zusammenfassung"],
+      "note": "« ungeachtet » régit le génitif : « ungeachtet der Kritik ». Très soutenu, plutôt écrit.",
+      "regle": "praep_kasus"
+    }
+  ],
+  "exercices": [
+    {
+      "phrase": "___ es stark geregnet hat, sind wir spazieren gegangen.",
+      "options": ["Obwohl", "Trotzdem", "Deshalb"],
+      "reponse": 0
+    },
+    {
+      "phrase": "Es hat stark geregnet, ___ sind wir spazieren gegangen.",
+      "options": ["obwohl", "weil", "trotzdem"],
+      "reponse": 2
+    },
+    {
+      "phrase": "Das Angebot ist interessant, ___ ist es zu teuer für uns.",
+      "options": ["obwohl", "jedoch", "weil"],
+      "reponse": 1
+    },
+    {
+      "phrase": "Das mag ___ stimmen, aber es erklärt nicht das ganze Problem.",
+      "options": ["zwar", "trotzdem", "obwohl"],
+      "reponse": 0
+    },
+    {
+      "phrase": "___ wenn wir mehr Geld hätten, würden wir das Projekt nicht finanzieren.",
+      "options": ["Obwohl", "Selbst", "Trotzdem"],
+      "reponse": 1
+    },
+    {
+      "phrase": "___ der Kritik hält die Firma an ihrem Plan fest.",
+      "options": ["Ungeachtet", "Trotz", "Wegen"],
+      "reponse": 0
+    }
+  ]
+}

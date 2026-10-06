@@ -1,0 +1,203 @@
+{
+  "format": "deutschduo-redemittel",
+  "id": "cause-01",
+  "theme": "cause",
+  "title": "Ursachen und Gründe ausdrücken",
+  "level": "B1+",
+  "items": [
+    {
+      "de": "weil …",
+      "fr": "parce que…",
+      "exemple": "Ich komme heute später, weil ich noch einen Termin habe.",
+      "registre": "neutre",
+      "textes": ["lettre_informelle", "diskussion", "kommentar"],
+      "note": "« weil » introduit une subordonnée : le verbe conjugué se place à la fin. Ne pas confondre avec « denn », qui coordonne deux propositions principales.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "denn …",
+      "fr": "car…",
+      "exemple": "Wir müssen etwas ändern, denn so kann es nicht weitergehen.",
+      "registre": "neutre",
+      "textes": ["diskussion", "kommentar", "lettre_informelle"],
+      "note": "« denn » est une conjonction de coordination : elle occupe la position 0 et n'entraîne aucune modification de l'ordre des mots dans la proposition qui suit.",
+      "regle": "konnektoren"
+    },
+    {
+      "de": "deshalb …",
+      "fr": "c'est pourquoi…",
+      "exemple": "Die Preise sind stark gestiegen, deshalb kaufen viele Menschen weniger.",
+      "registre": "neutre",
+      "textes": ["kommentar", "diskussion", "grafikbeschreibung"],
+      "note": "« deshalb » est un adverbe de conséquence placé en tête : il entraîne l'inversion (verbe en position 2). À ne pas confondre avec « weil », qui exprime la cause.",
+      "regle": "inversion"
+    },
+    {
+      "de": "deswegen …",
+      "fr": "c'est pour cette raison que…",
+      "exemple": "Er hat lange nicht geschlafen, deswegen ist er heute sehr müde.",
+      "registre": "neutre",
+      "textes": ["diskussion", "kommentar", "lettre_informelle"],
+      "note": "Comme « deshalb », « deswegen » entraîne l'inversion lorsqu'il est en tête de phrase.",
+      "regle": "inversion"
+    },
+    {
+      "de": "da …",
+      "fr": "étant donné que…",
+      "exemple": "Da die Nachfrage gestiegen ist, müssen wir unsere Produktion erhöhen.",
+      "registre": "formel",
+      "textes": ["kommentar", "praesentation", "zusammenfassung"],
+      "note": "« da » introduit une subordonnée causale (verbe en fin). Quand la subordonnée est antéposée, la principale commence par le verbe conjugué (inversion).",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "wegen + Genitiv",
+      "fr": "à cause de / en raison de…",
+      "exemple": "Wegen des schlechten Wetters wurde das Fest abgesagt.",
+      "registre": "neutre",
+      "textes": ["kommentar", "praesentation", "zusammenfassung"],
+      "note": "« wegen » régit le génitif : « wegen des Wetters ». À l'oral, le datif est fréquent, mais le génitif reste la norme à l'écrit.",
+      "regle": "praep_kasus"
+    },
+    {
+      "de": "aufgrund + Genitiv",
+      "fr": "en raison de / du fait de…",
+      "exemple": "Aufgrund der aktuellen Lage können wir den Termin nicht einhalten.",
+      "registre": "formel",
+      "textes": ["kommentar", "praesentation", "zusammenfassung", "lettre_formelle"],
+      "note": "« aufgrund » régit le génitif. Plus soutenu que « wegen », il est courant dans les textes formels et administratifs.",
+      "regle": "praep_kasus"
+    },
+    {
+      "de": "aus diesem Grund …",
+      "fr": "pour cette raison…",
+      "exemple": "Aus diesem Grund schlage ich vor, das Projekt zu verschieben.",
+      "registre": "formel",
+      "textes": ["lettre_formelle", "kommentar", "praesentation"],
+      "note": "Le groupe prépositionnel en tête entraîne l'inversion : le verbe conjugué vient immédiatement après.",
+      "regle": "inversion"
+    },
+    {
+      "de": "infolgedessen …",
+      "fr": "par conséquent…",
+      "exemple": "Die Nachfrage ist gesunken, infolgedessen mussten mehrere Filialen schließen.",
+      "registre": "formel",
+      "textes": ["kommentar", "zusammenfassung", "grafikbeschreibung"],
+      "note": "« infolgedessen » est un adverbe placé en tête qui entraîne l'inversion. Il exprime la conséquence, non la cause.",
+      "regle": "inversion"
+    },
+    {
+      "de": "dadurch, dass …",
+      "fr": "du fait que… / parce que…",
+      "exemple": "Dadurch, dass er täglich übt, hat er große Fortschritte gemacht.",
+      "registre": "neutre",
+      "textes": ["kommentar", "diskussion", "praesentation"],
+      "note": "« dadurch, dass » introduit une subordonnée (verbe en fin). La virgule entre « dadurch » et « dass » est obligatoire.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "dafür, dass …",
+      "fr": "vu que… / étant donné que…",
+      "exemple": "Dafür, dass er erst seit einem Jahr Deutsch lernt, spricht er schon sehr gut.",
+      "registre": "neutre",
+      "textes": ["diskussion", "lettre_informelle"],
+      "note": "Tournure concessive-causale : elle reconnaît un fait tout en le mettant en relation avec un résultat surprenant. Verbe en fin de subordonnée.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "nämlich …",
+      "fr": "en effet… / car…",
+      "exemple": "Wir müssen uns beeilen, wir haben nämlich nicht mehr viel Zeit.",
+      "registre": "neutre",
+      "textes": ["diskussion", "lettre_informelle"],
+      "note": "« nämlich » ne se place jamais en tête de phrase. Il introduit l'explication après coup, en position médiane (après le verbe ou le sujet).",
+      "regle": "verb_hauptsatz"
+    },
+    {
+      "de": "zumal …",
+      "fr": "d'autant plus que…",
+      "exemple": "Wir sollten früh losfahren, zumal der Verkehr am Morgen sehr dicht ist.",
+      "registre": "formel",
+      "textes": ["kommentar", "diskussion", "praesentation"],
+      "note": "« zumal » introduit une subordonnée causale renforcée (verbe en fin). Souvent utilisé pour ajouter un argument décisif.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "aufgrund dessen, dass …",
+      "fr": "du fait que…",
+      "exemple": "Aufgrund dessen, dass die Mittel begrenzt sind, müssen wir Prioritäten setzen.",
+      "registre": "formel",
+      "textes": ["lettre_formelle", "kommentar", "zusammenfassung"],
+      "note": "Tournure lourde mais correcte, réservée à l'écrit soutenu. Verbe en fin de subordonnée introduite par « dass ».",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "dies liegt daran, dass …",
+      "fr": "cela tient au fait que…",
+      "exemple": "Dies liegt daran, dass die Nachfrage in den letzten Jahren stark gestiegen ist.",
+      "registre": "formel",
+      "textes": ["kommentar", "praesentation", "zusammenfassung"],
+      "note": "« daran » est le corrélat qui annonce la subordonnée en « dass ». Verbe en fin de subordonnée.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "der Grund dafür ist, dass …",
+      "fr": "la raison en est que…",
+      "exemple": "Der Grund dafür ist, dass viele Menschen flexibler arbeiten möchten.",
+      "registre": "formel",
+      "textes": ["kommentar", "praesentation", "diskussion"],
+      "note": "« dafür » est le corrélat de la subordonnée en « dass ». Verbe en fin de subordonnée.",
+      "regle": "verb_nebensatz"
+    },
+    {
+      "de": "es liegt an + Dativ",
+      "fr": "cela est dû à…",
+      "exemple": "Es liegt an der schlechten Organisation, dass das Projekt gescheitert ist.",
+      "registre": "neutre",
+      "textes": ["diskussion", "kommentar"],
+      "note": "« liegen an » régit le datif : « an der Organisation ». Ne pas confondre avec « es liegt mir an etwas » (tenir à quelque chose).",
+      "regle": "praep_kasus"
+    },
+    {
+      "de": "aus … Gründen",
+      "fr": "pour des raisons…",
+      "exemple": "Aus organisatorischen Gründen muss die Veranstaltung leider verschoben werden.",
+      "registre": "formel",
+      "textes": ["lettre_formelle", "kommentar", "praesentation"],
+      "note": "Le groupe prépositionnel antéposé entraîne l'inversion. L'adjectif se décline au datif pluriel : « aus organisatorischen Gründen ».",
+      "regle": "inversion"
+    }
+  ],
+  "exercices": [
+    {
+      "phrase": "Ich komme heute später, ___ ich noch einen Termin habe.",
+      "options": ["weil", "denn", "deshalb"],
+      "reponse": 0
+    },
+    {
+      "phrase": "Die Nachfrage ist stark gestiegen, ___ mussten wir unsere Produktion erhöhen.",
+      "options": ["weil", "da", "deshalb"],
+      "reponse": 2
+    },
+    {
+      "phrase": "___ des schlechten Wetters wurde das Fest abgesagt.",
+      "options": ["Wegen", "Trotz", "Damit"],
+      "reponse": 0
+    },
+    {
+      "phrase": "___ die Nachfrage gestiegen ist, müssen wir unsere Produktion erhöhen.",
+      "options": ["Deshalb", "Da", "Nämlich"],
+      "reponse": 1
+    },
+    {
+      "phrase": "Wir müssen uns beeilen, wir haben ___ nicht mehr viel Zeit.",
+      "options": ["nämlich", "deshalb", "da"],
+      "reponse": 0
+    },
+    {
+      "phrase": "Dies liegt ___, dass die Nachfrage in den letzten Jahren stark gestiegen ist.",
+      "options": ["deshalb", "daran", "nämlich"],
+      "reponse": 1
+    }
+  ]
+}

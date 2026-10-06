@@ -1,0 +1,227 @@
+{
+"format": "deutschduo-redemittel",
+"id": "nuancer-01",
+"theme": "nuancer",
+"title": "Eine Meinung nuancieren",
+"level": "B1+",
+"items": [
+{
+"de": "Einerseits …, andererseits …",
+"fr": "D'une part…, d'autre part…",
+"exemple": "Einerseits bietet das Homeoffice mehr Flexibilität, andererseits kann die Trennung zwischen Arbeit und Privatleben schwieriger werden.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "« Einerseits » et « andererseits » servent à présenter deux aspects opposés ou complémentaires.",
+"regle": "konnektoren"
+},
+{
+"de": "Auf der einen Seite …, auf der anderen Seite …",
+"fr": "D'un côté…, de l'autre…",
+"exemple": "Auf der einen Seite spart man durch Online-Shopping Zeit, auf der anderen Seite fehlt oft die persönliche Beratung.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Les deux expressions permettent de mettre en parallèle deux aspects opposés ou complémentaires.",
+"regle": "konnektoren"
+},
+{
+"de": "Das lässt sich nicht eindeutig beurteilen.",
+"fr": "Cela ne peut pas être évalué de manière univoque.",
+"exemple": "Ob soziale Medien eher nützlich oder schädlich sind, lässt sich nicht eindeutig beurteilen.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "La construction « sich lassen + infinitif » équivaut à un passif avec « können » : « das lässt sich beurteilen » = « das kann beurteilt werden ».",
+"regle": "verb_hauptsatz"
+},
+{
+"de": "Das hängt davon ab, ob …",
+"fr": "Cela dépend du fait de savoir si…",
+"exemple": "Ob eine solche Regelung sinnvoll ist, hängt davon ab, ob sie in der Praxis umsetzbar ist.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "« davon » est le corrélat qui annonce la subordonnée en « ob ». Quand cette subordonnée occupe le Vorfeld (première position), le verbe de la principale suit immédiatement (« hängt »). Dans la subordonnée, le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Es kommt darauf an, ob …",
+"fr": "Cela dépend de savoir si…",
+"exemple": "Es kommt darauf an, ob die Betroffenen ausreichend informiert wurden.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar"],
+"note": "La locution « es kommt darauf an » est suivie d'une subordonnée introduite par « ob », dont le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Das kann man nicht pauschal sagen.",
+"fr": "On ne peut pas dire cela de manière générale.",
+"exemple": "Ob junge Menschen heute weniger lesen, kann man nicht pauschal sagen.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar"],
+"note": "« pauschal » signifie ici de manière générale, sans tenir compte des différences entre les situations.",
+"regle": "verb_hauptsatz"
+},
+{
+"de": "Man muss zwischen … und … unterscheiden.",
+"fr": "Il faut distinguer entre… et…",
+"exemple": "Man muss zwischen kurzfristigen und langfristigen Folgen unterscheiden.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "« zwischen » est une préposition mixte (Wechselpräposition) : elle régit le datif en situation statique et l'accusatif en cas de mouvement. Avec « unterscheiden » (pas de mouvement), on emploie donc le datif : « zwischen kurzfristigen und langfristigen Folgen ».",
+"regle": "praep_kasus"
+},
+{
+"de": "Dabei sollte man berücksichtigen, dass …",
+"fr": "À cet égard, il faut tenir compte du fait que…",
+"exemple": "Dabei sollte man berücksichtigen, dass nicht alle Menschen über dieselben finanziellen Möglichkeiten verfügen.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Es kommt darauf an, inwieweit …",
+"fr": "Cela dépend de la mesure dans laquelle…",
+"exemple": "Es kommt darauf an, inwieweit die neuen Maßnahmen tatsächlich umgesetzt werden.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "« inwieweit » introduit une subordonnée ; le verbe conjugué se place à la fin.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Zum Teil trifft das zu, allerdings …",
+"fr": "C'est en partie vrai, cependant…",
+"exemple": "Zum Teil trifft das zu, allerdings gibt es auch wichtige Gegenargumente.",
+"registre": "formel",
+"textes": ["kommentar", "diskussion"],
+"note": "« allerdings » introduit ici une restriction ou une réserve par rapport à l'affirmation précédente.",
+"regle": "konnektoren"
+},
+{
+"de": "Das mag zwar stimmen, aber …",
+"fr": "C'est peut-être vrai, mais…",
+"exemple": "Das mag zwar stimmen, aber dabei werden die langfristigen Folgen oft unterschätzt.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar"],
+"note": "La structure « zwar …, aber … » sert à reconnaître partiellement un argument avant d'introduire une restriction.",
+"regle": "konnektoren"
+},
+{
+"de": "In diesem Zusammenhang sollte man auch bedenken, dass …",
+"fr": "Dans ce contexte, il faut également garder à l'esprit que…",
+"exemple": "In diesem Zusammenhang sollte man auch bedenken, dass nicht alle Regionen gleich gut an das Internet angebunden sind.",
+"registre": "formel",
+"textes": ["kommentar", "praesentation", "diskussion"],
+"note": "Après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "verb_nebensatz"
+},
+{
+"de": "Das hängt von … ab.",
+"fr": "Cela dépend de…",
+"exemple": "Ob eine Maßnahme erfolgreich ist, hängt von ihrer konkreten Umsetzung ab.",
+"registre": "neutre",
+"textes": ["diskussion", "kommentar", "praesentation"],
+"note": "« abhängen von + Dativ » est un verbe à particule séparable : « hängt … ab ». La préposition « von » régit le datif.",
+"regle": "trennbar"
+},
+{
+"de": "Es wäre zu kurz gegriffen, zu sagen, dass …",
+"fr": "Il serait réducteur de dire que…",
+"exemple": "Es wäre zu kurz gegriffen, zu sagen, dass technische Lösungen allein alle Umweltprobleme lösen können.",
+"registre": "formel",
+"textes": ["kommentar", "praesentation", "diskussion"],
+"note": "La construction « es wäre …, zu sagen » utilise le Konjunktiv II pour formuler une appréciation prudente. « zu sagen » est un infinitif avec « zu » ; après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "konjunktiv2"
+},
+{
+"de": "Es wäre allerdings übertrieben zu behaupten, dass …",
+"fr": "Il serait toutefois exagéré d'affirmer que…",
+"exemple": "Es wäre allerdings übertrieben zu behaupten, dass digitale Angebote den persönlichen Unterricht vollständig ersetzen können.",
+"registre": "formel",
+"textes": ["kommentar", "praesentation", "diskussion"],
+"note": "« zu behaupten » est un infinitif avec « zu » (sans « um ») ; après « dass », le verbe conjugué se place en fin de proposition.",
+"regle": "infinitiv_zu"
+},
+{
+"de": "Je nach … kann …",
+"fr": "Selon… / en fonction de…, … peut…",
+"exemple": "Je nach Situation kann dieselbe Maßnahme unterschiedliche Auswirkungen haben.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion", "praesentation"],
+"note": "« je nach » est suivi d'un nom et signifie « selon / en fonction de ». Le cas dépend du contexte : souvent le datif (« je nach dem Fall, je nach den Umständen »), parfois l'accusatif, ou une forme sans déterminant (« je nach Wetter, je nach Situation »).",
+"regle": "praep_kasus"
+},
+{
+"de": "Unter bestimmten Umständen …",
+"fr": "Dans certaines circonstances…",
+"exemple": "Unter bestimmten Umständen kann eine solche Lösung durchaus sinnvoll sein.",
+"registre": "formel",
+"textes": ["kommentar", "praesentation", "diskussion"],
+"note": "Le groupe prépositionnel placé en tête entraîne l'inversion : le verbe conjugué vient immédiatement après. « unter » régit ici le datif pluriel : « Umständen » (avec -n).",
+"regle": "inversion"
+},
+{
+"de": "Nicht unbedingt …",
+"fr": "Pas nécessairement…",
+"exemple": "Mehr Auswahl bedeutet nicht unbedingt eine bessere Qualität.",
+"registre": "neutre",
+"textes": ["kommentar", "diskussion"],
+"note": "« nicht unbedingt » permet de limiter la portée d'une affirmation sans la rejeter complètement.",
+"regle": "verb_hauptsatz"
+}
+],
+"exercices": [
+{
+"phrase": "___ bietet das Homeoffice mehr Flexibilität, andererseits kann die Trennung zwischen Arbeit und Privatleben schwieriger werden.",
+"options": [
+"Einerseits",
+"Trotzdem",
+"Deshalb"
+],
+"reponse": 0
+},
+{
+"phrase": "Ob eine solche Regelung sinnvoll ist, ___ davon ab, ob sie in der Praxis umsetzbar ist.",
+"options": [
+"hängt",
+"kommt",
+"steht"
+],
+"reponse": 0
+},
+{
+"phrase": "Man muss ___ kurzfristigen und langfristigen Folgen unterscheiden.",
+"options": [
+"zwischen die",
+"zwischen den",
+"mit den"
+],
+"reponse": 1
+},
+{
+"phrase": "Das mag zwar stimmen, ___ dabei werden die langfristigen Folgen oft unterschätzt.",
+"options": [
+"deshalb",
+"aber",
+"während"
+],
+"reponse": 1
+},
+{
+"phrase": "___ kann eine solche Lösung durchaus sinnvoll sein.",
+"options": [
+"Unter bestimmten Umständen",
+"Unter bestimmten Umstände",
+"Bestimmten Umständen unter"
+],
+"reponse": 0
+},
+{
+"phrase": "Es wäre zu kurz gegriffen, ___, dass technische Lösungen allein alle Umweltprobleme lösen können.",
+"options": [
+"zu sagen",
+"dass zu sagen",
+"sagen zu"
+],
+"reponse": 0
+}
+]
+}
