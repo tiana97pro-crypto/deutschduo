@@ -122,12 +122,34 @@ function weakHtml(){
     top.map(t => '<button class="chipbtn" data-sa="gogram" data-r="' + esc(t[0]) + '">' + esc(RULES[t[0]] || t[0]) + ' · ' + t[1] + '</button>').join('') +
     '</div><p class="hint">D\'après vos textes corrigés jusqu\'ici. Le module Grammatik s\'appuiera dessus.</p></div>';
 }
+function rmUsePacks(){
+  const R = DD.redemittel;
+  return !!(R && R.groups({ max: 1 }).length >= 4);
+}
+function rmControlsHtml(){
+  if (!rmUsePacks()) return '';
+  const opts = '<option value="">Tous les types de texte</option>' +
+    DD.redemittel.textes().map(t =>
+      '<option value="' + esc(t.id) + '"' + (st.rmType === t.id ? ' selected' : '') + '>' + esc(t.label) + '</option>').join('');
+  return '<div class="row" style="margin:8px 0"><select id="sc-rmtype" aria-label="Type de texte">' + opts + '</select>' +
+    '<button class="btn" data-sa="gorm">Tout le répertoire</button></div>';
+}
+function rmBodyHtml(){
+  let cats;
+  if (rmUsePacks()){
+    const gs = DD.redemittel.groups({ texte: st.rmType || '', max: 8 });
+    if (!gs.length) return '<p class="hint">Aucune expression pour ce type de texte pour l\'instant.</p>';
+    cats = gs.map(g => [g.label, g.items]);
+  } else {
+    cats = Object.keys(REDEMITTEL).map(c => [c, REDEMITTEL[c]]);
+  }
+  return cats.map(c => '<h3>' + esc(c[0]) + '</h3><div class="chips">' +
+    c[1].map(x => '<button class="chipbtn" data-sa="ins" data-t="' + esc(x) + '">' + esc(x) + '</button>').join('') + '</div>').join('');
+}   
 function writeHtml(){
-  const rm = Object.keys(REDEMITTEL).map(cat =>
-    '<h3>' + esc(cat) + '</h3><div class="chips">' + REDEMITTEL[cat].map(x => '<button class="chipbtn" data-sa="ins" data-t="' + esc(x) + '">' + esc(x) + '</button>').join('') + '</div>').join('');
   return '<textarea id="sc-text" rows="12" lang="de" spellcheck="false" autocorrect="off" placeholder="Schreiben Sie hier Ihren Text …" aria-label="Votre texte en allemand">' + esc(st.text) + '</textarea>' +
     '<p class="hint" id="sc-count">' + countLabel(countWords(st.text)) + '</p>' +
-    '<details class="rm"><summary>Redemittel : touchez une expression pour l\'insérer</summary>' + rm + '</details>' +
+    '<details class="rm"><summary>Redemittel : touchez une expression pour l\'insérer</summary>' + rmControlsHtml() + '<div id="sc-rm-body">' + rmBodyHtml() + '</div></details>' +
     '<div class="row"><button class="btn primary big" data-sa="correct"' + (st.busy ? ' disabled' : '') + '>' + (st.busy ? 'Correction en cours…' : 'Corriger mon texte') + '</button></div>' +
     (st.busy ? '<p class="hint" role="status" style="margin-top:8px">Cela prend quelques secondes.</p>' : '') +
     (st.result ? '<div class="row"><button class="btn" data-sa="new">Nouveau texte</button></div>' : '');
@@ -346,7 +368,7 @@ document.addEventListener('click', e => {
   else if (a === 'ins') insertAtCursor(el.dataset.t);
   else if (a === 'correct') correct();
   else if (a === 'copy' && st.result) copyText(st.result.texte_corrige);
-  else if (a === 'gogram'){ DD.pending = { rule: el.dataset.r }; DD.setView('grammatik'); }
+  else if (a === 'gogram'){ DD.pending = { rule: el.dataset.r }; DD.setView('grammatik'); } else if (a === 'gorm'){ DD.setView('redemittel'); }
   else if (a === 'new'){ st.text = ''; st.result = null; st.notice = ''; st.scanPreview = null; saveDraft(); rerender(); window.scrollTo(0, 0); }
   else if (a === 'addword' && st.result){
     const i = Number(el.dataset.i), v = st.result.vocabulaire[i];
@@ -369,6 +391,12 @@ document.addEventListener('change', e => {
   const f = e.target.files && e.target.files[0];
   if (f) scan(f);
 });
-
+document.addEventListener('change', e => {
+  if (DD.view !== 'schreiben' || !e.target || e.target.id !== 'sc-rmtype') return;
+  st.rmType = e.target.value;
+  const b = document.getElementById('sc-rm-body');
+  if (b) b.innerHTML = rmBodyHtml();
+});
+   
 DD.register({ id: 'schreiben', label: 'Schreiben', render });
 })();
