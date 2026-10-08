@@ -257,7 +257,12 @@ function render(){
   const builtin = { review: renderReview, add: renderAdd, list: renderList, settings: renderSettings };
   const mod = modules.find(x => x.id === view);
   const fn = builtin[view] || (mod && mod.render);
-  if (fn) fn(box); else { view = 'review'; renderReview(box); }
+  if (view === 'review' && !session && window.DD && DD.planHtml){
+  const pb = document.createElement('div');
+  pb.innerHTML = DD.planHtml();
+  m.insertBefore(pb, box);
+}
+if (fn) fn(box); else { view = 'review'; renderReview(box); }
 }
 
 /* ---------- Vue : Réviser ---------- */
@@ -763,5 +768,6 @@ render();
 <script src="lesenb2.js"></script>
 <script src="hoeren.js"></script>
 <script src="redemittel.js"></script>
+<script src="plan.js"></script>
 </body>
 </html>
